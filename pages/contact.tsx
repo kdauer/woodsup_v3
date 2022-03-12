@@ -1,18 +1,7 @@
-import {
-  Box,
-  Heading,
-  Container,
-  Text,
-  Button,
-  Stack,
-  Icon,
-  useColorModeValue,
-  createIcon,
-  Link,
-} from '@chakra-ui/react';
+import { Box, Heading, Container, Text, Stack, Link } from '@chakra-ui/react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import nextI18NextConfig from '../next-i18next.config.js';
+import nextI18NextConfig from '../next-i18next.config';
 
 export default function Contact() {
   const { t } = useTranslation('common');
