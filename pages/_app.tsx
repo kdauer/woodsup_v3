@@ -7,12 +7,14 @@ import { AppProps } from 'next/app';
 import { appWithTranslation } from 'next-i18next';
 import nextI18NextConfig from '../next-i18next.config';
 
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
+import NavBar from '../components/NavBar';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ChakraProvider theme={customTheme}>
       <>
+        <NavBar {...pageProps} />
         <Component {...pageProps} />
         <Footer {...pageProps} />
       </>

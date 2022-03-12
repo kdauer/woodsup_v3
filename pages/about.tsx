@@ -8,6 +8,7 @@ import {
 } from '@chakra-ui/react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import TextComponent from '../components/TextComponent';
 import nextI18NextConfig from '../next-i18next.config.js';
 
 const About = () => {
@@ -21,26 +22,25 @@ const About = () => {
       bgAttachment="fixed"
       spacing={8}
       justify="center"
-      h="100vh"
+      h={['', '', '', '100vh']}
     >
       <Container maxW="container.xl">
         <Center>
-          <Heading as="h1" fontSize={['md', 'lg', '2xl', '4xl']} color="white">
+          <Heading
+            as="h1"
+            fontSize={['md', 'lg', '2xl', '4xl']}
+            color="white"
+            mt="2em"
+          >
             {t('heading')}
           </Heading>
         </Center>
       </Container>
       <Container maxW="container.lg">
         <Stack spacing={3}>
-          <Text fontSize={['sm', 'md', 'lg', 'xl']} color="white">
-            {t('aboutParagraphOne')}
-          </Text>
-          <Text fontSize={['sm', 'md', 'lg', 'xl']} color="white">
-            {t('aboutParagraphTwo')}
-          </Text>
-          <Text fontSize={['sm', 'md', 'lg', 'xl']} color="white">
-            {t('aboutParagraphThree')}
-          </Text>
+          <TextComponent text={t('aboutParagraphOne')} />
+          <TextComponent text={t('aboutParagraphTwo')} />
+          <TextComponent text={t('aboutParagraphThree')} />
         </Stack>
       </Container>
     </VStack>
