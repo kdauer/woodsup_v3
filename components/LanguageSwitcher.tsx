@@ -1,6 +1,7 @@
 import { Select, useColorModeValue } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import { useCookies } from 'react-cookie';
+import { UrlObject } from 'url';
 
 export default function LanguageSwitcher() {
   const [cookie, setCookie] = useCookies(['NEXT_LOCALE']);
@@ -8,8 +9,8 @@ export default function LanguageSwitcher() {
   const { locale } = router;
 
   const switchLanguage = (e) => {
-    const locale = e.target.value;
-    router.push({ locale }, { locale }, { locale }, { shallow: true });
+    const locale: UrlObject = e.target.value;
+    router.push(`/${locale}`, `/${locale}`, { locale: false });
     if (cookie.NEXT_LOCALE !== locale) {
       setCookie('NEXT_LOCALE', locale, { path: '/' });
     }

@@ -5,7 +5,7 @@ import NewsContainer from '../components/NewsContainer';
 import nextI18NextConfig from '../next-i18next.config.js';
 
 const Home = () => {
-  const { t } = useTranslation('common', 'news');
+  const { t } = useTranslation('common');
 
   console.log('Woods Up e.v. - from Potsdam with ❤');
 
