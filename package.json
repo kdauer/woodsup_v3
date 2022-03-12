@@ -1,0 +1,32 @@
+{
+  "name": "woodsup_v3",
+  "version": "3.0.0",
+  "description": "",
+  "homepage": ".",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^1.1.7",
+    "@chakra-ui/react": "^1.8.6",
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
+    "@fontsource/oswald": "^4.5.4",
+    "@fontsource/public-sans": "^4.5.3",
+    "framer-motion": "^6.2.8",
+    "next": "^12.1.0",
+    "next-i18next": "^10.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@types/react": "^17.0.39",
+    "typescript": "^4.6.2"
+  }
+}

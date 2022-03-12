@@ -1,0 +1,55 @@
+{
+    "links":
+    [
+        {
+        "id":"1",
+        "href":"https://ethz.ch/de/news-und-veranstaltungen/eth-news/news/2019/07/wie-baeume-das-klima-retten-koennten.html",
+        "title":"Wie Bäume helfen könnten, das Klima zu retten"
+    },
+    {
+        "id":"2",
+        "href":"https://www.freitag.de/autoren/der-freitag/der-planet-schlaegt-zurueck?fbclid=IwAR1EvFlBD_ilv21F_GnXVnaK5mqHBEjBDNKLEa_QbZa6iqyUlC8--NSYvnY",
+        "title":"Der Planet schlägt zurück"
+    },
+    {
+        "id":"3",
+        "href":"https://www.nzz.ch/wissenschaft/was-waelder-zum-klimaschutz-beitragen-koennen-ld.1402068?fbclid=IwAR3s-AQUOMfrybcWJ-hAh25rfPst33Ld1lzYhSUPQppfP4wH7XH9GE5pHN4",
+        "title":"Wälder können einen riesigen Beitrag zum Klimaschutz leisten"
+    },
+    {
+        "id":"4",
+        "href":"https://www.nytimes.com/interactive/2017/10/20/climate/iceland-trees-reforestation.html?fbclid=IwAR2Qh2wNo9p-H27bjOaJXLbgQc4IDPoDWF_ZzxH6za7bevF4Yo5oGjk7fOk",
+        "title":"Vikings Razed the Forests. Can Iceland Regrow Them?"
+    },
+    {
+        "id":"5",
+        "href":"https://www.skogur.is/en/forestry/forestry-in-a-treeless-land/forestry-and-climate-change?fbclid=IwAR1D6jLuX8fpq7YxqRiuxIkNlgQ0WZ0DORXN9XCDnx1ASp42P8T71xcuQ0c",
+        "title":"Forestry and Climate Change"
+    },
+    {
+        "id":"6",
+        "href":"https://www.tagesschau.de/ausland/klimawandel-aufforstung-eth-101.html?fbclid=IwAR3r_R_k-h3g4A2N1Eky-1CJSAPa4yEHN7C5ZxOv7CqZRKDENuTusbUyGo8",
+        "title":"Aufforstung wäre effektivster Klimaschutz"
+    },
+    {
+        "id":"7",
+        "href":"https://www.thinkinghumanity.com/2019/07/for-the-first-time-ever-scientists-can-tell-where-and-how-many-trees-should-be-planted-to-stop-climate-crisis.html?fbclid=IwAR1uVOCV-YQobY2akoI_jSTSgqZUEox4ygoGGOEBaQMVS-T4NROBx-8xVmk",
+        "title":" For The First Time Ever, Scientists Can Tell Where And How Many Trees Should Be Planted To Stop Climate Crisis"
+    },
+    {
+        "id":"8",
+        "href":"https://www.youtube.com/watch?v=pnRNdbqXu1I&fbclid=IwAR1jzXILfwlt0WZeUKD_Ip8Wx3hA5y1joy_4wat7TlV82cGFIDDbLkYREdo",
+        "title":"Iceland Is Growing New Forests for the First Time in 1,000 Years"
+    },
+    {
+        "id":"9",
+        "href":"https://www.spiegel.de/wissenschaft/natur/klimaschutz-unzureichend-forscher-warnen-vor-weltweitem-klimanotstand-a-1294979.html?fbclid=IwAR1soHHad347RLSzFR49SDC3BFtEpFPl6Ix9zXjtvhbZF0sMZwCEyVCDtBs",
+        "title":"11.000 Wissenschaftler warnen vor weltweitem Klimanotstand"
+    },
+    {
+        "id":"10",
+        "href":"https://www.ecowatch.com/climate-change-planting-trees-2639092782.html?rebelltitem=1#rebelltitem1",
+        "title":"Planting Billions of Trees Is the 'Best Climate Change Solution Available Today,' Study Finds"
+    }
+]
+}
