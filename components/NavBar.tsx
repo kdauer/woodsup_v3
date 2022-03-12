@@ -108,7 +108,7 @@ export default function navBar() {
                   color: useColorModeValue('white', 'brand.900'),
                   bg: useColorModeValue('brand.400', 'white'),
                 }}
-                href="/motivation"
+                href="/links"
               >
                 {t('common:motivation')}
               </Link>
@@ -181,7 +181,7 @@ export default function navBar() {
                   color: useColorModeValue('white', 'brand.900'),
                   bg: useColorModeValue('brand.400', 'white'),
                 }}
-                href="/motivation"
+                href="/links"
               >
                 {t('common:motivation')}
               </Link>

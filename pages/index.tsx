@@ -1,4 +1,4 @@
-import { Heading, Text, Center, Stack } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import NewsContainer from '../components/NewsContainer';
@@ -12,14 +12,18 @@ const Home = () => {
   return (
     <>
       <main>
-        <Center
+        <Flex
+          w={'full'}
+          h={'100vh'}
+          align="center"
+          justify="center"
           bgImage={'url(/DSC073482.jpg)'}
           bgRepeat="no-repeat"
           bgSize="cover"
           bgPosition="center"
         >
           <NewsContainer />
-        </Center>
+        </Flex>
       </main>
     </>
   );

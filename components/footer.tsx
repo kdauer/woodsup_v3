@@ -29,6 +29,7 @@ const SocialButton = ({
       h={8}
       cursor={'pointer'}
       as={'a'}
+      target="_blank"
       href={href}
       display={'inline-flex'}
       alignItems={'center'}
@@ -64,6 +65,9 @@ export default function Footer() {
         <Text fontSize={['sm', 'md', 'lg', 'xl']}>
           Copyright © 2022 Woods Up e.V. All rights reserved
         </Text>
+        <Link href="/privacypolicy" fontSize={['sm', 'md', 'lg', 'xl']}>
+          {t('privacypolicy')}
+        </Link>
         <Link href="/legalnotice" fontSize={['sm', 'md', 'lg', 'xl']}>
           {t('legalnotice')}
         </Link>
@@ -71,7 +75,10 @@ export default function Footer() {
           {t('contact')}
         </Link>
         <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Instagram'} href={'#'}>
+          <SocialButton
+            label={'Instagram'}
+            href={'https://www.instagram.com/woods.up.potsdam/'}
+          >
             <FaInstagram />
           </SocialButton>
         </Stack>

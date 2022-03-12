@@ -31,6 +31,7 @@ const About = () => {
             fontSize={['md', 'lg', '2xl', '4xl']}
             color="white"
             mt="2em"
+            textAlign={'center'}
           >
             {t('heading')}
           </Heading>

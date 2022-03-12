@@ -71,10 +71,4 @@ export const customTheme = extendTheme({
     wider: '0.05em',
     widest: '0.1em',
   },
-  breakpoints: {
-    sm: '320px',
-    md: '768px',
-    lg: '960px',
-    xl: '1200px',
-  },
 });
