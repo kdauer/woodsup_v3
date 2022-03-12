@@ -2,16 +2,16 @@
   "projects": [
     {
       "id": "1",
-      "image": "../Baumpflanzungen.jpg",
+      "image": "/Baumpflanzungen.jpg",
       "title": "Since 2018 regular individual tree planting",
       "content": "",
       "video": "",
-      "presslinks": "",
+      "presslinks": [],
       "gallery": []
     },
     {
       "id": "2",
-      "image": "../IMG_3023.JPG",
+      "image": "/IMG_3023.JPG",
       "title": "Practical measure for climate protection, tree planting in front of the Brandenburg State Parliament in Potsdam on June 21, 2019.",
       "content": "Planting of three giant sequoia trees in front of the Brandenburg State Parliament in Potsdam as a practical measure for climate protection",
       "video": "",
@@ -24,11 +24,11 @@
     },
     {
       "id": "3",
-      "image": "../IMG_3024.JPG",
+      "image": "/IMG_3024.JPG",
       "title": "Bike tour with tree planting action in cooperation with XR and FFF in August 2019 in Potsdam, Brandenburg and Krielow.",
       "content": "on August 10, 2019 bike tour with tree planting action in Potsdam, Brandenburg and Krielow in cooperation with Extinction Rebellion and Fridays for Future.",
       "video": "",
-      "presslinks": "",
+      "presslinks": [],
       "gallery": [
         "/images/radtour/67813342_470544643525649_3099070275614932992_o.jpg",
         "/images/radtour/68343072_470510526862394_5543892864544538624_o.jpg",
@@ -41,20 +41,20 @@
     },
     {
       "id": "4",
-      "image": "../IMG_3025.JPG",
+      "image": "/IMG_3025.JPG",
       "title": "Planting on the banks of the Nuthe in Saarmund in May 2019",
       "content": "",
       "video": "",
-      "presslinks": "",
+      "presslinks": [],
       "gallery": []
     },
     {
       "id": "5",
-      "image": "../IMG_3014.JPG",
+      "image": "/IMG_3014.JPG",
       "title": "Participation in reforestation action of the association 'Land und Mehr Projekt-Initiative' in Gömnigk on December 14, 2019.",
       "content": "",
       "video": "",
-      "presslinks": "",
+      "presslinks": [],
       "gallery": [
         "/images/goemnigk/81111649_725496244525888_5537632979775389696_o.jpg",
         "/images/goemnigk/photo_2019-12-14_20-51-32.jpg",
@@ -63,11 +63,11 @@
     },
     {
       "id": "6",
-      "image": "../IMG_3021.JPG",
+      "image": "/IMG_3021.JPG",
       "title": "Tree planting in the project 'Rio Mira' Portugal February 2020",
       "content": "",
       "video": "",
-      "presslinks": "",
+      "presslinks": [],
       "gallery": [
         "/images/rio_mira/photo_2019-11-24_22-42-24.jpg",
         "/images/rio_mira/photo_2020-02-12_13-23-12.jpg",
@@ -76,7 +76,7 @@
     },
     {
       "id": "7",
-      "image": "../IMG_3011.JPG",
+      "image": "/IMG_3011.JPG",
       "title": "Iceland in June 2020: establishment of a climate forest with 2500 seedlings of different tree species",
       "content": "",
       "video": "https://www.youtube.com/embed/9uYkBS9e6p4",
@@ -87,35 +87,61 @@
     },
     {
       "id": "8",
-      "image": "../IMG_3733.JPG",
+      "image": "/IMG_3733.JPG",
       "title": "Kagendorf in October 2020: Planting of 86 trees (mainly old fruit varieties).",
       "content": "",
       "video": "",
-      "presslinks": "",
+      "presslinks": [],
       "gallery": []
     },
     {
       "id": "9",
-      "image": "../IMG_2855.JPG",
+      "image": "/IMG_2855.JPG",
       "title": "October 2020: planting a mixed woodland in Wollin",
       "content": "",
       "video": "",
-      "presslinks": "",
+      "presslinks": [],
       "gallery": []
     },
     {
       "id": "10",
-      "image": "../IMG_2935.JPG",
+      "image": "/IMG_2935.JPG",
       "title": "Iceland - 29.05. - 05.06.2021: Establishment of a mixed forest with approx. 20.000 trees on 10 hectares.",
       "content": "At the end of May, a group of five flew to Hafnarsandur, Iceland, to plant about 20,000 trees and cuttings on a 10 ha site. To counteract the climate catastrophe and promote biodiversity, it is important to plant mixed forests. We planted poplar, willow, alder, sitka spruce, birch, Murray pine and rowan from the local tree nursery. Why do we fly several thousand kilometres to plant trees? We are asked this again and again. We would very much like to realise more reforestation projects in Germany/Brandenburg. Our motivation is great, but unfortunately it has been slowed down again and again in the past two years. Applying for funding is, as in any German authority, a feat of incredible proportions. Our applications so far have been rejected. Furthermore, we need areas where trees can be planted. In Germany, these are either hard to come by or too expensive. In Iceland, we were given a large area to plant without much effort. In contrast to Germany, there are huge unused areas that can be reforested. Since no fences have to be built around the planted areas in Iceland, you save a lot of money and work. Because it rains a lot and often in Iceland, the trees do not need to be watered. There is also no need to cut back weeds that are too tall, because the areas are hardly overgrown.  90 % of the planted trees will grow. In Germany, usually only 50-60% make it.",
       "video": "",
-      "presslinks": "",
+      "presslinks": [],
       "gallery": [
         "/images/island/IMG_2936.JPG",
         "/images/island/IMG_2937.JPG",
         "/images/island/IMG_2938.JPG",
         "/images/island/IMG_2939.JPG",
         "/images/island/IMG_2940.JPG"
+      ]
+    },
+    {
+      "id": "11",
+      "image": "/IMG_3052.JPG",
+      "title": "Citizen Budget",
+      "content": "First of all, a big thank you to everyone who voted for our project 'planting old fruit trees in Babelsberg, Zentrum Ost and Klein Glienicke'. Thankfully, some people from Potsdam sent us a photo of the planted fruit trees, so that we can show a small collage here.",
+      "video": "",
+      "presslinks": [
+        "https://m.pnn.de/potsdam/kampf-gegen-den-klimawandel-neue-baeume-von-babelsberg-bis-bosnien/28033016.html"
+      ],
+      "gallery": []
+    },
+    {
+      "id": "12",
+      "image": "/IMG_D6A3645A986D-5.jpeg",
+      "title": "March 2022: Support for Schöner Land e.V. in the establishment of a climate protection grove",
+      "content": "We supported the association 'Schöner Land' in planting a barren area of 5600 square metres with various trees and shrubs",
+      "video": "",
+      "presslinks": [],
+      "gallery": [
+        "/images/Forst/IMG_3053.JPG",
+        "/images/Forst/IMG_D6A3645A986D-1.jpeg",
+        "/images/Forst/IMG_D6A3645A986D-2.jpeg",
+        "/images/Forst/IMG_D6A3645A986D-3.jpeg",
+        "/images/Forst/IMG_D6A3645A986D-4.jpeg"
       ]
     }
   ]
