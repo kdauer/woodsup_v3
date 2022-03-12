@@ -4,9 +4,6 @@ import {
   Heading,
   Stack,
   Text,
-  Button,
-  Icon,
-  IconProps,
   Image,
   UnorderedList,
   ListItem,
@@ -60,7 +57,7 @@ export default function Project() {
           py={{ base: 20, md: 28 }}
         >
           <Heading>{project.title}</Heading>
-          <Image src={project.image} />
+          <Image src={project.image} alt={project.image} />
           <Text textAlign="justify" fontSize={['sm', 'md', 'lg', 'xl']}>
             {project.content}
           </Text>
@@ -71,7 +68,7 @@ export default function Project() {
               <UnorderedList>
                 <Heading>Für Presseartikel</Heading>
                 {presslinks.map((link) => (
-                  <ListItem listStyleType={'none'}>
+                  <ListItem listStyleType={'none'} key={link}>
                     <Link
                       href={link}
                       isExternal

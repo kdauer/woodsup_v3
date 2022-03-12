@@ -80,7 +80,7 @@ export default function Carousel(props) {
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {props.projects.map((image) => (
           <Box key={image}>
-            <Image src={image} h="full" />
+            <Image src={image} h="full" alt={image} />
           </Box>
         ))}
       </Slider>

@@ -14,9 +14,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ChakraProvider theme={customTheme}>
       <>
-        <NavBar {...pageProps} />
+        <NavBar />
         <Component {...pageProps} />
-        <Footer {...pageProps} />
+        <Footer />
       </>
     </ChakraProvider>
   );

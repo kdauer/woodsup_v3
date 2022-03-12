@@ -14,7 +14,11 @@ export default function CardComponent(project: any) {
         bgColor={useColorModeValue('white', 'brand.900')}
         color={useColorModeValue('black', 'white')}
       >
-        <Image src={project.data.image} objectFit={'cover'} />
+        <Image
+          src={project.data.image}
+          objectFit={'cover'}
+          alt={project.data.image}
+        />
         <Box
           mt="1"
           pb={2}
