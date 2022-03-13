@@ -9,6 +9,7 @@ import {
   Link,
 } from '@chakra-ui/react';
 import { FaInstagram } from 'react-icons/fa';
+import NextLink from 'next/link';
 import { FunctionComponent, ReactNode } from 'react';
 import { useTranslation } from 'next-i18next';
 
@@ -65,15 +66,15 @@ const Footer: FunctionComponent<{ children?: never }> = () => {
         <Text fontSize={['sm', 'md', 'lg', 'xl']}>
           Copyright © 2022 Woods Up e.V. All rights reserved
         </Text>
-        <Link href="/privacypolicy" fontSize={['sm', 'md', 'lg', 'xl']}>
-          {t('privacypolicy')}
-        </Link>
-        <Link href="/legalnotice" fontSize={['sm', 'md', 'lg', 'xl']}>
-          {t('legalnotice')}
-        </Link>
-        <Link href="/contact" fontSize={['sm', 'md', 'lg', 'xl']}>
-          {t('contact')}
-        </Link>
+        <NextLink href="/privacypolicy" passHref>
+          <Link fontSize={['sm', 'md', 'lg', 'xl']}>{t('privacypolicy')}</Link>
+        </NextLink>
+        <NextLink href="/legalnotice" passHref>
+          <Link fontSize={['sm', 'md', 'lg', 'xl']}>{t('legalnotice')}</Link>
+        </NextLink>
+        <NextLink href="/contact" passHref>
+          <Link fontSize={['sm', 'md', 'lg', 'xl']}>{t('contact')}</Link>
+        </NextLink>
         <Stack direction={'row'} spacing={6}>
           <SocialButton
             label={'Instagram'}

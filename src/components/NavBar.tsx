@@ -12,6 +12,7 @@ import {
   Stack,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import NextLink from 'next/link';
 import ColorModeSwitcher from './ColorModeSwitcher';
 import LanguageSwitcher from './LanguageSwitcher';
 import { FunctionComponent } from 'react';
@@ -34,81 +35,87 @@ const navBar: FunctionComponent<{ children?: never }> = () => {
           />
           <HStack spacing={8} alignItems={'center'}>
             <Box>
-              <Link href="/">
-                <Image
-                  src="/IMG_2825.JPG"
-                  alt="Logo"
-                  borderRadius="base"
-                  h="64px"
-                  w="128px"
-                />
-              </Link>
+              <NextLink href="/" passHref>
+                <Link>
+                  <Image
+                    src="/IMG_2825.JPG"
+                    alt="Logo"
+                    borderRadius="base"
+                    h="64px"
+                    w="128px"
+                  />
+                </Link>
+              </NextLink>
             </Box>
             <HStack
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}
             >
-              <Link
-                fontSize={['sm', 'md', 'lg', 'xl']}
-                px={2}
-                py={1}
-                rounded={'md'}
-                color={useColorModeValue('brand.400', 'white')}
-                _hover={{
-                  textDecoration: 'none',
-                  color: useColorModeValue('white', 'brand.900'),
-                  bg: useColorModeValue('brand.400', 'white'),
-                }}
-                href="/about"
-              >
-                {t('common:about')}
-              </Link>
-              <Link
-                fontSize={['sm', 'md', 'lg', 'xl']}
-                px={2}
-                py={1}
-                rounded={'md'}
-                color={useColorModeValue('brand.400', 'white')}
-                _hover={{
-                  textDecoration: 'none',
-                  color: useColorModeValue('white', 'brand.900'),
-                  bg: useColorModeValue('brand.400', 'white'),
-                }}
-                href="/projects"
-              >
-                {t('common:projects')}
-              </Link>
-              <Link
-                fontSize={['sm', 'md', 'lg', 'xl']}
-                px={2}
-                py={1}
-                rounded={'md'}
-                color={useColorModeValue('brand.400', 'white')}
-                _hover={{
-                  textDecoration: 'none',
-                  color: useColorModeValue('white', 'brand.900'),
-                  bg: useColorModeValue('brand.400', 'white'),
-                }}
-                href="/support"
-              >
-                {t('common:support')}
-              </Link>
-              <Link
-                fontSize={['sm', 'md', 'lg', 'xl']}
-                px={2}
-                py={1}
-                rounded={'md'}
-                color={useColorModeValue('brand.400', 'white')}
-                _hover={{
-                  textDecoration: 'none',
-                  color: useColorModeValue('white', 'brand.900'),
-                  bg: useColorModeValue('brand.400', 'white'),
-                }}
-                href="links"
-              >
-                {t('common:motivation')}
-              </Link>
+              <NextLink href="/about" passHref>
+                <Link
+                  fontSize={['sm', 'md', 'lg', 'xl']}
+                  px={2}
+                  py={1}
+                  rounded={'md'}
+                  color={useColorModeValue('brand.400', 'white')}
+                  _hover={{
+                    textDecoration: 'none',
+                    color: useColorModeValue('white', 'brand.900'),
+                    bg: useColorModeValue('brand.400', 'white'),
+                  }}
+                >
+                  {t('common:about')}
+                </Link>
+              </NextLink>
+              <NextLink href="/projects" passHref>
+                <Link
+                  fontSize={['sm', 'md', 'lg', 'xl']}
+                  px={2}
+                  py={1}
+                  rounded={'md'}
+                  color={useColorModeValue('brand.400', 'white')}
+                  _hover={{
+                    textDecoration: 'none',
+                    color: useColorModeValue('white', 'brand.900'),
+                    bg: useColorModeValue('brand.400', 'white'),
+                  }}
+                >
+                  {t('common:projects')}
+                </Link>
+              </NextLink>
+              <NextLink href="/support" passHref>
+                <Link
+                  fontSize={['sm', 'md', 'lg', 'xl']}
+                  px={2}
+                  py={1}
+                  rounded={'md'}
+                  color={useColorModeValue('brand.400', 'white')}
+                  _hover={{
+                    textDecoration: 'none',
+                    color: useColorModeValue('white', 'brand.900'),
+                    bg: useColorModeValue('brand.400', 'white'),
+                  }}
+                >
+                  {t('common:support')}
+                </Link>
+              </NextLink>
+              <NextLink href="/links" passHref>
+                <Link
+                  fontSize={['sm', 'md', 'lg', 'xl']}
+                  px={2}
+                  py={1}
+                  rounded={'md'}
+                  color={useColorModeValue('brand.400', 'white')}
+                  _hover={{
+                    textDecoration: 'none',
+                    color: useColorModeValue('white', 'brand.900'),
+                    bg: useColorModeValue('brand.400', 'white'),
+                  }}
+                >
+                  {t('common:motivation')}
+                </Link>
+              </NextLink>
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
@@ -122,66 +129,71 @@ const navBar: FunctionComponent<{ children?: never }> = () => {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              <Link
-                fontSize={['sm', 'md', 'lg', 'xl']}
-                px={2}
-                py={1}
-                rounded={'md'}
-                color={useColorModeValue('brand.400', 'white')}
-                _hover={{
-                  textDecoration: 'none',
-                  color: useColorModeValue('white', 'brand.900'),
-                  bg: useColorModeValue('brand.400', 'white'),
-                }}
-                href="/about"
-              >
-                {t('common:about')}
-              </Link>
-              <Link
-                fontSize={['sm', 'md', 'lg', 'xl']}
-                px={2}
-                py={1}
-                rounded={'md'}
-                color={useColorModeValue('brand.400', 'white')}
-                _hover={{
-                  textDecoration: 'none',
-                  color: useColorModeValue('white', 'brand.900'),
-                  bg: useColorModeValue('brand.400', 'white'),
-                }}
-                href="/projects"
-              >
-                {t('common:projects')}
-              </Link>
-              <Link
-                fontSize={['sm', 'md', 'lg', 'xl']}
-                px={2}
-                py={1}
-                rounded={'md'}
-                color={useColorModeValue('brand.400', 'white')}
-                _hover={{
-                  textDecoration: 'none',
-                  color: useColorModeValue('white', 'brand.900'),
-                  bg: useColorModeValue('brand.400', 'white'),
-                }}
-                href="/support"
-              >
-                {t('common:support')}
-              </Link>
-              <Link
-                fontSize={['sm', 'md', 'lg', 'xl']}
-                px={2}
-                py={1}
-                rounded={'md'}
-                color={useColorModeValue('brand.400', 'white')}
-                _hover={{
-                  textDecoration: 'none',
-                  color: useColorModeValue('white', 'brand.900'),
-                  bg: useColorModeValue('brand.400', 'white'),
-                }}
-                href="/links"
-              >
-                {t('common:motivation')}
-              </Link>
+              <NextLink href="/about" passHref>
+                <Link
+                  fontSize={['sm', 'md', 'lg', 'xl']}
+                  px={2}
+                  py={1}
+                  rounded={'md'}
+                  color={useColorModeValue('brand.400', 'white')}
+                  _hover={{
+                    textDecoration: 'none',
+                    color: useColorModeValue('white', 'brand.900'),
+                    bg: useColorModeValue('brand.400', 'white'),
+                  }}
+                  href="/about"
+                >
+                  {t('common:about')}
+                </Link>
+              </NextLink>
+              <NextLink href="/projects" passHref>
+                <Link
+                  fontSize={['sm', 'md', 'lg', 'xl']}
+                  px={2}
+                  py={1}
+                  rounded={'md'}
+                  color={useColorModeValue('brand.400', 'white')}
+                  _hover={{
+                    textDecoration: 'none',
+                    color: useColorModeValue('white', 'brand.900'),
+                    bg: useColorModeValue('brand.400', 'white'),
+                  }}
+                >
+                  {t('common:projects')}
+                </Link>
+              </NextLink>
+              <NextLink href="/support" passHref>
+                <Link
+                  fontSize={['sm', 'md', 'lg', 'xl']}
+                  px={2}
+                  py={1}
+                  rounded={'md'}
+                  color={useColorModeValue('brand.400', 'white')}
+                  _hover={{
+                    textDecoration: 'none',
+                    color: useColorModeValue('white', 'brand.900'),
+                    bg: useColorModeValue('brand.400', 'white'),
+                  }}
+                >
+                  {t('common:support')}
+                </Link>
+              </NextLink>
+              <NextLink href="/links" passHref>
+                <Link
+                  fontSize={['sm', 'md', 'lg', 'xl']}
+                  px={2}
+                  py={1}
+                  rounded={'md'}
+                  color={useColorModeValue('brand.400', 'white')}
+                  _hover={{
+                    textDecoration: 'none',
+                    color: useColorModeValue('white', 'brand.900'),
+                    bg: useColorModeValue('brand.400', 'white'),
+                  }}
+                >
+                  {t('common:motivation')}
+                </Link>
+              </NextLink>
             </Stack>
           </Box>
         ) : null}

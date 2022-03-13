@@ -7,7 +7,7 @@ import projects_en from '../data/projects_en.json';
 import projects_es from '../data/projects_es.json';
 import projects_fr from '../data/projects_fr.json';
 import CardComponent from '../components/Card';
-
+import NextLink from 'next/link';
 export default function Projects() {
   const { t, i18n } = useTranslation('common');
 
@@ -36,9 +36,11 @@ export default function Projects() {
     >
       <VStack>
         {sortedList.map((project) => (
-          <Link href={`/projects/${project.id}`} key={project.id}>
-            <CardComponent project={project} />
-          </Link>
+          <NextLink href={`/projects/${project.id}`} key={project.id} passHref>
+            <Link>
+              <CardComponent project={project} />
+            </Link>
+          </NextLink>
         ))}
       </VStack>
     </Center>
