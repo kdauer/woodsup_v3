@@ -8,6 +8,7 @@ import {
   UnorderedList,
   ListItem,
   Link,
+  Box,
 } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
@@ -60,7 +61,7 @@ export default function Project() {
             {project.content}
           </Text>
 
-          {/* {images.length > 0 ? <Carousel props={images} /> : <Box></Box>} */}
+          {images.length > 0 ? <Carousel props={images} /> : <Box></Box>}
           <Stack spacing={6}>
             {presslinks.length > 0 ? (
               <UnorderedList>
