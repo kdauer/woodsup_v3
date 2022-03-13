@@ -1,27 +1,35 @@
 import { Select, useColorModeValue } from '@chakra-ui/react';
+import { useTranslation, i18n } from 'next-i18next';
 import { useRouter } from 'next/router';
-import { FunctionComponent } from 'react';
+import React, { FunctionComponent, useEffect, useState } from 'react';
 import { useCookies } from 'react-cookie';
 import { UrlObject } from 'url';
 
-const LanguageSwitcher: FunctionComponent<{ children?: never }> = () => {
+const LanguageSwitcher: FunctionComponent<{
+  children?: React.ReactNode;
+}> = () => {
   const [cookie, setCookie] = useCookies(['NEXT_LOCALE']);
   const router = useRouter();
-  const { locale } = router;
+  const { pathname, asPath, query } = router;
 
   const switchLanguage = (e) => {
-    const locale = e.target.value;
-    router.replace(router.pathname, router.pathname, { locale });
-    if (cookie.NEXT_LOCALE !== locale) {
-      setCookie('NEXT_LOCALE', locale, { path: '/' });
+    e.preventDefault();
+    const selectedLocale = e.target.value;
+    console.log('on switch', selectedLocale);
+    router.push({ pathname, query }, asPath, {
+      locale: selectedLocale,
+    });
+    if (cookie.NEXT_LOCALE !== selectedLocale) {
+      setCookie('NEXT_LOCALE', selectedLocale, { path: '/' });
     }
+    console.log('after switch', selectedLocale);
   };
-
+  console.log('cookie', cookie);
   return (
     <Select
       variant="outline"
-      onChange={(locale) => switchLanguage(locale)}
-      defaultValue={locale}
+      onChange={switchLanguage}
+      defaultValue={router.locale}
       bg={useColorModeValue('brand.100', 'brand.700')}
       ml="0.5rem"
     >

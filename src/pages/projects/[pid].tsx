@@ -8,7 +8,6 @@ import {
   UnorderedList,
   ListItem,
   Link,
-  Box,
 } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
@@ -25,7 +24,7 @@ export default function Project() {
   const router = useRouter();
   const { pid } = router.query;
 
-  let projectsList = projects_de.projects;
+  let projectsList;
 
   if (i18n.language === 'de') {
     projectsList = projects_de.projects;
@@ -138,6 +137,14 @@ export async function getStaticPaths({ locales }) {
       { params: { pid: '10' }, locale: 'en' },
       { params: { pid: '10' }, locale: 'es' },
       { params: { pid: '10' }, locale: 'fr' },
+      { params: { pid: '11' }, locale: 'de' },
+      { params: { pid: '11' }, locale: 'en' },
+      { params: { pid: '11' }, locale: 'es' },
+      { params: { pid: '11' }, locale: 'fr' },
+      { params: { pid: '12' }, locale: 'de' },
+      { params: { pid: '12' }, locale: 'en' },
+      { params: { pid: '12' }, locale: 'es' },
+      { params: { pid: '12' }, locale: 'fr' },
     ],
     // Enable statically generating additional pages
     // For example: `/posts/3`

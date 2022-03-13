@@ -1,5 +1,4 @@
 import { useTranslation } from 'next-i18next';
-
 import {
   Box,
   Flex,
@@ -8,9 +7,6 @@ import {
   Link,
   IconButton,
   Menu,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Stack,
@@ -109,7 +105,7 @@ const navBar: FunctionComponent<{ children?: never }> = () => {
                   color: useColorModeValue('white', 'brand.900'),
                   bg: useColorModeValue('brand.400', 'white'),
                 }}
-                href="/links"
+                href="links"
               >
                 {t('common:motivation')}
               </Link>
