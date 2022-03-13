@@ -1,7 +1,10 @@
 import { Text } from '@chakra-ui/react';
-import { FunctionComponent } from 'react';
+import { FunctionComponent, ReactNode } from 'react';
 
-const TextComponent: FunctionComponent<{ children?: never }> = (text: any) => {
+const TextComponent: FunctionComponent<{
+  text: any;
+  children?: React.ReactNode;
+}> = ({ text, children }) => {
   return (
     <Text
       fontSize={['sm', 'md', 'lg', 'xl']}

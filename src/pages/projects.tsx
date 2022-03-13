@@ -1,7 +1,7 @@
 import { Center, Link, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import nextI18nextConfig from '../next-i18next.config';
+import nextI18nextConfig from '../../next-i18next.config';
 import projects_de from '../data/projects_de.json';
 import projects_en from '../data/projects_en.json';
 import projects_es from '../data/projects_es.json';
@@ -37,7 +37,7 @@ export default function Projects() {
       <VStack>
         {sortedList.map((project) => (
           <Link href={`/projects/${project.id}`} key={project.id}>
-            <CardComponent data={project} />
+            <CardComponent project={project} />
           </Link>
         ))}
       </VStack>

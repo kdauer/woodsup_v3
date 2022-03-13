@@ -18,7 +18,10 @@ const settings = {
   slidesToScroll: 1,
 };
 
-const Carousel: FunctionComponent<{ children?: never }> = (props: any) => {
+const Carousel: FunctionComponent<{
+  props: any;
+  children?: React.ReactNode;
+}> = ({ children, props }) => {
   // As we have used custom buttons, we need a reference variable to
   // change the state
   const [slider, setSlider] = React.useState<Slider | null>(null);

@@ -1,7 +1,7 @@
 import { Box, Heading, Container, Text, Stack, Link } from '@chakra-ui/react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import nextI18NextConfig from '../next-i18next.config';
+import nextI18NextConfig from '../../next-i18next.config';
 
 export default function Contact() {
   const { t } = useTranslation('common');

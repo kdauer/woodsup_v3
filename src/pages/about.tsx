@@ -1,15 +1,8 @@
-import {
-  Center,
-  Container,
-  Heading,
-  Stack,
-  Text,
-  VStack,
-} from '@chakra-ui/react';
+import { Center, Container, Heading, Stack, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import TextComponent from '../components/TextComponent';
-import nextI18NextConfig from '../next-i18next.config.js';
+import nextI18NextConfig from '../../next-i18next.config.js';
 
 const About = () => {
   const { t } = useTranslation('common');

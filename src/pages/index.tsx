@@ -2,7 +2,7 @@ import { Flex } from '@chakra-ui/react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import NewsContainer from '../components/NewsContainer';
-import nextI18NextConfig from '../next-i18next.config.js';
+import nextI18NextConfig from '../../next-i18next.config.js';
 
 const Home = () => {
   const { t } = useTranslation('common');

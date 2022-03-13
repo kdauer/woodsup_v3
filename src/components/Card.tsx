@@ -1,9 +1,10 @@
 import { Box, Center, useColorModeValue, Image } from '@chakra-ui/react';
-import { FunctionComponent } from 'react';
+import { FunctionComponent, ReactNode } from 'react';
 
-const CardComponent: FunctionComponent<{ children?: never }> = (
-  project: any
-) => {
+const CardComponent: FunctionComponent<{
+  project: any;
+  children?: React.ReactNode;
+}> = ({ project, children }) => {
   return (
     <Center>
       <Box
