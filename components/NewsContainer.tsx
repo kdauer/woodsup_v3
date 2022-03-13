@@ -3,14 +3,13 @@ import {
   Container,
   Heading,
   Stack,
-  StackDivider,
   Text,
   useColorModeValue,
-  VStack,
 } from '@chakra-ui/react';
 import { useTranslation } from 'next-i18next';
+import { FunctionComponent } from 'react';
 
-export default function NewsContainer() {
+const NewsContainer: FunctionComponent<{ children?: never }> = () => {
   const { t } = useTranslation('news');
   return (
     <Container
@@ -37,4 +36,6 @@ export default function NewsContainer() {
       </Stack>
     </Container>
   );
-}
+};
+
+export default NewsContainer;

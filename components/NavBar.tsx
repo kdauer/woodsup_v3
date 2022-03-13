@@ -18,8 +18,9 @@ import {
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import ColorModeSwitcher from './ColorModeSwitcher';
 import LanguageSwitcher from './LanguageSwitcher';
+import { FunctionComponent } from 'react';
 
-export default function navBar() {
+const navBar: FunctionComponent<{ children?: never }> = () => {
   const { t } = useTranslation('common');
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -191,4 +192,6 @@ export default function navBar() {
       </Box>
     </>
   );
-}
+};
+
+export default navBar;

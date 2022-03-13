@@ -1,9 +1,10 @@
 import { Select, useColorModeValue } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
+import { FunctionComponent } from 'react';
 import { useCookies } from 'react-cookie';
 import { UrlObject } from 'url';
 
-export default function LanguageSwitcher() {
+const LanguageSwitcher: FunctionComponent<{ children?: never }> = () => {
   const [cookie, setCookie] = useCookies(['NEXT_LOCALE']);
   const router = useRouter();
   const { locale } = router;
@@ -30,4 +31,6 @@ export default function LanguageSwitcher() {
       <option value="fr">🇫🇷</option>
     </Select>
   );
-}
+};
+
+export default LanguageSwitcher;

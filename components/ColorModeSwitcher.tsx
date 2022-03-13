@@ -1,8 +1,8 @@
-import { ReactNode } from 'react';
+import { FunctionComponent, ReactNode } from 'react';
 import { Button, useColorMode, useColorModeValue } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
-export default function ColorModeSwitcher() {
+const ColorModeSwitcher: FunctionComponent<{ children?: never }> = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
@@ -18,4 +18,6 @@ export default function ColorModeSwitcher() {
       </Button>
     </>
   );
-}
+};
+
+export default ColorModeSwitcher;

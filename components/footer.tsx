@@ -9,7 +9,7 @@ import {
   Link,
 } from '@chakra-ui/react';
 import { FaInstagram } from 'react-icons/fa';
-import { ReactNode } from 'react';
+import { FunctionComponent, ReactNode } from 'react';
 import { useTranslation } from 'next-i18next';
 
 const SocialButton = ({
@@ -45,7 +45,7 @@ const SocialButton = ({
   );
 };
 
-export default function Footer() {
+const Footer: FunctionComponent<{ children?: never }> = () => {
   const { t } = useTranslation('common');
 
   return (
@@ -85,4 +85,6 @@ export default function Footer() {
       </Container>
     </Box>
   );
-}
+};
+
+export default Footer;

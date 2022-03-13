@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Box, IconButton, useBreakpointValue, Image } from '@chakra-ui/react';
 // Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
@@ -18,8 +18,7 @@ const settings = {
   slidesToScroll: 1,
 };
 
-export default function Carousel(props) {
-  console.log(props);
+const Carousel: FunctionComponent<{ children?: never }> = (props: any) => {
   // As we have used custom buttons, we need a reference variable to
   // change the state
   const [slider, setSlider] = React.useState<Slider | null>(null);
@@ -86,4 +85,6 @@ export default function Carousel(props) {
       </Slider>
     </Box>
   );
-}
+};
+
+export default Carousel;

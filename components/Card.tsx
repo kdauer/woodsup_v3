@@ -1,6 +1,9 @@
 import { Box, Center, useColorModeValue, Image } from '@chakra-ui/react';
+import { FunctionComponent } from 'react';
 
-export default function CardComponent(project: any) {
+const CardComponent: FunctionComponent<{ children?: never }> = (
+  project: any
+) => {
   return (
     <Center>
       <Box
@@ -31,4 +34,6 @@ export default function CardComponent(project: any) {
       </Box>
     </Center>
   );
-}
+};
+
+export default CardComponent;
