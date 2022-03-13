@@ -1,13 +1,4 @@
-import {
-  Box,
-  Heading,
-  Text,
-  Stack,
-  UnorderedList,
-  ListItem,
-  Link,
-  Center,
-} from '@chakra-ui/react';
+import { Box, Heading, Text, Stack, Link, Center } from '@chakra-ui/react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import nextI18nextConfig from '../../next-i18next.config';

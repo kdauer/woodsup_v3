@@ -1,9 +1,7 @@
 import { Select, useColorModeValue } from '@chakra-ui/react';
-import { useTranslation, i18n } from 'next-i18next';
 import { useRouter } from 'next/router';
-import React, { FunctionComponent, useEffect, useState } from 'react';
+import React, { FunctionComponent } from 'react';
 import { useCookies } from 'react-cookie';
-import { UrlObject } from 'url';
 
 const LanguageSwitcher: FunctionComponent<{
   children?: React.ReactNode;
@@ -15,16 +13,14 @@ const LanguageSwitcher: FunctionComponent<{
   const switchLanguage = (e) => {
     e.preventDefault();
     const selectedLocale = e.target.value;
-    console.log('on switch', selectedLocale);
     router.push({ pathname, query }, asPath, {
       locale: selectedLocale,
     });
     if (cookie.NEXT_LOCALE !== selectedLocale) {
       setCookie('NEXT_LOCALE', selectedLocale, { path: '/' });
     }
-    console.log('after switch', selectedLocale);
   };
-  console.log('cookie', cookie);
+
   return (
     <Select
       variant="outline"
