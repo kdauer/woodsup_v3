@@ -10,8 +10,8 @@ const LanguageSwitcher: FunctionComponent<{ children?: never }> = () => {
   const { locale } = router;
 
   const switchLanguage = (e) => {
-    const locale: UrlObject = e.target.value;
-    router.push(`/${locale}`, `/${locale}`, { locale: false });
+    const locale = e.target.value;
+    router.replace(router.pathname, router.pathname, { locale });
     if (cookie.NEXT_LOCALE !== locale) {
       setCookie('NEXT_LOCALE', locale, { path: '/' });
     }
@@ -20,7 +20,7 @@ const LanguageSwitcher: FunctionComponent<{ children?: never }> = () => {
   return (
     <Select
       variant="outline"
-      onChange={switchLanguage}
+      onChange={(locale) => switchLanguage(locale)}
       defaultValue={locale}
       bg={useColorModeValue('brand.100', 'brand.700')}
       ml="0.5rem"

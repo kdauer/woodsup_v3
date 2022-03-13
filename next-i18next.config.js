@@ -4,6 +4,6 @@ module.exports = {
     locales: ['de', 'en', 'es', 'fr'],
     serializeConfig: false,
   },
-  debug: true,
+  debug: false,
   react: { useSuspense: true },
 };
