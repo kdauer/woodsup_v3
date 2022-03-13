@@ -80,7 +80,7 @@ const Carousel: FunctionComponent<{
       </IconButton>
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
-        {props.projects.map((image) => (
+        {props.map((image) => (
           <Box key={image}>
             <Image src={image} h="full" alt={image} />
           </Box>

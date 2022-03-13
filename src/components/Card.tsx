@@ -5,7 +5,6 @@ const CardComponent: FunctionComponent<{
   project: any;
   children?: React.ReactNode;
 }> = ({ project, children }) => {
-  console.log(project);
   return (
     <Center>
       <Box
@@ -19,11 +18,7 @@ const CardComponent: FunctionComponent<{
         bgColor={useColorModeValue('white', 'brand.900')}
         color={useColorModeValue('black', 'white')}
       >
-        <Image
-          src={project.project.image}
-          objectFit={'cover'}
-          alt={project.project.image}
-        />
+        <Image src={project.image} objectFit={'cover'} alt={project.image} />
         <Box
           mt="1"
           pb={2}
@@ -31,7 +26,7 @@ const CardComponent: FunctionComponent<{
           bgColor={useColorModeValue('white', 'brand.900')}
           color={useColorModeValue('black', 'white')}
         >
-          {project.project.title}
+          {project.title}
         </Box>
       </Box>
     </Center>
