@@ -17,7 +17,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import projects_de from '../../data/projects_de.json';
 import projects_en from '../../data/projects_en.json';
 import projects_es from '../../data/projects_es.json';
-import projects_fr from '../../../data/projects_fr.json';
+import projects_fr from '../../data/projects_fr.json';
 import nextI18nextConfig from '../../../next-i18next.config';
 import Carousel from '../../components/Carousel';
 
