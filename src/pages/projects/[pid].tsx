@@ -11,7 +11,6 @@ import {
   Box,
 } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
-//import Carousel from 'react-bootstrap/Carousel';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import projects_de from '../../data/projects_de.json';
@@ -62,7 +61,7 @@ export default function Project() {
             {project.content}
           </Text>
 
-          {images.length > 0 ? <Carousel props={images} /> : <Box></Box>}
+          {/* {images.length > 0 ? <Carousel props={images} /> : <Box></Box>} */}
           <Stack spacing={6}>
             {presslinks.length > 0 ? (
               <UnorderedList>
