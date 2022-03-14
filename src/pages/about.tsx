@@ -1,4 +1,11 @@
-import { Center, Container, Heading, Stack, VStack } from '@chakra-ui/react';
+import {
+  Center,
+  Container,
+  Heading,
+  Stack,
+  useColorModeValue,
+  VStack,
+} from '@chakra-ui/react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import TextComponent from '../components/TextComponent';
@@ -8,21 +15,12 @@ const About = () => {
   const { t } = useTranslation('common');
 
   return (
-    <VStack
-      bgImage={'url(/paul-gilmore-KT3WlrL_bsg-unsplash.jpg)'}
-      bgRepeat="no-repeat"
-      bgSize="cover"
-      bgAttachment="fixed"
-      spacing={8}
-      justify="center"
-      h={['', '', '', '100vh']}
-    >
+    <VStack spacing={8} justify="center" h={['', '', '', '100vh']}>
       <Container maxW="container.xl">
         <Center>
           <Heading
             as="h1"
             fontSize={['md', 'lg', '2xl', '4xl']}
-            color="white"
             mt="2em"
             textAlign={'center'}
           >

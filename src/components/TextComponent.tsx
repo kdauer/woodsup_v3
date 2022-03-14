@@ -6,11 +6,7 @@ const TextComponent: FunctionComponent<{
   children?: React.ReactNode;
 }> = ({ text, children }) => {
   return (
-    <Text
-      fontSize={['sm', 'md', 'lg', 'xl']}
-      color="white"
-      textAlign={'justify'}
-    >
+    <Text fontSize={['sm', 'md', 'lg', 'xl']} textAlign={'justify'}>
       {text}
     </Text>
   );

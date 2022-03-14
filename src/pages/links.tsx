@@ -4,6 +4,7 @@ import {
   VStack,
   useBreakpointValue,
   Link,
+  useColorModeValue,
 } from '@chakra-ui/react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -16,27 +17,28 @@ export default function Motivation() {
   const { t } = useTranslation('common');
 
   return (
-    <Flex
-      w={'full'}
-      h={'100vh'}
-      bgImage={'url(/paul-gilmore-KT3WlrL_bsg-unsplash.jpg)'}
-      backgroundSize={'cover'}
-      backgroundPosition={'center center'}
-    >
+    <Flex w={'full'} h={'100vh'}>
       <VStack
         w={'full'}
         justify={'center'}
         px={useBreakpointValue({ base: 4, md: 8 })}
-        bgGradient={'linear(to-r, blackAlpha.600, transparent)'}
       >
-        <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
+        <Stack
+          maxW={'2xl'}
+          align={'center'}
+          spacing={6}
+          backgroundColor={useColorModeValue('brand.50', 'brand.900')}
+          borderRadius={'base'}
+        >
           {linklist.map((link) => (
             <Link
+              p="3"
+              textAlign="center"
               key={link.id}
               href={link.href}
               lineHeight={1.2}
               fontSize={['sm', 'md', 'lg', 'xl']}
-              color="white"
+              color={useColorModeValue('black', 'white')}
               isExternal
             >
               {link.title}

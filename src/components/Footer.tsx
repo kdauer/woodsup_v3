@@ -51,7 +51,7 @@ const Footer: FunctionComponent<{ children?: never }> = () => {
 
   return (
     <Box
-      bg={useColorModeValue('white', 'brand.900')}
+      bg={useColorModeValue('brand.50', 'brand.900')}
       color={useColorModeValue('brand.400', 'white')}
     >
       <Container

@@ -1,4 +1,10 @@
-import { Box, Center, useColorModeValue, Image } from '@chakra-ui/react';
+import {
+  Box,
+  Center,
+  useColorModeValue,
+  Image,
+  VStack,
+} from '@chakra-ui/react';
 import { FunctionComponent, ReactNode } from 'react';
 
 const CardComponent: FunctionComponent<{
@@ -8,26 +14,36 @@ const CardComponent: FunctionComponent<{
   return (
     <Center>
       <Box
-        maxW="445px"
-        borderRadius="lg"
+        width={['90vw', null, '45vw', 300]}
+        borderRadius="md"
         overflow="hidden"
-        boxShadow={'2xl'}
+        boxShadow={'xl'}
         rounded={'md'}
         mb={3}
-        mx={1}
-        bgColor={useColorModeValue('white', 'brand.900')}
+        mx={3}
+        bgColor={useColorModeValue('brand.500', 'brand.900')}
         color={useColorModeValue('black', 'white')}
       >
-        <Image src={project.image} objectFit={'cover'} alt={project.image} />
-        <Box
-          mt="1"
-          pb={2}
-          textAlign={'center'}
-          bgColor={useColorModeValue('white', 'brand.900')}
-          color={useColorModeValue('black', 'white')}
-        >
-          {project.title}
-        </Box>
+        <Image
+          src={project.image}
+          borderRadius="0.375rem 0.375rem 0 0"
+          height="300"
+          width="100%"
+          objectFit="cover"
+          alt={project.image}
+        />
+        <VStack m={1} align="flex-end">
+          <Box
+            h={'4.25em'}
+            textAlign={'center'}
+            bgColor={useColorModeValue('brand.500', 'brand.900')}
+            color={useColorModeValue('black', 'white')}
+            alignSelf="center"
+            justifySelf="center"
+          >
+            {project.title}
+          </Box>
+        </VStack>
       </Box>
     </Center>
   );

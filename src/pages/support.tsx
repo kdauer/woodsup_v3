@@ -15,12 +15,7 @@ import nextI18nextConfig from '../../next-i18next.config';
 export default function Support() {
   const { t } = useTranslation('common');
   return (
-    <Flex
-      w={'full'}
-      bgImage={'url(/paul-gilmore-KT3WlrL_bsg-unsplash.jpg)'}
-      backgroundSize={'cover'}
-      backgroundPosition={'center center'}
-    >
+    <Flex w={'full'}>
       <VStack
         textAlign={'center'}
         w={'full'}
@@ -28,31 +23,27 @@ export default function Support() {
         spacing={{ base: 6, md: 8 }}
         py={{ base: 16, md: 26 }}
       >
-        <Heading
-          color="white"
-          fontWeight={600}
-          fontSize={['md', 'lg', '2xl', '4xl']}
-        >
+        <Heading fontWeight={600} fontSize={['md', 'lg', '2xl', '4xl']}>
           {t('supportHeading')}
         </Heading>
-        <Text color="white" maxW={'3xl'} fontSize={['sm', 'md', 'lg', 'xl']}>
+        <Text maxW={'3xl'} fontSize={['sm', 'md', 'lg', 'xl']}>
           {t('supportParagraphOne')}
         </Text>
-        <Text color="white" maxW={'3xl'} fontSize={['sm', 'md', 'lg', 'xl']}>
+        <Text maxW={'3xl'} fontSize={['sm', 'md', 'lg', 'xl']}>
           {t('supportParagraphTwo')}
         </Text>
-        <Text color="white" maxW={'3xl'} fontSize={['sm', 'md', 'lg', 'xl']}>
+        <Text maxW={'3xl'} fontSize={['sm', 'md', 'lg', 'xl']}>
           {t('supportParagraphThree')}
         </Text>
 
         <Stack spacing={6} direction={'column'}>
-          <Text color="white" maxW={'3xl'} fontSize={['sm', 'md', 'lg', 'xl']}>
+          <Text maxW={'3xl'} fontSize={['sm', 'md', 'lg', 'xl']}>
             Woods Up e.V. <br />
             BIC: HOLVDEB1
             <br />
             IBAN: DE 68 1001 7997 8678 3814 89
           </Text>
-          <Text color="white" maxW={'3xl'} fontSize={['sm', 'md', 'lg', 'xl']}>
+          <Text maxW={'3xl'} fontSize={['sm', 'md', 'lg', 'xl']}>
             {t('supportContact')}{' '}
             <Link href="woodsup@posteo.de" color="#0d6efd">
               woodsup@posteo.de
@@ -71,10 +62,10 @@ export default function Support() {
           {t('donate')}
         </Button>
         <Stack spacing={6} direction={'column'} p="2">
-          <Text color="white" maxW={'3xl'} fontSize={['sm', 'md', 'lg', 'xl']}>
+          <Text maxW={'3xl'} fontSize={['sm', 'md', 'lg', 'xl']}>
             {t('supportParagraphFour')}
           </Text>
-          <Text color="white" maxW={'3xl'} fontSize={['sm', 'md', 'lg', 'xl']}>
+          <Text maxW={'3xl'} fontSize={['sm', 'md', 'lg', 'xl']}>
             {t('supportParagraphFive')}
           </Text>
         </Stack>

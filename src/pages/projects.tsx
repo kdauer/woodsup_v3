@@ -1,4 +1,4 @@
-import { Center, Link, VStack } from '@chakra-ui/react';
+import { Center, Link, SimpleGrid, VStack } from '@chakra-ui/react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import nextI18nextConfig from '../../next-i18next.config';
@@ -27,21 +27,21 @@ export default function Projects() {
   }
   const sortedList = projectsList.sort((a: any, b: any) => b.id - a.id);
   return (
-    <Center
-      w={'full'}
-      py={6}
-      bgImage={'url(/paul-gilmore-KT3WlrL_bsg-unsplash.jpg)'}
-      backgroundSize={'cover'}
-      backgroundPosition={'center center'}
-    >
-      <VStack>
-        {sortedList.map((project) => (
-          <NextLink href={`/projects/${project.id}`} key={project.id} passHref>
-            <Link>
-              <CardComponent project={project} />
-            </Link>
-          </NextLink>
-        ))}
+    <Center>
+      <VStack mt={10}>
+        <SimpleGrid columns={[1, null, 2, 3]} spacing={10}>
+          {sortedList.map((project) => (
+            <NextLink
+              href={`/projects/${project.id}`}
+              key={project.id}
+              passHref
+            >
+              <Link>
+                <CardComponent project={project} />
+              </Link>
+            </NextLink>
+          ))}
+        </SimpleGrid>
       </VStack>
     </Center>
   );
