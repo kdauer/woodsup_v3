@@ -25,6 +25,7 @@ export default function Motivation() {
       >
         <Stack
           maxW={'2xl'}
+          mt={2}
           align={'center'}
           spacing={6}
           backgroundColor={useColorModeValue('brand.50', 'brand.900')}
@@ -32,7 +33,7 @@ export default function Motivation() {
         >
           {linklist.map((link) => (
             <Link
-              p="3"
+              p="1"
               textAlign="center"
               key={link.id}
               href={link.href}

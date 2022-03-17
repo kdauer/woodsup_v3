@@ -53,6 +53,9 @@ export default function Imprint() {
         <Text fontSize={['sm', 'md', 'lg', 'xl']}>
           Kontakt: <Link href="woodsup@posteo.de">woodsup@posteo.de</Link>
         </Text>
+        <Text fontSize={['sm', 'md', 'lg', 'xl']}>
+          Technische Umsetzung: Konstantin Dauer
+        </Text>
         <br />
         <Heading>{t('h3')}</Heading>
         <HeadingFive text={t('h5_1')} />

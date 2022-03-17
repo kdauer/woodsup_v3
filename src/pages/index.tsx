@@ -92,7 +92,7 @@ const Home = () => {
       <main>
         <Flex
           w={'full'}
-          h={'100vh'}
+          minH="100vh"
           align="center"
           justify="center"
           bgImage={'url(/DSC073482.jpg)'}

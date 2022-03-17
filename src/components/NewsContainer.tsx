@@ -23,7 +23,7 @@ const NewsContainer: FunctionComponent<{ children?: never }> = () => {
       <Stack
         as={Box}
         spacing={{ base: 8, md: 14 }}
-        py={{ base: 20, md: 36 }}
+        p={2}
         bg={useColorModeValue('white', 'brand.900')}
         color={useColorModeValue('black', 'white')}
       >

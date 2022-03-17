@@ -60,7 +60,20 @@ export default function Project() {
           <Text textAlign="justify" fontSize={['sm', 'md', 'lg', 'xl']}>
             {project.content}
           </Text>
-
+          {/* {project.video ? (
+            <Stack>
+              <iframe
+                width="100%"
+                height="auto"
+                src={project.video}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </Stack>
+          ) : (
+            <Stack></Stack>
+          )} */}
           {images.length > 0 ? <Carousel props={images} /> : <Box></Box>}
           <Stack spacing={6}>
             {presslinks.length > 0 ? (
