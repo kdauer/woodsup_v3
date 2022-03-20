@@ -91,7 +91,7 @@ const navBar: FunctionComponent<{ children?: never }> = () => {
                         alt="Logo"
                         borderRadius="base"
                         h="64px"
-                        w="128px"
+                        w="114px"
                       />
                     ) : (
                       <Image
@@ -99,7 +99,7 @@ const navBar: FunctionComponent<{ children?: never }> = () => {
                         alt="Logo"
                         borderRadius="base"
                         h="64px"
-                        w="128px"
+                        w="114px"
                       />
                     )}
                   </Link>
