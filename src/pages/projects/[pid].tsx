@@ -159,6 +159,10 @@ export async function getStaticPaths({ locales }) {
       { params: { pid: '12' }, locale: 'en' },
       { params: { pid: '12' }, locale: 'es' },
       { params: { pid: '12' }, locale: 'fr' },
+      { params: { pid: '13' }, locale: 'de' },
+      { params: { pid: '13' }, locale: 'en' },
+      { params: { pid: '13' }, locale: 'es' },
+      { params: { pid: '13' }, locale: 'fr' },
     ],
     // Enable statically generating additional pages
     // For example: `/posts/3`

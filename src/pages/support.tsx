@@ -58,6 +58,7 @@ export default function Support() {
           borderRadius="full"
           href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F4CTCSJDAN8DQ&source=url"
           bgColor="#0070ba"
+          color="white"
         >
           {t('donate')}
         </Button>
