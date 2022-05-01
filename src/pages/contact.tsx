@@ -21,7 +21,7 @@ export default function Contact() {
           Woods Up e.V.
         </Heading>
         <Text fontSize={['sm', 'md', 'lg', 'xl']}>
-          Wollestraße 52
+          Wollestraße 54
           <br />
           14482 Potsdam
         </Text>

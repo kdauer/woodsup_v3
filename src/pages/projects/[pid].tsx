@@ -9,6 +9,7 @@ import {
   ListItem,
   Link,
   Box,
+  AspectRatio,
 } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
@@ -43,6 +44,7 @@ export default function Project() {
     return el.id === pid;
   });
   const images = project.gallery;
+  console.log(project.video);
   const presslinks = project.presslinks;
   if (!project) {
     return <div>Loading</div>;
@@ -60,20 +62,17 @@ export default function Project() {
           <Text textAlign="justify" fontSize={['sm', 'md', 'lg', 'xl']}>
             {project.content}
           </Text>
-          {/* {project.video ? (
-            <Stack>
+          {project.video ? (
+            <AspectRatio maxW="560px" ratio={16 / 9}>
               <iframe
-                width="100%"
-                height="auto"
+                title={project.title}
                 src={project.video}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-              ></iframe>
-            </Stack>
+              />
+            </AspectRatio>
           ) : (
             <Stack></Stack>
-          )} */}
+          )}
           {images.length > 0 ? <Carousel props={images} /> : <Box></Box>}
           <Stack spacing={6}>
             {presslinks.length > 0 ? (

@@ -46,7 +46,7 @@ export default function Protection() {
             Falko Drescher
           </Text>
           <Text fontSize={['sm', 'md', 'lg', 'xl']} as="span">
-            Wollestraße 52
+            Wollestraße 54
           </Text>
           <Text fontSize={['sm', 'md', 'lg', 'xl']} as="span">
             14482 Potsdam
