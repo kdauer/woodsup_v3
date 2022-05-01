@@ -44,7 +44,6 @@ export default function Project() {
     return el.id === pid;
   });
   const images = project.gallery;
-  console.log(project.video);
   const presslinks = project.presslinks;
   if (!project) {
     return <div>Loading</div>;
@@ -63,13 +62,19 @@ export default function Project() {
             {project.content}
           </Text>
           {project.video ? (
-            <AspectRatio maxW="560px" ratio={16 / 9}>
-              <iframe
-                title={project.title}
-                src={project.video}
-                allowFullScreen
-              />
-            </AspectRatio>
+            <Stack>
+              <AspectRatio maxW="560px" minH="315" minW="560px" ratio={16 / 9}>
+                <iframe
+                  width="560"
+                  height="315"
+                  src={project.video}
+                  title="YouTube video player"
+                  allowFullScreen
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                ></iframe>
+              </AspectRatio>
+            </Stack>
           ) : (
             <Stack></Stack>
           )}
