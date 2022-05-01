@@ -63,7 +63,11 @@ export default function Project() {
           </Text>
           {project.video ? (
             <Stack>
-              <AspectRatio maxW="560px" minH="315" minW="560px" ratio={16 / 9}>
+              <AspectRatio
+                maxW="560px"
+                minW={['320px', '400px', '400px', '560px']}
+                ratio={16 / 9}
+              >
                 <iframe
                   width="560"
                   height="315"
