@@ -33,6 +33,9 @@ const NewsContainer: FunctionComponent<{ children?: never }> = () => {
         <Text textAlign={'justify'} fontSize={['xs', 'sm', 'md', 'lg']}>
           {t('topic_1')}
         </Text>
+        <Text textAlign={'justify'} fontSize={['xs', 'sm', 'md', 'lg']}>
+          {t('topic_2')}
+        </Text>
       </Stack>
     </Container>
   );
