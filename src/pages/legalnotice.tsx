@@ -51,7 +51,7 @@ export default function Imprint() {
           046/143/07515
         </Text>
         <Text fontSize={['sm', 'md', 'lg', 'xl']}>
-          Kontakt: <Link href="woodsup@posteo.de">woodsup@posteo.de</Link>
+          Kontakt: <Link href={`mailto:woodsup@posteo.de`}>woodsup@posteo.de</Link>
         </Text>
         <Text fontSize={['sm', 'md', 'lg', 'xl']}>
           Technische Umsetzung: Konstantin Dauer
