@@ -29,7 +29,7 @@ export default function Contact() {
         <Link
           fontSize={['sm', 'md', 'lg', 'xl']}
           color="brand.300"
-          href="woodsup@posteo.de"
+          href={`mailto:woodsup@posteo.de`}
           isExternal
         >
           woodsup@posteo.de

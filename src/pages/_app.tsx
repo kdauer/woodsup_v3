@@ -6,7 +6,7 @@ import { customTheme } from "../../styles/theme";
 import { AppProps } from "next/app";
 import { appWithTranslation } from "next-i18next";
 import nextI18NextConfig from "../../next-i18next.config";
-import { AnalyticsWrapper } from "../components/Analytics";
+import { Analytics } from "@vercel/analytics/react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
@@ -16,7 +16,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <>
         <NavBar {...pageProps} />
         <Component {...pageProps} />
-        <AnalyticsWrapper />
+        <Analytics />
         <Footer {...pageProps} />
       </>
     </ChakraProvider>
