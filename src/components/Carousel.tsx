@@ -1,9 +1,9 @@
-import React, { FunctionComponent } from 'react';
-import { Box, IconButton, useBreakpointValue, Image } from '@chakra-ui/react';
+import React, { FunctionComponent } from "react";
+import { Box, IconButton, useBreakpointValue, Image } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
-import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
+import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 // And react-slick as our Carousel Lib
-import Slider from 'react-slick';
+import Slider from "react-slick";
 
 // Settings for the slider
 const settings = {
@@ -28,18 +28,13 @@ const Carousel: FunctionComponent<{
 
   // These are the breakpoints which changes the position of the
   // buttons as the screen size changes
-  const top = useBreakpointValue({ base: '90%', md: '50%' });
-  const side = useBreakpointValue({ base: '30%', md: '10px' });
+  const top = useBreakpointValue({ base: "90%", md: "50%" });
+  const side = useBreakpointValue({ base: "30%", md: "10px" });
 
   // These are the images used in the slide
 
   return (
-    <Box
-      position={'relative'}
-      height={'600px'}
-      width={'full'}
-      overflow={'hidden'}
-    >
+    <Box position="relative" height="600px" width="full" overflow="hidden">
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"
@@ -59,7 +54,7 @@ const Carousel: FunctionComponent<{
         position="absolute"
         left={side}
         top={top}
-        transform={'translate(0%, -50%)'}
+        transform={"translate(0%, -50%)"}
         zIndex={2}
         onClick={() => slider?.slickPrev()}
       >
@@ -72,7 +67,7 @@ const Carousel: FunctionComponent<{
         position="absolute"
         right={side}
         top={top}
-        transform={'translate(0%, -50%)'}
+        transform={"translate(0%, -50%)"}
         zIndex={2}
         onClick={() => slider?.slickNext()}
       >
@@ -82,7 +77,7 @@ const Carousel: FunctionComponent<{
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {props.map((image) => (
           <Box key={image}>
-            <Image src={image} h="full" alt={image} />
+            <Image src={image} h="full" w="auto" alt={image} />
           </Box>
         ))}
       </Slider>
