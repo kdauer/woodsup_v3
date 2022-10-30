@@ -34,7 +34,7 @@ const Carousel: FunctionComponent<{
   // These are the images used in the slide
 
   return (
-    <Box position="relative" height="600px" width="full" overflow="hidden">
+    <Box position="relative" height="auto" width="full" overflow="hidden">
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"
