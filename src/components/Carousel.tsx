@@ -77,7 +77,13 @@ const Carousel: FunctionComponent<{
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {props.map((image) => (
           <Box key={image}>
-            <Image src={image} h="full" w="auto" alt={image} />
+            <Image
+              src={image}
+              height="300"
+              width="100%"
+              objectFit="cover"
+              alt={image}
+            />
           </Box>
         ))}
       </Slider>
