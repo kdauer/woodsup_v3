@@ -16,8 +16,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <>
         <NavBar {...pageProps} />
         <Component {...pageProps} />
-        <Analytics />
         <Footer {...pageProps} />
+        <Analytics />
       </>
     </ChakraProvider>
   );
