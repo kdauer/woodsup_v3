@@ -79,7 +79,7 @@ const Carousel: FunctionComponent<{
           <Box key={image}>
             <Image
               src={image}
-              height="300"
+              height={[300, 648]}
               width="100%"
               objectFit="cover"
               alt={image}
