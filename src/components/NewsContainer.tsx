@@ -23,7 +23,7 @@ const NewsContainer: FunctionComponent<{ children?: never }> = () => {
     >
       <Stack
         as={Box}
-        spacing={{ base: 8, md: 14 }}
+        spacing={{ base: 2, md: 4 }}
         p={2}
         bg={useColorModeValue("white", "brand.900")}
         color={useColorModeValue("black", "white")}
@@ -31,16 +31,45 @@ const NewsContainer: FunctionComponent<{ children?: never }> = () => {
         <Heading textAlign="center" as="h2">
           {t("h2")}
         </Heading>
-        <Text textAlign={"justify"} fontSize={["xs", "sm", "md", "lg"]}>
-          {t("topic_3")}
+        <Text textAlign="center" fontSize={["xs", "sm", "md", "lg"]}>
+          {t("p_1")}
         </Text>
-        <Image
-          src="./IMG_3071.JPG"
-          borderRadius="0.375rem "
-          pb={4}
-          objectFit="cover"
-          alt="Seeds"
-        />
+        <Text textAlign="center" fontSize={["xs", "sm", "md", "lg"]}>
+          {t("p_2")}
+        </Text>{" "}
+        <Text textAlign="center" fontSize={["xs", "sm", "md", "lg"]}>
+          {t("p_3")}
+        </Text>{" "}
+        <Text textAlign="center" fontSize={["xs", "sm", "md", "lg"]}>
+          {t("p_4")}
+        </Text>{" "}
+        <Text textAlign="center" fontSize={["xs", "sm", "md", "lg"]}>
+          {t("p_5")}
+        </Text>{" "}
+        <Text textAlign="center" fontSize={["xs", "sm", "md", "lg"]}>
+          {t("p_6")}
+        </Text>{" "}
+        <Text textAlign="center" fontSize={["xs", "sm", "md", "lg"]}>
+          {t("p_7")}
+        </Text>{" "}
+        <Text textAlign="center" fontSize={["xs", "sm", "md", "lg"]}>
+          {t("p_8")}
+        </Text>{" "}
+        <Text textAlign="center" fontSize={["xs", "sm", "md", "lg"]}>
+          {t("p_9")}
+        </Text>{" "}
+        <Text textAlign="center" fontSize={["xs", "sm", "md", "lg"]}>
+          {t("p_10")}
+        </Text>{" "}
+        <Text textAlign="center" fontSize={["xs", "sm", "md", "lg"]}>
+          {t("p_11")}
+        </Text>
+        <Text textAlign="center" fontSize={["xs", "sm", "md", "lg"]}>
+          {t("p_12")}
+        </Text>{" "}
+        <Text textAlign="center" fontSize={["xs", "sm", "md", "lg"]}>
+          {t("p_13")}
+        </Text>
       </Stack>
     </Container>
   );
