@@ -3,6 +3,7 @@ import {
   Container,
   Heading,
   Image,
+  Link,
   Stack,
   Text,
   useColorModeValue,
@@ -69,6 +70,18 @@ const NewsContainer: FunctionComponent<{ children?: never }> = () => {
         </Text>{" "}
         <Text textAlign="center" fontSize={["xs", "sm", "md", "lg"]}>
           {t("p_13")}
+        </Text>
+        <Text textAlign="center" fontSize={["xs", "sm", "md", "lg"]}>
+          Spende bei &nbsp;
+          <Link
+            as={Link}
+            fontSize={["sm", "md", "lg", "xl"]}
+            color="brand.500"
+            href="https://www.betterplace.org/de/projects/120679?utm_campaign=ShortURLs&utm_medium=project_120679&utm_source=PlainShortURL"
+            isExternal
+          >
+            betterplace.org
+          </Link>
         </Text>
       </Stack>
     </Container>
