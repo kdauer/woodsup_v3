@@ -1,13 +1,14 @@
 import { Center, Link, SimpleGrid, VStack } from '@chakra-ui/react';
+import NextLink from 'next/link';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 import nextI18nextConfig from '../../next-i18next.config';
+import CardComponent from '../components/Card';
 import projects_de from '../data/projects_de.json';
 import projects_en from '../data/projects_en.json';
 import projects_es from '../data/projects_es.json';
 import projects_fr from '../data/projects_fr.json';
-import CardComponent from '../components/Card';
-import NextLink from 'next/link';
 export default function Projects() {
   const { t, i18n } = useTranslation('common');
 
