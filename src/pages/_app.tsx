@@ -1,26 +1,27 @@
-import "@fontsource/oswald/400.css";
-import "@fontsource/public-sans/700.css";
+import { ChakraProvider } from '@chakra-ui/react'
+import { Analytics } from '@vercel/analytics/react'
+import { AppProps } from 'next/app'
+import { appWithTranslation } from 'next-i18next'
 
-import { ChakraProvider } from "@chakra-ui/react";
-import { customTheme } from "../../styles/theme";
-import { AppProps } from "next/app";
-import { appWithTranslation } from "next-i18next";
-import nextI18NextConfig from "../../next-i18next.config";
-import { Analytics } from "@vercel/analytics/react";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import nextI18NextConfig from '../../next-i18next.config'
+import { customTheme } from '../../styles/theme'
+import Footer from '../components/Footer'
+import NavBar from '../components/NavBar'
+
+import '@fontsource/oswald/400.css'
+import '@fontsource/public-sans/700.css'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-  return (
-    <ChakraProvider theme={customTheme}>
-      <>
-        <NavBar {...pageProps} />
-        <Component {...pageProps} />
-        <Footer {...pageProps} />
-        <Analytics />
-      </>
-    </ChakraProvider>
-  );
-};
+    return (
+        <ChakraProvider theme={customTheme}>
+            <>
+                <NavBar {...pageProps} />
+                <Component {...pageProps} />
+                <Footer {...pageProps} />
+                <Analytics />
+            </>
+        </ChakraProvider>
+    )
+}
 
-export default appWithTranslation(MyApp, nextI18NextConfig);
+export default appWithTranslation(MyApp, nextI18NextConfig)

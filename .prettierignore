@@ -1,0 +1,6 @@
+# Ignore artifacts:
+*.json
+*.yaml
+*.md
+build
+coverage

@@ -1,109 +1,100 @@
 import {
-  Box,
-  Heading,
-  Text,
-  Stack,
-  UnorderedList,
-  ListItem,
-  Link,
-  Center,
-} from '@chakra-ui/react';
-import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import nextI18nextConfig from '../../next-i18next.config';
+    Box,
+    Center,
+    Heading,
+    Link,
+    ListItem,
+    Stack,
+    Text,
+    UnorderedList,
+} from '@chakra-ui/react'
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-const HeadingFive = ({ text }) => {
-  return (
-    <Heading fontSize={['md', 'lg', 'xl', '2xl']} as="h5">
-      {text}
-    </Heading>
-  );
-};
+import nextI18nextConfig from '../../next-i18next.config'
+import Paragraph from '../components/ParagraphText'
+import PolymorphicHeading from '../components/PolymorphicHeading'
 
-const Paragraph = ({ text }) => {
-  return <Text fontSize={['sm', 'md', 'lg', 'xl']}>{text}</Text>;
-};
+const StackText = ({ children }: { children: React.ReactNode }) => {
+    return (
+        <Text fontSize={['sm', 'md', 'lg', 'xl']} as="span">
+            {children}
+        </Text>
+    )
+}
 
 export default function Protection() {
-  const { t } = useTranslation('privacypolicy');
-  return (
-    <Center px="2">
-      <Stack
-        as={Box}
-        spacing={{ base: 2, md: 4 }}
-        py={{ base: 10, md: 20 }}
-        w={'full'}
-      >
-        <Heading as="h5">{t('p_1')}</Heading>
-        <HeadingFive text={t('h5_1')} />
-        <HeadingFive text={t('h5_2')} />
-        <Paragraph text={t('p_2')} />
-        <Stack>
-          <Text fontSize={['sm', 'md', 'lg', 'xl']} as="span">
-            WoodsUp e.V.
-          </Text>
-          <Text fontSize={['sm', 'md', 'lg', 'xl']} as="span">
-            Falko Drescher
-          </Text>
-          <Text fontSize={['sm', 'md', 'lg', 'xl']} as="span">
-            Wollestraße 54
-          </Text>
-          <Text fontSize={['sm', 'md', 'lg', 'xl']} as="span">
-            14482 Potsdam
-          </Text>
-        </Stack>
-        <Paragraph text={t('p_3')} />
-        <HeadingFive text={t('h5_3')} />
-        <Paragraph text={t('p_4')} />
-        <HeadingFive text={t('h5_4')} />
-        <Text>
-          {t('p_5')}
-          <Link
-            rel="noopener noreferrer"
-            href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_ListItemnks/anschriften_ListItemnks-node.html"
-            target="_blank"
-          >
-            https://www.bfdi.bund.de/DE/Infothek/Anschriften_ListItemnks/anschriften_ListItemnks-node.html
-          </Link>
-          .
-        </Text>
-        <HeadingFive text={t('h5_5')} />
-        <Paragraph text={t('p_6')} />
-        <HeadingFive text={t('h5_6')} />
-        <Paragraph text={t('p_7')} />
-        <HeadingFive text={t('h5_7')} />
-        <Paragraph text={t('p_8')} />
-        <HeadingFive text={t('h5_8')} />
-        <Paragraph text={t('p_9')} />
-        <Paragraph text={t('p_10')} />
-        <Paragraph text={t('p_11')} />
-        <HeadingFive text={t('h5_9')} />
-        <Paragraph text={t('p_12')} />
-        <Paragraph text={t('p_13')} />
-        <Paragraph text={t('p_14')} />
-        <Paragraph text={t('p_15')} />
-        <HeadingFive text={t('h5_10')} />
-        <Paragraph text={t('p_16')} />
-        <UnorderedList>
-          <ListItem>{t('li_1')}</ListItem>
-          <ListItem>{t('li_2')}</ListItem>
-          <ListItem>{t('li_3')}</ListItem>
-          <ListItem>{t('li_4')}</ListItem>
-          <ListItem>{t('li_5')}</ListItem>
-          <ListItem>{t('li_6')}</ListItem>
-          <ListItem>{t('li_7')}</ListItem>
-        </UnorderedList>
-      </Stack>
-    </Center>
-  );
+    const { t } = useTranslation('privacypolicy')
+    return (
+        <Center px="2">
+            <Stack
+                as={Box}
+                spacing={{ base: 2, md: 4 }}
+                py={{ base: 10, md: 20 }}
+                w="full"
+            >
+                <PolymorphicHeading as="h5">{t('p_1')}</PolymorphicHeading>
+                <PolymorphicHeading as="h5"> {t('h5_1')}</PolymorphicHeading>
+                <PolymorphicHeading as="h5"> {t('h5_2')}</PolymorphicHeading>
+                <Paragraph> {t('p_2')}</Paragraph>
+                <Stack>
+                    <StackText>WoodsUp e.V.</StackText>
+                    <StackText>Falko Drescher</StackText>
+                    <StackText>Wollestraße 54</StackText>
+                    <StackText>14482 Potsdam</StackText>
+                </Stack>
+                <Paragraph> {t('p_3')}</Paragraph>
+                <PolymorphicHeading as="h5"> {t('h5_3')}</PolymorphicHeading>
+                <Paragraph> {t('p_4')}</Paragraph>
+                <PolymorphicHeading as="h5"> {t('h5_4')}</PolymorphicHeading>
+                <Text>
+                    {t('p_5')}
+                    <Link
+                        rel="noopener noreferrer"
+                        href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_ListItemnks/anschriften_ListItemnks-node.html"
+                        target="_blank"
+                    >
+                        https://www.bfdi.bund.de/DE/Infothek/Anschriften_ListItemnks/anschriften_ListItemnks-node.html
+                    </Link>
+                    .
+                </Text>
+                <PolymorphicHeading as="h5">{t('h5_5')}</PolymorphicHeading>
+                <Paragraph>{t('p_6')}</Paragraph>
+                <PolymorphicHeading as="h5">{t('h5_6')}</PolymorphicHeading>
+                <Paragraph>{t('p_7')}</Paragraph>
+                <PolymorphicHeading as="h5">{t('h5_7')}</PolymorphicHeading>
+                <Paragraph>{t('p_8')}</Paragraph>
+                <PolymorphicHeading as="h5">{t('h5_8')}</PolymorphicHeading>
+                <Paragraph>{t('p_9')}</Paragraph>
+                <Paragraph>{t('p_10')}</Paragraph>
+                <Paragraph>{t('p_11')}</Paragraph>
+                <PolymorphicHeading as="h5">{t('h5_9')}</PolymorphicHeading>
+                <Paragraph>{t('p_12')}</Paragraph>
+                <Paragraph>{t('p_13')}</Paragraph>
+                <Paragraph>{t('p_14')}</Paragraph>
+                <Paragraph>{t('p_15')}</Paragraph>
+                <PolymorphicHeading as="h5">{t('h5_10')}</PolymorphicHeading>
+                <Paragraph>{t('p_16')}</Paragraph>
+                <UnorderedList>
+                    <ListItem>{t('li_1')}</ListItem>
+                    <ListItem>{t('li_2')}</ListItem>
+                    <ListItem>{t('li_3')}</ListItem>
+                    <ListItem>{t('li_4')}</ListItem>
+                    <ListItem>{t('li_5')}</ListItem>
+                    <ListItem>{t('li_6')}</ListItem>
+                    <ListItem>{t('li_7')}</ListItem>
+                </UnorderedList>
+            </Stack>
+        </Center>
+    )
 }
 
 export const getStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(
-      locale,
-      ['common', 'privacypolicy'],
-      nextI18nextConfig
-    )),
-  },
-});
+    props: {
+        ...(await serverSideTranslations(
+            locale,
+            ['common', 'privacypolicy'],
+            nextI18nextConfig
+        )),
+    },
+})

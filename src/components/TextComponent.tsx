@@ -1,15 +1,14 @@
-import { Text } from '@chakra-ui/react';
-import { FunctionComponent, ReactNode } from 'react';
+import { FunctionComponent } from 'react'
+import { Text } from '@chakra-ui/react'
 
 const TextComponent: FunctionComponent<{
-  text: any;
-  children?: React.ReactNode;
-}> = ({ text, children }) => {
-  return (
-    <Text fontSize={['sm', 'md', 'lg', 'xl']} textAlign={'justify'}>
-      {text}
-    </Text>
-  );
-};
+    children?: React.ReactNode
+}> = ({ children }) => {
+    return (
+        <Text fontSize={['sm', 'md', 'lg', 'xl']} textAlign="justify">
+            {children}
+        </Text>
+    )
+}
 
-export default TextComponent;
+export default TextComponent
