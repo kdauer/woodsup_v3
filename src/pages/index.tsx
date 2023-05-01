@@ -107,7 +107,7 @@ const Home = () => {
                     bgSize="cover"
                     bgPosition="center"
                 >
-                    {/* <NewsContainer /> */}
+                    <NewsContainer />
                 </Flex>
             </main>
         </>
