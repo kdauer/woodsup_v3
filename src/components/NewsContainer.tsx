@@ -41,17 +41,7 @@ const NewsContainer: FunctionComponent<{ children?: never }> = () => {
                 <Heading textAlign="center" as="h2">
                     {t('h2')}
                 </Heading>
-                <NewsText>{t('p_1')}</NewsText>
-                <NewsText>{t('p_2')}</NewsText> <NewsText>{t('p_3')}</NewsText>{' '}
-                <NewsText>{t('p_4')}</NewsText> <NewsText>{t('p_5')}</NewsText>{' '}
-                <NewsText>{t('p_6')}</NewsText> <NewsText>{t('p_7')}</NewsText>{' '}
-                <NewsText>{t('p_8')}</NewsText>
-                <NewsText>{t('p_8_1')}</NewsText>
-                <NewsText>{t('p_8_2')}</NewsText>{' '}
-                <NewsText>{t('p_9')}</NewsText> <NewsText>{t('p_10')}</NewsText>{' '}
                 <NewsText>{t('p_11')}</NewsText>
-                <NewsText>{t('p_12')}</NewsText>{' '}
-                <NewsText>{t('p_13')}</NewsText>
                 <NewsText>
                     Spende bei &nbsp;
                     <Link
