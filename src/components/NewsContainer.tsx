@@ -52,21 +52,7 @@ const NewsContainer: FunctionComponent<{ children?: never }> = () => {
                 <Heading textAlign="center" as="h5">
                     {t('h3')}
                 </Heading>
-                {/* <Image
-                    src="./IMG_5902.png"
-                    borderRadius="0.375rem "
-                    pb={4}
-                    objectFit="cover"
-                    alt="Iceland-Two"
-                /> */}
                 <NewsText textAlignment="justify">{t('topic_1')}</NewsText>
-                {/* <Image
-                    src="./IMG_5901.jpeg"
-                    borderRadius="0.375rem "
-                    pb={4}
-                    objectFit="cover"
-                    alt="Iceland-One"
-                /> */}
                 <NewsText>
                     Spende bei &nbsp;
                     <Link
@@ -80,13 +66,6 @@ const NewsContainer: FunctionComponent<{ children?: never }> = () => {
                     </Link>
                 </NewsText>
                 <Carousel props={images} />
-                {/* <Image
-                    src="./IMG_5903.png"
-                    borderRadius="0.375rem "
-                    pb={4}
-                    objectFit="cover"
-                    alt="Iceland-Three"
-                /> */}
             </Stack>
         </Container>
     )
