@@ -1,6 +1,6 @@
-import { FunctionComponent } from 'react'
 import { Link, MenuItem } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import { FunctionComponent } from 'react'
 
 const NavMenuItem: FunctionComponent<{
     href: any

@@ -1,7 +1,7 @@
 import { Center, Link, SimpleGrid, VStack } from '@chakra-ui/react';
-import NextLink from 'next/link';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import NextLink from 'next/link';
 
 import nextI18nextConfig from '../../next-i18next.config';
 import CardComponent from '../components/Card';

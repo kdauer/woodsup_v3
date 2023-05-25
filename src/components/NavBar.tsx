@@ -1,4 +1,3 @@
-import { FunctionComponent } from 'react'
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 import {
     Box,
@@ -13,8 +12,9 @@ import {
     useColorModeValue,
     useDisclosure,
 } from '@chakra-ui/react'
-import NextLink from 'next/link'
 import { useTranslation } from 'next-i18next'
+import NextLink from 'next/link'
+import { FunctionComponent } from 'react'
 
 import ColorModeSwitcher from './ColorModeSwitcher'
 import LanguageSwitcher from './LanguageSwitcher'

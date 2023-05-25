@@ -1,7 +1,7 @@
 import { Flex } from '@chakra-ui/react'
-import Head from 'next/head'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import Head from 'next/head'
 
 import nextI18NextConfig from '../../next-i18next.config.js'
 import NewsContainer from '../components/NewsContainer'

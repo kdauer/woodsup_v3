@@ -1,7 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import { Analytics } from '@vercel/analytics/react'
-import { AppProps } from 'next/app'
 import { appWithTranslation } from 'next-i18next'
+import { AppProps } from 'next/app'
 
 import nextI18NextConfig from '../../next-i18next.config'
 import { customTheme } from '../../styles/theme'

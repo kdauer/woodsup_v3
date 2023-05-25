@@ -1,5 +1,5 @@
-import { FunctionComponent } from 'react'
 import { Box, Center, Image, useColorModeValue, VStack } from '@chakra-ui/react'
+import { FunctionComponent } from 'react'
 
 const CardComponent: FunctionComponent<{
     project: any

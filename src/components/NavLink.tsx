@@ -1,7 +1,7 @@
-import { FunctionComponent } from 'react'
 import { Link, useColorModeValue } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
+import { FunctionComponent } from 'react'
 
 const NavLink: FunctionComponent<{
     href: any
