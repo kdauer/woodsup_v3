@@ -1,12 +1,11 @@
 import {
     Box,
     Center,
-    Heading,
     Link,
     ListItem,
     Stack,
     Text,
-    UnorderedList,
+    UnorderedList
 } from '@chakra-ui/react'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'

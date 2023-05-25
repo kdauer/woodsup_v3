@@ -1,6 +1,6 @@
-import { FunctionComponent } from 'react'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 import { Button, useColorMode, useColorModeValue } from '@chakra-ui/react'
+import { FunctionComponent } from 'react'
 
 const ColorModeSwitcher: FunctionComponent<{ children?: never }> = () => {
     const { colorMode, toggleColorMode } = useColorMode()

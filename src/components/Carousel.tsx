@@ -1,7 +1,7 @@
+import { Box, IconButton, Image, useBreakpointValue } from '@chakra-ui/react'
 import React, { FunctionComponent } from 'react'
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi'
 import Slider from 'react-slick'
-import { Box, IconButton, Image, useBreakpointValue } from '@chakra-ui/react'
 
 // Settings for the slider
 const settings = {

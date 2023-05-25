@@ -11,9 +11,9 @@ import {
     Text,
     UnorderedList,
 } from '@chakra-ui/react'
-import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useRouter } from 'next/router'
 
 import nextI18nextConfig from '../../../next-i18next.config'
 import Carousel from '../../components/Carousel'

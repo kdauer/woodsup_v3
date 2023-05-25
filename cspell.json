@@ -1,0 +1,32 @@
+{
+  "flagWords": [],
+  "language": "en,de",
+  "version": "0.2",
+  "words": [
+    "Aufforstungsprojekt",
+    "Aufforstungsprojekten",
+    "betterplace",
+    "Drescher",
+    "Falko",
+    "Hafnarsandur",
+    "HOLVDEB",
+    "legalnotice",
+    "linklist",
+    "msapplication",
+    "Pflanzprojekte",
+    "Pflanzteam",
+    "privacypolicy",
+    "Schollbach",
+    "Sitkafichte",
+    "Sitkafichten",
+    "Staudenhofes",
+    "Wollestraße",
+    "woodsup"
+  ],
+  "ignoreWords": [
+    "chakra",
+    "fontsource",
+    "oswald",
+    "webm"
+  ]
+}

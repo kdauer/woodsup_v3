@@ -1,4 +1,3 @@
-import { FunctionComponent } from 'react'
 import {
     Box,
     Container,
@@ -6,15 +5,19 @@ import {
     Link,
     Stack,
     Text,
+    TypographyProps,
     useColorModeValue,
 } from '@chakra-ui/react'
 import { useTranslation } from 'next-i18next'
+import { FunctionComponent } from 'react'
+import Carousel from './Carousel'
 
 const NewsText: FunctionComponent<{
     children: React.ReactNode
-}> = ({ children }) => {
+    textAlignment?: TypographyProps['textAlign']
+}> = ({ children, textAlignment = 'center' }) => {
     return (
-        <Text textAlign="center" fontSize={['xs', 'sm', 'md', 'lg']}>
+        <Text textAlign={textAlignment} fontSize={['xs', 'sm', 'md', 'lg']}>
             {children}
         </Text>
     )
@@ -22,6 +25,11 @@ const NewsText: FunctionComponent<{
 
 const NewsContainer: FunctionComponent<{ children?: never }> = () => {
     const { t } = useTranslation('news')
+    const images = [
+        '/images/island_23/IMG_5902.png',
+        '/images/island_23/IMG_5901.jpeg',
+        '/images/island_23/IMG_5903.png',
+    ]
     return (
         <Container
             maxW="3xl"
@@ -41,7 +49,24 @@ const NewsContainer: FunctionComponent<{ children?: never }> = () => {
                 <Heading textAlign="center" as="h2">
                     {t('h2')}
                 </Heading>
-                <NewsText>{t('p_11')}</NewsText>
+                <Heading textAlign="center" as="h5">
+                    {t('h3')}
+                </Heading>
+                {/* <Image
+                    src="./IMG_5902.png"
+                    borderRadius="0.375rem "
+                    pb={4}
+                    objectFit="cover"
+                    alt="Iceland-Two"
+                /> */}
+                <NewsText textAlignment="justify">{t('topic_1')}</NewsText>
+                {/* <Image
+                    src="./IMG_5901.jpeg"
+                    borderRadius="0.375rem "
+                    pb={4}
+                    objectFit="cover"
+                    alt="Iceland-One"
+                /> */}
                 <NewsText>
                     Spende bei &nbsp;
                     <Link
@@ -54,6 +79,14 @@ const NewsContainer: FunctionComponent<{ children?: never }> = () => {
                         betterplace.org
                     </Link>
                 </NewsText>
+                <Carousel props={images} />
+                {/* <Image
+                    src="./IMG_5903.png"
+                    borderRadius="0.375rem "
+                    pb={4}
+                    objectFit="cover"
+                    alt="Iceland-Three"
+                /> */}
             </Stack>
         </Container>
     )

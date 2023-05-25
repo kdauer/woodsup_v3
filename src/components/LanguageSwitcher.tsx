@@ -1,7 +1,7 @@
-import React, { FunctionComponent } from 'react'
-import { useCookies } from 'react-cookie'
 import { Select, useColorModeValue } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
+import React, { FunctionComponent } from 'react'
+import { useCookies } from 'react-cookie'
 
 export const LanguageSwitcher: FunctionComponent<{
     children?: React.ReactNode

@@ -1,17 +1,17 @@
-import { FunctionComponent, ReactNode } from 'react'
-import { FaInstagram } from 'react-icons/fa'
 import {
     Box,
-    chakra,
     Container,
     Link,
     Stack,
     Text,
-    useColorModeValue,
     VisuallyHidden,
+    chakra,
+    useColorModeValue,
 } from '@chakra-ui/react'
-import NextLink from 'next/link'
 import { useTranslation } from 'next-i18next'
+import NextLink from 'next/link'
+import { FunctionComponent, ReactNode } from 'react'
+import { FaInstagram } from 'react-icons/fa'
 
 const SocialButton = ({
     children,
