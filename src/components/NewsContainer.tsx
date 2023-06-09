@@ -9,7 +9,8 @@ import {
     useColorModeValue,
 } from '@chakra-ui/react'
 import { useTranslation } from 'next-i18next'
-import { FunctionComponent } from 'react'
+import NextLink from 'next/link'
+import React, { FunctionComponent } from 'react'
 import Carousel from './Carousel'
 
 const NewsText: FunctionComponent<{
@@ -55,15 +56,18 @@ const NewsContainer: FunctionComponent<{ children?: never }> = () => {
                 <NewsText textAlignment="justify">{t('topic_1')}</NewsText>
                 <NewsText>
                     Spende bei &nbsp;
-                    <Link
-                        as={Link}
-                        fontSize={['sm', 'md', 'lg', 'xl']}
-                        color="brand.500"
+                    <NextLink
                         href="https://www.betterplace.org/de/projects/120679?utm_campaign=ShortURLs&utm_medium=project_120679&utm_source=PlainShortURL"
-                        isExternal
+                        passHref
                     >
-                        betterplace.org
-                    </Link>
+                        <Link
+                            fontSize={['sm', 'md', 'lg', 'xl']}
+                            color="brand.500"
+                            isExternal
+                        >
+                            betterplace.org
+                        </Link>
+                    </NextLink>
                 </NewsText>
                 <Carousel props={images} />
             </Stack>

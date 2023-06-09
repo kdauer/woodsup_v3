@@ -1,5 +1,5 @@
 import { Box, Center, Image, useColorModeValue, VStack } from '@chakra-ui/react'
-import { FunctionComponent } from 'react'
+import React, { FunctionComponent } from 'react'
 
 const CardComponent: FunctionComponent<{
     project: any
@@ -26,6 +26,7 @@ const CardComponent: FunctionComponent<{
                     objectFit="cover"
                     alt={project.image}
                 />
+
                 <VStack m={1} align="flex-end">
                     <Box
                         h="4.25em"

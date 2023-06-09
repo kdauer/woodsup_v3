@@ -1,5 +1,5 @@
 import { Text } from '@chakra-ui/react'
-import { FunctionComponent } from 'react'
+import React, { FunctionComponent } from 'react'
 
 const TextComponent: FunctionComponent<{
     children?: React.ReactNode

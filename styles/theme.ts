@@ -1,4 +1,8 @@
 import { extendTheme } from '@chakra-ui/react'
+import { Oswald, Public_Sans } from 'next/font/google'
+
+const publicSans = Public_Sans({ subsets: ['latin-ext'], weight: '700' })
+const oswald = Oswald({ subsets: ['latin-ext'], weight: '400' })
 
 export const customTheme = extendTheme({
     colors: {
@@ -16,8 +20,8 @@ export const customTheme = extendTheme({
         },
     },
     fonts: {
-        heading: 'Public Sans, sans-serif',
-        body: 'Oswald, sans-serif',
+        heading: publicSans.style.fontFamily,
+        body: oswald.style.fontFamily,
     },
     fontSizes: {
         xs: '0.75rem',

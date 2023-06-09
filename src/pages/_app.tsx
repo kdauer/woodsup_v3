@@ -10,6 +10,7 @@ import NavBar from '../components/NavBar'
 
 import '@fontsource/oswald/400.css'
 import '@fontsource/public-sans/700.css'
+import React from 'react'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
     return (

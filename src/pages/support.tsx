@@ -2,7 +2,6 @@ import {
     Button,
     Flex,
     Heading,
-    Image,
     Link,
     Stack,
     Text,
@@ -11,7 +10,9 @@ import {
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
+import React from 'react'
 import nextI18nextConfig from '../../next-i18next.config'
+import ImageComponent from '../components/ImageComponent'
 
 const SupportText = ({ children }: { children: React.ReactNode }) => {
     return (
@@ -57,11 +58,16 @@ export default function Support() {
                         </Link>
                     </SupportText>
                 </Stack>
-                <Image
+                <ImageComponent
                     src="/QR-Code.png"
                     alt="QR-Code"
                     mt={{ base: 12, sm: 16 }}
                 />
+                {/* <Image
+                    src="/QR-Code.png"
+                    alt="QR-Code"
+                    mt={{ base: 12, sm: 16 }}
+                /> */}
                 <Button
                     as="a"
                     p="2em"

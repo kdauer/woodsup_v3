@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react'
 import { useTranslation } from 'next-i18next'
 import NextLink from 'next/link'
-import { FunctionComponent, ReactNode } from 'react'
+import React, { FunctionComponent, ReactNode } from 'react'
 import { FaInstagram } from 'react-icons/fa'
 
 const SocialButton = ({

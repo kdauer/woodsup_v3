@@ -9,6 +9,7 @@ import {
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
+import React from 'react'
 import nextI18nextConfig from '../../next-i18next.config'
 import links from '../data/links.json'
 

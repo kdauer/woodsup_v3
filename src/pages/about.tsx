@@ -2,6 +2,7 @@ import { Center, Container, Heading, Stack, VStack } from '@chakra-ui/react'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
+import React from 'react'
 import nextI18NextConfig from '../../next-i18next.config.js'
 import PolymorphicText from '../components/PolymorphicText'
 
