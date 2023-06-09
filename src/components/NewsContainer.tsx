@@ -72,8 +72,14 @@ export const NewsContainer = () => {
                         color="brand.500"
                         isExternal
                     >
-                        betterplace.org
-                    </Link>
+                        <Link
+                            fontSize={['sm', 'md', 'lg', 'xl']}
+                            color="brand.500"
+                            isExternal
+                        >
+                            betterplace.org
+                        </Link>
+                    </NextLink>
                 </NewsText>
                 <Carousel props={images} />
             </Stack>

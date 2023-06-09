@@ -3,7 +3,6 @@ import {
     Button,
     Flex,
     Heading,
-    Image,
     Link,
     Stack,
     Text,
@@ -56,11 +55,16 @@ export default function SupportPage() {
                         </Link>
                     </SupportText>
                 </Stack>
-                <Image
+                <ImageComponent
                     src="/QR-Code.png"
                     alt="QR-Code"
                     mt={{ base: 12, sm: 16 }}
                 />
+                {/* <Image
+                    src="/QR-Code.png"
+                    alt="QR-Code"
+                    mt={{ base: 12, sm: 16 }}
+                /> */}
                 <Button
                     as="a"
                     p="2em"
