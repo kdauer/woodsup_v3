@@ -1,3 +1,4 @@
+'use client'
 import {
     Box,
     Container,
@@ -8,7 +9,7 @@ import {
     TypographyProps,
     useColorModeValue,
 } from '@chakra-ui/react'
-import { useTranslation } from 'next-i18next'
+import { useTranslations } from 'next-intl'
 import NextLink from 'next/link'
 import React, { FunctionComponent } from 'react'
 import Carousel from './Carousel'
@@ -25,7 +26,7 @@ const NewsText: FunctionComponent<{
 }
 
 const NewsContainer: FunctionComponent<{ children?: never }> = () => {
-    const { t } = useTranslation('news')
+    const t = useTranslations('news')
     const images = [
         '/images/island_23/IMG_5902.png',
         '/images/island_23/IMG_5901.jpeg',
@@ -56,18 +57,15 @@ const NewsContainer: FunctionComponent<{ children?: never }> = () => {
                 <NewsText textAlignment="justify">{t('topic_1')}</NewsText>
                 <NewsText>
                     Spende bei &nbsp;
-                    <NextLink
+                    <Link
                         href="https://www.betterplace.org/de/projects/120679?utm_campaign=ShortURLs&utm_medium=project_120679&utm_source=PlainShortURL"
-                        passHref
+                        as={NextLink}
+                        fontSize={['sm', 'md', 'lg', 'xl']}
+                        color="brand.500"
+                        isExternal
                     >
-                        <Link
-                            fontSize={['sm', 'md', 'lg', 'xl']}
-                            color="brand.500"
-                            isExternal
-                        >
-                            betterplace.org
-                        </Link>
-                    </NextLink>
+                        betterplace.org
+                    </Link>
                 </NewsText>
                 <Carousel props={images} />
             </Stack>

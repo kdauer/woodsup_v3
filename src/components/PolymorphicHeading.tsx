@@ -1,5 +1,5 @@
+'use client'
 import { Heading, HeadingProps } from '@chakra-ui/react'
-import React from 'react'
 
 type Props = Omit<HeadingProps, 'name'> & {
     children: React.ReactNode

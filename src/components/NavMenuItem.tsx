@@ -1,5 +1,6 @@
-import { Link, MenuItem } from '@chakra-ui/react'
-import NextLink from 'next/link'
+'use client'
+import { MenuItem } from '@chakra-ui/react'
+import NextLink from 'next-intl/link'
 import React, { FunctionComponent } from 'react'
 
 const NavMenuItem: FunctionComponent<{
@@ -8,15 +9,14 @@ const NavMenuItem: FunctionComponent<{
     onClose: () => void
 }> = ({ href, children, onClose }) => {
     return (
-        <NextLink href={href} passHref>
-            <MenuItem
-                as={Link}
-                onClick={onClose}
-                fontSize={['sm', 'md', 'lg', 'xl']}
-            >
-                {children}
-            </MenuItem>
-        </NextLink>
+        <MenuItem
+            href={href}
+            as={NextLink}
+            onClick={onClose}
+            fontSize={['sm', 'md', 'lg', 'xl']}
+        >
+            {children}
+        </MenuItem>
     )
 }
 

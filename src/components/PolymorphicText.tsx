@@ -1,5 +1,5 @@
+'use client'
 import { Text, TextProps } from '@chakra-ui/react'
-import React from 'react'
 
 type Props = Omit<TextProps, 'name'> & {
     children: React.ReactNode

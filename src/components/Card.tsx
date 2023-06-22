@@ -1,8 +1,10 @@
+'use client'
 import { Box, Center, Image, useColorModeValue, VStack } from '@chakra-ui/react'
 import React, { FunctionComponent } from 'react'
+import { Project } from '../app/[locale]/projects/projects-page'
 
 const CardComponent: FunctionComponent<{
-    project: any
+    project: Project
     children?: React.ReactNode
 }> = ({ project, children }) => {
     return (

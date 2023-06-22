@@ -1,3 +1,4 @@
+'use client'
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 import {
     Box,
@@ -5,24 +6,23 @@ import {
     HStack,
     IconButton,
     Image,
-    Link,
     Menu,
     MenuButton,
     MenuList,
     useColorModeValue,
     useDisclosure,
 } from '@chakra-ui/react'
-import { useTranslation } from 'next-i18next'
-import NextLink from 'next/link'
+import NextLink from 'next-intl/link'
 import { FunctionComponent } from 'react'
 
+import { useTranslations } from 'next-intl'
 import ColorModeSwitcher from './ColorModeSwitcher'
 import LanguageSwitcher from './LanguageSwitcher'
 import NavLink from './NavLink'
 import NavMenuItem from './NavMenuItem'
 
-const navBar: FunctionComponent<{ children?: never }> = () => {
-    const { t } = useTranslation('common')
+const NavBar: FunctionComponent<{ children?: never }> = () => {
+    const t = useTranslations('common')
     const { isOpen, onOpen, onClose } = useDisclosure()
     const colorMode = useColorModeValue('light', 'dark')
     return (
@@ -47,41 +47,44 @@ const navBar: FunctionComponent<{ children?: never }> = () => {
                         {isOpen ? (
                             <MenuList pb={4} display={{ md: 'none' }}>
                                 <NavMenuItem href="/about" onClose={onClose}>
-                                    {t('common:about')}
+                                    {t('about')}
                                 </NavMenuItem>
                                 <NavMenuItem href="/projects" onClose={onClose}>
-                                    {t('common:projects')}
+                                    {t('projects')}
                                 </NavMenuItem>
                                 <NavMenuItem href="/support" onClose={onClose}>
-                                    {t('common:support')}
+                                    {t('support')}
                                 </NavMenuItem>
-                                <NavMenuItem href="/links" onClose={onClose}>
-                                    {t('common:motivation')}
+                                <NavMenuItem
+                                    href="/motivation"
+                                    onClose={onClose}
+                                >
+                                    {t('motivation')}
                                 </NavMenuItem>
                             </MenuList>
                         ) : null}
                         <HStack spacing={8} alignItems="center">
                             <Box>
                                 <NextLink href="/" passHref>
-                                    <Link>
-                                        {colorMode === 'light' ? (
-                                            <Image
-                                                src="/logo_light.jpg"
-                                                alt="Logo"
-                                                borderRadius="base"
-                                                h="64px"
-                                                w="114px"
-                                            />
-                                        ) : (
-                                            <Image
-                                                src="/logo_dark.jpg"
-                                                alt="Logo"
-                                                borderRadius="base"
-                                                h="64px"
-                                                w="114px"
-                                            />
-                                        )}
-                                    </Link>
+                                    {/* <Link> */}
+                                    {colorMode === 'light' ? (
+                                        <Image
+                                            src="/logo_light.jpg"
+                                            alt="Logo"
+                                            borderRadius="base"
+                                            h="64px"
+                                            w="114px"
+                                        />
+                                    ) : (
+                                        <Image
+                                            src="/logo_dark.jpg"
+                                            alt="Logo"
+                                            borderRadius="base"
+                                            h="64px"
+                                            w="114px"
+                                        />
+                                    )}
+                                    {/* </Link> */}
                                 </NextLink>
                             </Box>
                             <HStack
@@ -89,17 +92,15 @@ const navBar: FunctionComponent<{ children?: never }> = () => {
                                 spacing={4}
                                 display={{ base: 'none', md: 'flex' }}
                             >
-                                <NavLink href="/about">
-                                    {t('common:about')}
-                                </NavLink>
+                                <NavLink href="/about">{t('about')}</NavLink>
                                 <NavLink href="/projects">
-                                    {t('common:projects')}
+                                    {t('projects')}
                                 </NavLink>
                                 <NavLink href="/support">
-                                    {t('common:support')}{' '}
+                                    {t('support')}{' '}
                                 </NavLink>
-                                <NavLink href="/links">
-                                    {t('common:motivation')}
+                                <NavLink href="/motivation">
+                                    {t('motivation')}
                                 </NavLink>
                             </HStack>
                         </HStack>
@@ -116,4 +117,4 @@ const navBar: FunctionComponent<{ children?: never }> = () => {
     )
 }
 
-export default navBar
+export default NavBar
