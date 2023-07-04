@@ -1,0 +1,85 @@
+{
+  "common":
+  {
+    "locale":"fr",
+    "change-locale": "🇫🇷",
+    "about": "À propos de",
+    "projects": "Projets",
+    "support": "Soutien",
+    "motivation": "Motivation",
+    "privacy-policy": "Politique de confidentialité",
+    "legal-notice": "Avis juridique",
+    "contact": "Contact",
+    "heading": "“Nous ne pouvons plus attendre, nous sommes la dernière génération capable d’atténuer efficacement les conséquences de la catastrophe écologique“ (Carola Rackete)",
+    "aboutParagraphOne": "Woods Up. E.V est une association à but non lucratif qui s’engage pour la protection du climat et de l’environnement. C’est grâce à la conception, la coordination et la réalisation de projets de reboisement et d’arborétums ainsi qu’aux mesures d’entretien et de formations environnementales que cet objectif est réalisable.",
+    "aboutParagraphTwo": "Nous nous considérons comme un groupe autodéterminé agissant indépendamment de la politique de parti. Notre objectif est d’intervenir rapidement et de façon efficace contre la catastrophe climatique demeurante. Nous voulons contribuer autant que possible à l’accroissement des arbres et subventionner à l’absorption de Co2.",
+    "aboutParagraphThree": "Une partie considérable de l’émission de dioxyde de carbone provoquée par les êtres humains se laisserait compenser grâce aux forêts. Le reboisement de terres incultes ne contribue pas seulement à l’absorption de Co2 dans l’atmosphère mais crée aussi un biotope pour de nombreux animaux et pour différentes plantes. La biodiversité est renforcée, la terre est protégée de l’érosion, l’air est purifié et l’équilibre hydraulique est positivement influencé.",
+    "supportHeading": "Merci de votre intérêt et de votre soutien !",
+    "supportParagraphOne": "Woods Up est une association à but non lucratif composée de membres bénévoles.",
+    "supportParagraphTwo": "Nous sommes heureux de toute forme de soutien. Que ce soit en tant qu'aide active lors des campagnes de plantation ou en tant que facilitateur de nos projets grâce à vos dons financiers.",
+    "supportParagraphThree": "Nous serons heureux de délivrer un reçu pour vos dons.",
+    "supportParagraphFour": "Grâce à votre contribution, nous pouvons créer de nouvelles forêts et transformer les forêts existantes de plantations de monoculture en forêts naturelles résilientes au climat !",
+    "supportParagraphFive": "Vous connaissez des zones qui peuvent être plantées ou vous voulez savoir que les semis d'arbres sont entre de bonnes mains ? N'hésitez pas à nous contacter !",
+    "donate": "Faire un don avec Paypal",
+    "cookieText": "Ce site web utilise des cookies pour améliorer l'expérience de l'utilisateur.",
+    "cookieButton": "accepter"
+  }
+  ,
+  "legal-notice":
+  {
+    "h3": "Avis de non-responsabilité",
+    "h5_1": "Contenu de l'offre en ligne",
+    "h5_2": "Références et liens",
+    "h5_3": "Copyright",
+    "h5_4": "Validité juridique",
+    "p_1": "Ce site web a été créé avec le plus grand soin, mais il est précisé qu'aucune garantie n'est donnée quant à l'actualité, l'exactitude, l'exhaustivité ou la qualité des informations fournies. Les réclamations en responsabilité concernant les dommages causés par l'utilisation des informations fournies, y compris celles qui sont incomplètes ou incorrectes, seront donc rejetées. Le fournisseur de ce site Web se réserve le droit de modifier certaines parties des pages ou l'ensemble de l'offre sans préavis.",
+    "p_2": "Les références et les liens utilisés sur WoodsUp ont été contrôlés quant à leur contenu et étaient exempts de tout contenu illégal au moment de la création du lien. Il est à noter que le fournisseur n'a aucune influence sur la conception et le contenu actuels et futurs des pages liées. Par conséquent, le fournisseur se désolidarise expressément du contenu de toutes les pages liées qui peuvent être trouvées sur WoodsUp.",
+    "p_3": "Tous les graphiques, photos, logos et textes sont soumis aux droits d'auteur et autres lois de protection. Toute duplication ou utilisation d'objets tels que des images, des diagrammes, des sons ou des textes dans d'autres publications électroniques ou imprimées est interdite sans l'accord du fournisseur. Toutes les autres marques et marques déposées mentionnées sur ce site web sont la propriété de leurs propriétaires respectifs et sont soumises aux droits de propriété de leurs propriétaires enregistrés.",
+    "p_4": "Si l'une des parties susmentionnées de la présente clause de non-responsabilité est invalide, cela n'affecte pas les autres dispositions."
+  },
+"privacy-policy":
+{
+  "contactperson": "Contact",
+  "h5_1": "Avis général et informations obligatoires",
+  "h5_2": "Désignation de l'organisme responsable",
+  "h5_3": "Révocation de votre consentement au traitement des données",
+  "h5_4": "Droit de porter plainte auprès de l'autorité de surveillance compétente",
+  "h5_5": "Droit à la portabilité des données",
+  "h5_6": "Droit à l'information, correction, blocage, suppression",
+  "h5_7": "Cryptage SSL ou TLS",
+  "h5_8": "Formulaire de contact",
+  "h5_9": "Cookies",
+  "h5_10": "Fichiers journaux du serveur",
+  "p_1": "Politique de confidentialité",
+  "p_2": "Le responsable du traitement des données sur ce site web est :",
+  "p_3": "Le responsable du traitement décide seul ou conjointement avec d'autres des finalités et des moyens du traitement des données à caractère personnel (par exemple, noms, coordonnées ou similaires).",
+  "p_4": "Certaines opérations de traitement des données ne sont possibles qu'avec votre consentement exprès. Une révocation de votre consentement déjà donné est possible à tout moment. Une communication informelle par e-mail est suffisante pour la révocation. La légalité du traitement des données effectué jusqu'à la révocation n'est pas affectée par la révocation.",
+  "p_5": "En tant que personne concernée, vous avez le droit de déposer une plainte auprès de l'autorité de surveillance compétente en cas de violation de la protection des données. L'autorité de surveillance compétente en matière de protection des données est le commissaire à la protection des données de l'État fédéral dans lequel se trouve le siège social de notre entreprise. Le lien suivant fournit une liste des délégués à la protection des données et leurs coordonnées :",
+  "p_6": "Vous avez le droit d'obtenir que les données que nous traitons automatiquement sur la base de votre consentement ou en exécution d'un contrat vous soient transmises ou soient transmises à des tiers. Les données seront fournies dans un format lisible par machine. Si vous demandez le transfert direct des données à un autre responsable, cela ne sera fait que dans la mesure où cela est techniquement possible.",
+  "p_7": "Dans le cadre des dispositions légales applicables, vous avez à tout moment le droit d'obtenir gratuitement des informations sur vos données personnelles enregistrées, l'origine des données, leurs destinataires et la finalité du traitement des données et, le cas échéant, un droit de rectification, de blocage ou de suppression de ces données. À cet égard et également pour d'autres questions sur le thème des données personnelles, vous pouvez nous contacter à tout moment via les options de contact indiquées dans les mentions légales.",
+  "p_8": "Pour des raisons de sécurité et pour protéger la transmission de contenus confidentiels que vous nous envoyez en tant qu'exploitant du site, notre site web utilise un cryptage SSL ou TLS. Cela signifie que les données que vous transmettez via ce site web ne peuvent pas être lues par des tiers. Vous pouvez reconnaître une connexion cryptée à la ligne d'adresse 'https://' de votre navigateur et au symbole du cadenas dans la ligne du navigateur.",
+  "p_9": "Les données transmises par le biais du formulaire de contact seront stockées, y compris vos coordonnées, afin de traiter votre demande ou d'être disponible pour des questions de suivi. Ces données ne seront pas transmises sans votre consentement.",
+  "p_10": "Le traitement des données saisies dans le formulaire de contact se fonde exclusivement sur votre consentement (art. 6, al. 1, let. a, de la loi sur la protection des données). Une révocation de votre consentement déjà donné est possible à tout moment. Pour la révocation, une communication informelle par e-mail est suffisante. La légalité des traitements de données effectués jusqu'à la révocation n'est pas affectée par la révocation.",
+  "p_11": "Les données transmises via la 'page de contact' sont conservées jusqu'à ce que vous nous demandiez de les supprimer, que vous révoquiez votre consentement à leur conservation ou que leur conservation ne soit plus nécessaire. Les dispositions légales obligatoires - en particulier les délais de conservation - ne sont pas affectées.",
+  "p_12": "Notre site web utilise des cookies. Il s'agit de petits fichiers texte que votre navigateur web enregistre sur votre appareil terminal. Les cookies nous aident à rendre notre offre plus conviviale, plus efficace et plus sûre.",
+  "p_13": "Certains cookies sont des 'cookies de session'. Ces cookies sont supprimés d'eux-mêmes après la fin de la session de votre navigateur. En revanche, d'autres cookies restent sur votre appareil terminal jusqu'à ce que vous les supprimiez vous-même. Ces cookies nous aident à vous reconnaître lorsque vous revenez sur notre site web.",
+  "p_14": "Avec un navigateur web moderne, vous pouvez surveiller, restreindre ou empêcher l'installation de cookies. De nombreux navigateurs web peuvent être configurés de manière à ce que les cookies soient supprimés automatiquement à la fermeture du programme. La désactivation des cookies peut entraîner une fonctionnalité limitée de notre site web.",
+  "p_15": "La mise en place de cookies, qui sont nécessaires à l'exercice des processus de communication électronique ou à la fourniture de certaines fonctions souhaitées par vous (par exemple, le panier d'achat), est basée sur l'art. 6 para. 1 lit. f Protection. En tant qu'exploitant de ce site web, nous avons un intérêt légitime à stocker des cookies pour la fourniture techniquement sans erreur et sans heurts de nos services. Si d'autres cookies sont définis (par exemple pour des fonctions d'analyse), ils sont traités séparément dans la présente politique de confidentialité.",
+  "p_16": "Dans les fichiers journaux du serveur, le fournisseur du site web collecte et stocke automatiquement les informations que votre navigateur nous transmet automatiquement. Il s'agit de :",
+  "li_1": "Page visitée sur notre domaine",
+  "li_2": "Date et heure de la requête du serveur",
+  "li_3": "Type et version du navigateur",
+  "li_4": "Système d'exploitation utilisé",
+  "li_5": "URL de référence",
+  "li_6": "Nom d'hôte de l'ordinateur d'accès",
+  "li_7": "Adresse IP"
+},
+"news":
+{
+  "h2": "projets actuels",
+  "h3": "100.000 arbres plantés en Islande",
+  "topic_1": "L'association Woods Up e.V., basée à Potsdam, a achevé son premier projet de reforestation cette année à Hafnarsandur, en Islande. Ensemble, 10 bénévoles ont planté 35.000 arbres, ce qui porte le total à plus de 100.000 arbres plantés depuis 2020. Les conditions étaient difficiles et caractérisées par de fortes pluies, des coups de vent et des températures fraîches. Néanmoins, un total de 35.000 petits arbres ont été plantés en huit jours. L'association est déjà engagée en Islande depuis 2020, avec plus de 100.000 peupliers, saules, bouleaux, sorbiers, épicéas de sitka et pins côtiers désormais plantés sur une surface d'environ 100 hectares grâce à des dons. Les zones plantées sont des friches auparavant inutilisées, c'est pourquoi il ne s'agit pas d'une simple conversion de forêts existantes, mais d'une véritable création de zones forestières supplémentaires. L'association est également active en Islande, car il est possible d'y remettre en culture de grandes surfaces avec un très petit budget et sans obstacles bureaucratiques. Un autre aspect particulièrement favorable est qu'aucune clôture n'est nécessaire et qu'en raison des précipitations régulières, aucune irrigation n'est requise. De plus, en Islande, les terres ne doivent pas être achetées, mais restent dans le domaine public, ce qui garantit un engagement social permanent. La société islandaise a tout intérêt à soutenir la reforestation afin d'atteindre les objectifs de protection du climat, de stopper l'érosion des sols et d'accroître la biodiversité. L'association peut également s'appuyer sur l'expertise des scientifiques forestiers islandais, qui étudient depuis des décennies les espèces d'arbres qui prospèrent sur l'île. L'épicéa de Sitka, par exemple, a fait ses preuves et atteint aujourd'hui jusqu'à 30 mètres de haut. En Allemagne, en revanche, des expériences sont toujours en cours pour déterminer quelles espèces d'arbres pourraient persister à l'avenir, et les projets de reboisement nationaux se heurtent également à d'énormes obstacles et défis. Woods Up prévoit un autre projet en Islande pour l'automne, en plus de la réalisation d'une 'petite forêt' dans la zone urbaine de Potsdam, qui pourrait planter 15.000 arbres supplémentaires. L'association espère que les 7.500 euros nécessaires à cette fin seront récoltés grâce à des dons. L'équipe de plantation a également suivi de loin le débat actuel sur la démolition du Staudenhof et a constaté avec agacement que la ville de Potsdam s'en tenait à sa politique de construction brutale et néfaste pour le climat. Les toiles de fond historiques semblent plus importantes que l'urgence climatique proclamée.",
+  "topic_2":"Le 9 octobre, nous tiendrons un stand au Soli Flohmarkt à Freiland ! Nous parlerons de nos projets et vendrons de délicieux mets. Venez nous voir ! Tous les bénéfices et les dons de cette journée iront directement à nos projets de plantation.",
+  "topic_3":"L'automne attire de nombreuses personnes en forêt, que ce soit pour la cueillette de champignons ou pour de longues promenades dans des paysages colorés. Nous rencontrons encore et toujours des monocultures de pins, qui sont tristes à voir. Pourquoi ne pas emporter des glands, des châtaignes, des noix, des noisettes ou des faînes lors de votre prochaine promenade en forêt et les mettre en terre."
+}
+}
