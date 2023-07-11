@@ -24,7 +24,7 @@
     "accept-language": "^3.0.18",
     "framer-motion": "^7.10.3",
     "negotiator": "^0.6.3",
-    "next": "^13.4.7",
+    "next": "^13.4.9",
     "next-intl": "^2.14.6",
     "react": "^18.2.0",
     "react-cookie": "^4.1.1",
