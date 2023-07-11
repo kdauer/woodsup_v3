@@ -1,20 +1,20 @@
 {
   "name": "woodsup_v3",
-  "version": "3.0.0",
+  "version": "3.2.0",
   "description": "",
   "homepage": ".",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev --turbo",
+    "preinstall": "npx only-allow pnpm",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "test": "jest"
+    "lint": "next lint"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.9",
     "@chakra-ui/next-js": "^2.1.4",
-    "@chakra-ui/react": "^2.7.0",
+    "@chakra-ui/react": "^2.7.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/oswald": "^4.5.4",
@@ -37,6 +37,7 @@
     "@types/negotiator": "^0.6.1",
     "@types/node": "^17.0.21",
     "@types/react": "^17.0.39",
+    "@types/react-slick": "^0.23.10",
     "eslint": "8.11.0",
     "eslint-config-next": "^13.4.3",
     "prettier": "^2.8.8",
