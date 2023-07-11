@@ -7,7 +7,7 @@ import {
     useColorModeValue,
     VStack,
 } from '@chakra-ui/react'
-import links from '../../../json/links.json'
+import links from 'json/links.json'
 export type Link = {
     id: string
     href: string

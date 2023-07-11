@@ -11,13 +11,15 @@ import {
 } from '@chakra-ui/react'
 import { useTranslations } from 'next-intl'
 import NextLink from 'next/link'
-import React, { FunctionComponent } from 'react'
-import Carousel from './Carousel'
+import { Carousel } from './Carousel'
 
-const NewsText: FunctionComponent<{
+const NewsText = ({
+    children,
+    textAlignment = 'center',
+}: {
     children: React.ReactNode
     textAlignment?: TypographyProps['textAlign']
-}> = ({ children, textAlignment = 'center' }) => {
+}) => {
     return (
         <Text textAlign={textAlignment} fontSize={['xs', 'sm', 'md', 'lg']}>
             {children}
@@ -25,7 +27,13 @@ const NewsText: FunctionComponent<{
     )
 }
 
-const NewsContainer: FunctionComponent<{ children?: never }> = () => {
+// Move somewhere logcial, to theme maybe?
+// const { toggleColorMode } = useColorMode()
+
+// const colorModeBg = useColorModeValue('white', 'brand.900')
+// const colorModeColor = useColorModeValue('black', 'white')
+
+export const NewsContainer = () => {
     const t = useTranslations('news')
     const images = [
         '/images/island_23/IMG_5902.png',
@@ -72,5 +80,3 @@ const NewsContainer: FunctionComponent<{ children?: never }> = () => {
         </Container>
     )
 }
-
-export default NewsContainer

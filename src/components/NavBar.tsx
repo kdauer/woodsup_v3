@@ -13,15 +13,14 @@ import {
     useDisclosure,
 } from '@chakra-ui/react'
 import NextLink from 'next-intl/link'
-import { FunctionComponent } from 'react'
 
 import { useTranslations } from 'next-intl'
-import ColorModeSwitcher from './ColorModeSwitcher'
-import LanguageSwitcher from './LanguageSwitcher'
-import NavLink from './NavLink'
-import NavMenuItem from './NavMenuItem'
+import { ColorModeSwitcher } from './ColorModeSwitcher'
+import { LanguageSwitcher } from './LanguageSwitcher'
+import { NavLink } from './NavLink'
+import { NavMenuItem } from './NavMenuItem'
 
-const NavBar: FunctionComponent<{ children?: never }> = () => {
+export const NavBar = () => {
     const t = useTranslations('common')
     const { isOpen, onOpen, onClose } = useDisclosure()
     const colorMode = useColorModeValue('light', 'dark')
@@ -116,5 +115,3 @@ const NavBar: FunctionComponent<{ children?: never }> = () => {
         </>
     )
 }
-
-export default NavBar

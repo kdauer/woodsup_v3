@@ -1,8 +1,8 @@
 'use client'
 import { Box, Center, Link, Stack } from '@chakra-ui/react'
+import { Paragraph } from 'components/ParagraphText'
+import { PolymorphicHeading } from 'components/PolymorphicHeading'
 import { useTranslations } from 'next-intl'
-import Paragraph from '../../../components/ParagraphText'
-import PolymorphicHeading from '../../../components/PolymorphicHeading'
 
 export default function LegalNoticePage() {
     const t = useTranslations('legal-notice')

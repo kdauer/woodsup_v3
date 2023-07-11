@@ -2,12 +2,12 @@
 import { Center, Link, SimpleGrid, VStack } from '@chakra-ui/react'
 import NextLink from 'next-intl/link'
 
+import { CardComponent } from 'components/Card'
+import projects_de from 'json/projects_de.json'
+import projects_en from 'json/projects_en.json'
+import projects_es from 'json/projects_es.json'
+import projects_fr from 'json/projects_fr.json'
 import { Locale } from '../../../../i18n-config'
-import CardComponent from '../../../components/Card'
-import projects_de from '../../../json/projects_de.json'
-import projects_en from '../../../json/projects_en.json'
-import projects_es from '../../../json/projects_es.json'
-import projects_fr from '../../../json/projects_fr.json'
 
 export type Project = {
     id: number

@@ -61,7 +61,7 @@ const FooterLink = ({
     )
 }
 
-const Footer = () => {
+export const Footer = () => {
     const t = useTranslations('common')
 
     return (
@@ -100,5 +100,3 @@ const Footer = () => {
         </Box>
     )
 }
-
-export default Footer

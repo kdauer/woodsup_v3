@@ -1,8 +1,8 @@
+import projects_de from 'json/projects_de.json'
+import projects_en from 'json/projects_en.json'
+import projects_es from 'json/projects_es.json'
+import projects_fr from 'json/projects_fr.json'
 import { Locale } from '../../../../../i18n-config'
-import projects_de from '../../../../json/projects_de.json'
-import projects_en from '../../../../json/projects_en.json'
-import projects_es from '../../../../json/projects_es.json'
-import projects_fr from '../../../../json/projects_fr.json'
 import { Project } from '../projects-page'
 import ProjectPage from './project-page'
 

@@ -16,7 +16,7 @@ export default function NotFound() {
                             display="inline-block"
                             as="h2"
                             size={['lg', 'xl', '2xl', '3xl']}
-                            bgGradient="linear(to-r, brand.100, brand.800)"
+                            bg="gradientHeading"
                             backgroundClip="text"
                         >
                             404
@@ -35,7 +35,7 @@ export default function NotFound() {
                             <Button
                                 size={['sm', 'md', 'lg', 'lg']}
                                 color="white"
-                                bgGradient="linear(to-t, brand.300, brand.700)"
+                                bg="gradientButton"
                                 fontFamily="body"
                                 _hover={{
                                     background: 'black',

@@ -2,12 +2,14 @@
 import { Link, useColorModeValue } from '@chakra-ui/react'
 import { usePathname } from 'next-intl/client'
 import NextLink from 'next-intl/link'
-import React, { FunctionComponent } from 'react'
 
-const NavLink: FunctionComponent<{
+export const NavLink = ({
+    href,
+    children,
+}: {
     href: string
     children?: React.ReactNode
-}> = ({ href, children }) => {
+}) => {
     const pathname = usePathname()
     const isActive = pathname === href
     return (
@@ -33,5 +35,3 @@ const NavLink: FunctionComponent<{
         </Link>
     )
 }
-
-export default NavLink

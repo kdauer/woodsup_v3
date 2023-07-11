@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation'
 import { ChangeEvent, useTransition } from 'react'
 import { useCookies } from 'react-cookie'
 
-export default function LanguageSwitcher() {
+export const LanguageSwitcher = () => {
     const t = useTranslations('common')
     const [cookie, setCookie] = useCookies(['NEXT_LOCALE'])
     const [isPending, startTransition] = useTransition()

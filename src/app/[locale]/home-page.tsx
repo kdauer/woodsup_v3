@@ -1,7 +1,7 @@
 'use client'
 
 import { Flex } from '@chakra-ui/react'
-import NewsContainer from '../../components/NewsContainer'
+import { NewsContainer } from 'components/NewsContainer'
 
 export default function Page() {
     console.log('Woods Up e.v. - from Potsdam with ❤')

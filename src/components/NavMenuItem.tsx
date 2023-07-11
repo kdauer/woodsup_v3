@@ -1,13 +1,16 @@
 'use client'
 import { MenuItem } from '@chakra-ui/react'
 import NextLink from 'next-intl/link'
-import React, { FunctionComponent } from 'react'
 
-const NavMenuItem: FunctionComponent<{
+export const NavMenuItem = ({
+    href,
+    children,
+    onClose,
+}: {
     href: any
     children?: React.ReactNode
     onClose: () => void
-}> = ({ href, children, onClose }) => {
+}) => {
     return (
         <MenuItem
             href={href}
@@ -19,5 +22,3 @@ const NavMenuItem: FunctionComponent<{
         </MenuItem>
     )
 }
-
-export default NavMenuItem

@@ -12,8 +12,8 @@ import {
     Text,
     UnorderedList,
 } from '@chakra-ui/react'
+import { Carousel } from 'components/Carousel'
 import Error from 'next/error'
-import Carousel from '../../../../components/Carousel'
 import { Project } from '../projects-page'
 
 export default function ProjectPage({

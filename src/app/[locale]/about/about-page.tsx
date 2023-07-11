@@ -1,7 +1,7 @@
 'use client'
 import { Center, Container, Heading, Stack, VStack } from '@chakra-ui/react'
+import { PolymorphicText } from 'components/PolymorphicText'
 import { useTranslations } from 'next-intl'
-import PolymorphicText from '../../../components/PolymorphicText'
 
 export default function AboutPage() {
     const t = useTranslations('common')
