@@ -27,7 +27,7 @@ const NewsText = ({
     )
 }
 
-// Move somewhere logcial, to theme maybe?
+// Move somewhere logical, to theme maybe?
 // const { toggleColorMode } = useColorMode()
 
 // const colorModeBg = useColorModeValue('white', 'brand.900')
