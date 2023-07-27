@@ -1,6 +1,16 @@
-import { extendTheme } from '@chakra-ui/react'
+import { extendTheme, type ThemeConfig } from '@chakra-ui/react'
+import { Oswald, Public_Sans } from 'next/font/google'
+
+const publicSans = Public_Sans({ subsets: ['latin-ext'], weight: '700' })
+const oswald = Oswald({ subsets: ['latin-ext'], weight: '400' })
+
+const config: ThemeConfig = {
+    initialColorMode: 'system',
+    useSystemColorMode: true,
+}
 
 export const customTheme = extendTheme({
+    config,
     colors: {
         brand: {
             900: '#1C4532',
@@ -15,9 +25,19 @@ export const customTheme = extendTheme({
             50: '#F0FFF4',
         },
     },
+    semanticTokens: {
+        colors: {
+            gradientHeading: {
+                default: 'linear-gradient(90deg, #C6F6D5 0%, #22543D 100%)',
+            },
+            gradientButton: {
+                default: 'linear-gradient(90deg, #68D391 0%, #276749 100%)',
+            },
+        },
+    },
     fonts: {
-        heading: 'Public Sans, sans-serif',
-        body: 'Oswald, sans-serif',
+        heading: publicSans.style.fontFamily,
+        body: oswald.style.fontFamily,
     },
     fontSizes: {
         xs: '0.75rem',

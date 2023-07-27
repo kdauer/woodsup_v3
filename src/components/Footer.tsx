@@ -1,3 +1,4 @@
+'use client'
 import {
     Box,
     Container,
@@ -8,9 +9,9 @@ import {
     chakra,
     useColorModeValue,
 } from '@chakra-ui/react'
-import { useTranslation } from 'next-i18next'
+import { useTranslations } from 'next-intl'
 import NextLink from 'next/link'
-import { FunctionComponent, ReactNode } from 'react'
+import { ReactNode } from 'react'
 import { FaInstagram } from 'react-icons/fa'
 
 const SocialButton = ({
@@ -54,14 +55,14 @@ const FooterLink = ({
     children: ReactNode
 }) => {
     return (
-        <NextLink href={linkText} passHref>
-            <Link fontSize={['sm', 'md', 'lg', 'xl']}>{children}</Link>
-        </NextLink>
+        <Link href={linkText} as={NextLink} fontSize={['sm', 'md', 'lg', 'xl']}>
+            {children}
+        </Link>
     )
 }
 
-const Footer: FunctionComponent<{ children?: never }> = () => {
-    const { t } = useTranslation('common')
+export const Footer = () => {
+    const t = useTranslations('common')
 
     return (
         <Box
@@ -80,11 +81,11 @@ const Footer: FunctionComponent<{ children?: never }> = () => {
                 <Text fontSize={['sm', 'md', 'lg', 'xl']}>
                     Copyright © 2023 Woods Up e.V. All rights reserved
                 </Text>
-                <FooterLink linkText="/privacypolicy">
-                    {t('privacypolicy')}
+                <FooterLink linkText="/privacy-policy">
+                    {t('privacy-policy')}
                 </FooterLink>
-                <FooterLink linkText="/legalnotice">
-                    {t('legalnotice')}
+                <FooterLink linkText="/legal-notice">
+                    {t('legal-notice')}
                 </FooterLink>
                 <FooterLink linkText="/contact">{t('contact')}</FooterLink>
                 <Stack direction="row" spacing={6}>
@@ -99,5 +100,3 @@ const Footer: FunctionComponent<{ children?: never }> = () => {
         </Box>
     )
 }
-
-export default Footer

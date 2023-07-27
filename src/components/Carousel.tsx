@@ -1,5 +1,6 @@
+'use client'
 import { Box, IconButton, Image, useBreakpointValue } from '@chakra-ui/react'
-import React, { FunctionComponent } from 'react'
+import { useState } from 'react'
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi'
 import Slider from 'react-slick'
 
@@ -16,11 +17,8 @@ const settings = {
     slidesToScroll: 1,
 }
 
-const Carousel: FunctionComponent<{
-    props: any
-    children?: React.ReactNode
-}> = ({ children, props }) => {
-    const [slider, setSlider] = React.useState<Slider | null>(null)
+export const Carousel = ({ props }: { props: any }) => {
+    const [slider, setSlider] = useState<Slider | null>(null)
 
     const top = useBreakpointValue({ base: '90%', md: '50%' })
     const side = useBreakpointValue({ base: '30%', md: '10px' })
@@ -67,7 +65,7 @@ const Carousel: FunctionComponent<{
             </IconButton>
             {/* Slider */}
             <Slider {...settings} ref={(slider) => setSlider(slider)}>
-                {props.map((image) => (
+                {props.map((image: any) => (
                     <Box key={image}>
                         <Image
                             src={image}
@@ -82,5 +80,3 @@ const Carousel: FunctionComponent<{
         </Box>
     )
 }
-
-export default Carousel

@@ -1,57 +1,45 @@
 {
   "name": "woodsup_v3",
-  "version": "3.0.0",
+  "version": "3.2.0",
   "description": "",
   "homepage": ".",
   "main": "index.js",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "test": "jest"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^2.0.9",
-    "@chakra-ui/react": "^2.3.2",
-    "@emotion/react": "^11.10.4",
-    "@emotion/styled": "^11.10.4",
-    "@fontsource/oswald": "^4.5.4",
-    "@fontsource/public-sans": "^4.5.3",
-    "@vercel/analytics": "^0.1.1",
-    "framer-motion": "^7.3.2",
-    "next": "^12.3.1",
-    "next-i18next": "^12.0.1",
+    "@chakra-ui/icons": "^2.0.19",
+    "@chakra-ui/next-js": "^2.1.4",
+    "@chakra-ui/react": "^2.7.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/oswald": "^5.0.5",
+    "@fontsource/public-sans": "^5.0.5",
+    "@formatjs/intl-localematcher": "^0.4.0",
+    "@vercel/analytics": "^1.0.1",
+    "accept-language": "^3.0.18",
+    "framer-motion": "^10.12.18",
+    "negotiator": "^0.6.3",
+    "next": "^13.4.9",
+    "next-intl": "^2.17.5",
     "react": "^18.2.0",
     "react-cookie": "^4.1.1",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.4.0",
+    "react-icons": "^4.10.1",
     "react-slick": "^0.29.0"
   },
   "devDependencies": {
-    "@testing-library/dom": "^8.17.1",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@types/node": "^17.0.21",
-    "@types/react": "^17.0.39",
-    "babel-jest": "^29.0.3",
-    "eslint": "8.11.0",
-    "eslint-config-next": "12.1.0",
-    "jest": "^29.0.3",
-    "prettier": "2.8.4",
-    "typescript": "^4.6.2"
-  },
-  "jest": {
-    "testPathIgnorePatterns": [
-      "woodsup_v3/.next/",
-      "woodsup_v3/node_modules/"
-    ],
-    "transform": {
-      "^.+\\.(js|jsx|ts|tsx)$": "woodsup_v3/node_modules/babel-jest"
-    },
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "woodsup_v3/__mocks__/fileMock.js",
-      "\\.(css|less)$": "woodsup_v3/__mocks__/styleMock.js"
-    }
+    "@types/negotiator": "^0.6.1",
+    "@types/node": "^20.4.1",
+    "@types/react": "^18.2.14",
+    "@types/react-slick": "^0.23.10",
+    "eslint": "8.44.0",
+    "eslint-config-next": "^13.4.9",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6"
   }
 }

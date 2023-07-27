@@ -1,3 +1,4 @@
+'use client'
 import {
     Box,
     Container,
@@ -8,14 +9,17 @@ import {
     TypographyProps,
     useColorModeValue,
 } from '@chakra-ui/react'
-import { useTranslation } from 'next-i18next'
-import { FunctionComponent } from 'react'
-import Carousel from './Carousel'
+import { useTranslations } from 'next-intl'
+import NextLink from 'next/link'
+import { Carousel } from './Carousel'
 
-const NewsText: FunctionComponent<{
+const NewsText = ({
+    children,
+    textAlignment = 'center',
+}: {
     children: React.ReactNode
     textAlignment?: TypographyProps['textAlign']
-}> = ({ children, textAlignment = 'center' }) => {
+}) => {
     return (
         <Text textAlign={textAlignment} fontSize={['xs', 'sm', 'md', 'lg']}>
             {children}
@@ -23,8 +27,14 @@ const NewsText: FunctionComponent<{
     )
 }
 
-const NewsContainer: FunctionComponent<{ children?: never }> = () => {
-    const { t } = useTranslation('news')
+// Move somewhere logcial, to theme maybe?
+// const { toggleColorMode } = useColorMode()
+
+// const colorModeBg = useColorModeValue('white', 'brand.900')
+// const colorModeColor = useColorModeValue('black', 'white')
+
+export const NewsContainer = () => {
+    const t = useTranslations('news')
     const images = [
         '/images/island_23/IMG_5902.png',
         '/images/island_23/IMG_5901.jpeg',
@@ -56,10 +66,10 @@ const NewsContainer: FunctionComponent<{ children?: never }> = () => {
                 <NewsText>
                     Spende bei &nbsp;
                     <Link
-                        as={Link}
+                        href="https://www.betterplace.org/de/projects/120679?utm_campaign=ShortURLs&utm_medium=project_120679&utm_source=PlainShortURL"
+                        as={NextLink}
                         fontSize={['sm', 'md', 'lg', 'xl']}
                         color="brand.500"
-                        href="https://www.betterplace.org/de/projects/120679?utm_campaign=ShortURLs&utm_medium=project_120679&utm_source=PlainShortURL"
                         isExternal
                     >
                         betterplace.org
@@ -70,5 +80,3 @@ const NewsContainer: FunctionComponent<{ children?: never }> = () => {
         </Container>
     )
 }
-
-export default NewsContainer

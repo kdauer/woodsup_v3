@@ -11,4 +11,4 @@ It uses:
 
 and
 
- `next-i18next` for internationalization
+ `next-intl` for internationalization
