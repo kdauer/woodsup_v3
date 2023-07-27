@@ -27,7 +27,7 @@ const NewsText = ({
     )
 }
 
-// Move somewhere logical, to theme maybe?
+// Move somewhere logcial, to theme maybe?
 // const { toggleColorMode } = useColorMode()
 
 // const colorModeBg = useColorModeValue('white', 'brand.900')
@@ -72,14 +72,8 @@ export const NewsContainer = () => {
                         color="brand.500"
                         isExternal
                     >
-                        <Link
-                            fontSize={['sm', 'md', 'lg', 'xl']}
-                            color="brand.500"
-                            isExternal
-                        >
-                            betterplace.org
-                        </Link>
-                    </NextLink>
+                        betterplace.org
+                    </Link>
                 </NewsText>
                 <Carousel props={images} />
             </Stack>
