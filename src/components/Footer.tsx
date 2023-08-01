@@ -23,9 +23,11 @@ const SocialButton = ({
     label: string
     href: string
 }) => {
+    const colorModeBg = useColorModeValue('brand.100', 'brand.700')
+
     return (
         <chakra.button
-            bg={useColorModeValue('brand.100', 'brand.700')}
+            bg={colorModeBg}
             rounded="full"
             w={8}
             h={8}
@@ -38,7 +40,7 @@ const SocialButton = ({
             justifyContent="center"
             transition="background 0.3s ease"
             _hover={{
-                bg: useColorModeValue('brand.100', 'brand.700'),
+                bg: colorModeBg,
             }}
         >
             <VisuallyHidden>{label}</VisuallyHidden>
@@ -63,10 +65,11 @@ const FooterLink = ({
 
 export const Footer = () => {
     const t = useTranslations('common')
+    const colorModeBgNav = useColorModeValue('brand.50', 'brand.900')
 
     return (
         <Box
-            bg={useColorModeValue('brand.50', 'brand.900')}
+            bg={colorModeBgNav}
             color={useColorModeValue('brand.400', 'white')}
         >
             <Container

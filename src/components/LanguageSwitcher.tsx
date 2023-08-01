@@ -26,12 +26,14 @@ export const LanguageSwitcher = () => {
         }
     }
 
+    const colorModeBg = useColorModeValue('brand.100', 'brand.700')
+
     return (
         <Select
             variant="outline"
             onChange={switchLanguage}
             defaultValue={locale}
-            bg={useColorModeValue('brand.100', 'brand.700')}
+            bg={colorModeBg}
             ml="0.5rem"
             disabled={isPending}
         >

@@ -12,6 +12,8 @@ export const NavLink = ({
 }) => {
     const pathname = usePathname()
     const isActive = pathname === href
+    const colorModeBgContainer = useColorModeValue('white', 'brand.900')
+    const colorModeBgNavLink = useColorModeValue('brand.400', 'white')
     return (
         <Link
             href={href}
@@ -23,12 +25,12 @@ export const NavLink = ({
             color={
                 isActive
                     ? useColorModeValue('brand.600', 'brand.100')
-                    : useColorModeValue('brand.400', 'white')
+                    : colorModeBgNavLink
             }
             _hover={{
                 textDecoration: 'none',
-                color: useColorModeValue('white', 'brand.900'),
-                bg: useColorModeValue('brand.400', 'white'),
+                color: colorModeBgContainer,
+                bg: colorModeBgNavLink,
             }}
         >
             {children}
