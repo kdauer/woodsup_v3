@@ -1,8 +1,10 @@
 'use client'
-import { Box, Center, Image, useColorModeValue, VStack } from '@chakra-ui/react'
+import { Box, Center, Image, VStack, useColorModeValue } from '@chakra-ui/react'
 import { Project } from 'app/[locale]/projects/projects-page'
 
 export const CardComponent = ({ project }: { project: Project }) => {
+    const colorModeBgCard = useColorModeValue('brand.500', 'brand.900')
+    const colorModeColor = useColorModeValue('black', 'white')
     return (
         <Center>
             <Box
@@ -13,8 +15,8 @@ export const CardComponent = ({ project }: { project: Project }) => {
                 rounded="md"
                 mb={3}
                 mx={3}
-                bgColor={useColorModeValue('brand.500', 'brand.900')}
-                color={useColorModeValue('black', 'white')}
+                bgColor={colorModeBgCard}
+                color={colorModeColor}
             >
                 <Image
                     src={project.image}
@@ -29,8 +31,8 @@ export const CardComponent = ({ project }: { project: Project }) => {
                     <Box
                         h="4.25em"
                         textAlign="center"
-                        bgColor={useColorModeValue('brand.500', 'brand.900')}
-                        color={useColorModeValue('black', 'white')}
+                        bgColor={colorModeBgCard}
+                        color={colorModeColor}
                         alignSelf="center"
                         justifySelf="center"
                     >

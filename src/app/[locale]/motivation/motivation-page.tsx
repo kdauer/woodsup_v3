@@ -17,6 +17,8 @@ export type Link = {
 const linklist: Link[] = links.links
 
 export default function MotivationPage() {
+    const colorModeColor = useColorModeValue('black', 'white')
+    const colorModeBgNav = useColorModeValue('white', 'brand.900')
     return (
         <Flex w="full" h="100vh">
             <VStack
@@ -29,7 +31,7 @@ export default function MotivationPage() {
                     mt={2}
                     align="center"
                     spacing={6}
-                    backgroundColor={useColorModeValue('brand.50', 'brand.900')}
+                    backgroundColor={colorModeBgNav}
                     borderRadius="base"
                 >
                     {linklist.map((link) => (
@@ -40,7 +42,7 @@ export default function MotivationPage() {
                             href={link.href}
                             lineHeight={1.2}
                             fontSize={['sm', 'md', 'lg', 'xl']}
-                            color={useColorModeValue('black', 'white')}
+                            color={colorModeColor}
                             isExternal
                         >
                             {link.title}

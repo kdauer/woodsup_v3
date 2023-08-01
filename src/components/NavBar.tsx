@@ -24,10 +24,13 @@ export const NavBar = () => {
     const t = useTranslations('common')
     const { isOpen, onOpen, onClose } = useDisclosure()
     const colorMode = useColorModeValue('light', 'dark')
+    const colorModeBg = useColorModeValue('brand.100', 'brand.700')
+    const colorModeBgNav = useColorModeValue('brand.50', 'brand.900')
+
     return (
         <>
             <Menu closeOnSelect>
-                <Box bg={useColorModeValue('brand.50', 'brand.900')} px={4}>
+                <Box bg={colorModeBgNav} px={4}>
                     <Flex
                         h={16}
                         alignItems="center"
@@ -41,7 +44,7 @@ export const NavBar = () => {
                             aria-label="Open Menu"
                             display={{ md: 'none' }}
                             onClick={isOpen ? onClose : onOpen}
-                            bg={useColorModeValue('brand.100', 'brand.700')}
+                            bg={colorModeBg}
                         />
                         {isOpen ? (
                             <MenuList pb={4} display={{ md: 'none' }}>

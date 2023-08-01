@@ -27,24 +27,21 @@ const NewsText = ({
     )
 }
 
-// Move somewhere logcial, to theme maybe?
-// const { toggleColorMode } = useColorMode()
-
-// const colorModeBg = useColorModeValue('white', 'brand.900')
-// const colorModeColor = useColorModeValue('black', 'white')
-
 export const NewsContainer = () => {
     const t = useTranslations('news')
+    const colorModeColor = useColorModeValue('black', 'white')
+    const colorModeBgContainer = useColorModeValue('white', 'brand.900')
     const images = [
         '/images/island_23/IMG_5902.png',
         '/images/island_23/IMG_5901.jpeg',
         '/images/island_23/IMG_5903.png',
     ]
+
     return (
         <Container
             maxW="3xl"
-            bg={useColorModeValue('white', 'brand.900')}
-            color={useColorModeValue('black', 'white')}
+            bg={colorModeBgContainer}
+            color={colorModeColor}
             opacity="80%"
             borderRadius="xl"
             m="2em"
@@ -53,8 +50,8 @@ export const NewsContainer = () => {
                 as={Box}
                 spacing={{ base: 2, md: 4 }}
                 p={2}
-                bg={useColorModeValue('white', 'brand.900')}
-                color={useColorModeValue('black', 'white')}
+                bg={colorModeBgContainer}
+                color={colorModeColor}
             >
                 <Heading textAlign="center" as="h2">
                     {t('h2')}
