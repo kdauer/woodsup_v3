@@ -9,7 +9,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.19",
@@ -19,26 +21,27 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource/oswald": "^5.0.5",
     "@fontsource/public-sans": "^5.0.5",
-    "@formatjs/intl-localematcher": "^0.4.0",
+    "@formatjs/intl-localematcher": "^0.4.2",
     "@vercel/analytics": "^1.0.1",
     "accept-language": "^3.0.18",
-    "framer-motion": "^10.12.18",
+    "framer-motion": "^10.16.4",
     "negotiator": "^0.6.3",
     "next": "^13.4.9",
-    "next-intl": "^2.17.5",
+    "next-intl": "^2.20.0",
     "react": "^18.2.0",
-    "react-cookie": "^4.1.1",
+    "react-cookie": "^6.1.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-slick": "^0.29.0"
   },
   "devDependencies": {
     "@types/negotiator": "^0.6.1",
-    "@types/node": "^20.4.1",
+    "@types/node": "^20.6.2",
     "@types/react": "^18.2.14",
     "@types/react-slick": "^0.23.10",
-    "eslint": "8.44.0",
-    "eslint-config-next": "^13.4.9",
+    "cypress": "^13.2.0",
+    "eslint": "8.49.0",
+    "eslint-config-next": "^13.4.19",
     "prettier": "^3.0.0",
     "typescript": "^5.1.6"
   }

@@ -14,6 +14,7 @@ export const ColorModeSwitcher = () => {
                 _hover={{
                     bg: colorModeBg,
                 }}
+                aria-label="Toggle color mode"
             >
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
             </Button>
