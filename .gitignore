@@ -5,8 +5,16 @@
 /.pnp
 .pnp.js
 .env
+
 # testing
 /coverage
+/cypress/downloads
+/cypress/videos/*
+/cypress/downloads/*
+/cypress/screenshots/*
+/cypress-visual-report/
+/cypress-visual-screenshots/*
+!/cypress-visual-screenshots/baseline/
 
 # production
 /build
