@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -16,5 +17,10 @@ export default async function RootLayout({
 }: {
     children: React.ReactNode
 }) {
-    return <>{children}</>
+    return (
+        <>
+            {children}
+            <Analytics />
+        </>
+    )
 }
