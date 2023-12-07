@@ -12,6 +12,7 @@ import {
 import { useTranslations } from 'next-intl'
 import NextLink from 'next/link'
 import { ReactNode } from 'react'
+import CookieConsent from 'react-cookie-consent'
 import { FaInstagram } from 'react-icons/fa'
 
 const SocialButton = ({
@@ -100,6 +101,21 @@ export const Footer = () => {
                     </SocialButton>
                 </Stack>
             </Container>
+            <CookieConsent
+                buttonText={t('cookieButton')}
+                buttonStyle={{
+                    background: '#276749',
+                    color: '#fff',
+                    borderRadius: '0.25em',
+                    fontSize: '1em',
+                }}
+                style={{
+                    background: '#1C4532',
+                    opacity: '0.9',
+                }}
+            >
+                {t('cookieText')}
+            </CookieConsent>
         </Box>
     )
 }
