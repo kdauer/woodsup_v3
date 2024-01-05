@@ -67,7 +67,7 @@ const FooterLink = ({
 export const Footer = () => {
     const t = useTranslations('common')
     const colorModeBgNav = useColorModeValue('brand.50', 'brand.900')
-
+    const copyrightDate = new Date().getUTCFullYear()
     return (
         <Box
             bg={colorModeBgNav}
@@ -83,7 +83,8 @@ export const Footer = () => {
                 align={{ base: 'center', md: 'center' }}
             >
                 <Text fontSize={['sm', 'md', 'lg', 'xl']}>
-                    Copyright © 2023 Woods Up e.V. All rights reserved
+                    Copyright © {copyrightDate} Woods Up e.V. All rights
+                    reserved
                 </Text>
                 <FooterLink linkText="/privacy-policy">
                     {t('privacy-policy')}
