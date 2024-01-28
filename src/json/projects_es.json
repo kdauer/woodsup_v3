@@ -1,222 +1,226 @@
 {
-  "projects": [
-    {
-      "id":1,
-      "image": "/images/Baumpflanzungen.jpg",
-      "title": "Desde 2018 la plantación regular de árboles individuales",
-      "content": "",
-      "video": "",
-      "presslinks": [],
-      "gallery": []
-    },
-    {
-      "id":2,
-      "image": "/images/landtag/IMG_3023.JPG",
-      "title": "Medida práctica para la protección del clima, plantación de árboles frente al Parlamento del Estado de Brandenburgo en Potsdam el 21 de junio de 2019.",
-      "content": "La plantación de tres secuoyas gigantes frente al Parlamento del Estado de Brandenburgo en Potsdam como medida práctica para la protección del clima",
-      "video": "",
-      "presslinks": [
-        "https://www.focus.de/regional/potsdam/klima-aktivisten-pflanzen-drei-mammutbaeume-neben-dem-landtag_id_10850327.html",
-        "https://www.pnn.de/potsdam/klimaschutz-in-potsdam-schueler-haben-drei-mammutbaeume-am-steubenplatz-gepflanzt/24482244.html",
-        "https://www.sueddeutsche.de/wissen/klima-potsdam-aktivisten-pflanzen-drei-mammutbaeume-neben-dem-landtag-dpa.urn-newsml-dpa-com-20090101-190621-99-743810"
-      ],
-      "gallery": ["/images/landtag/giesen1.jpg", "/images/landtag/P1090274.JPG"]
-    },
-    {
-      "id":3,
-      "image": "/images/radtour/IMG_3024.JPG",
-      "title": "Recorrido en bicicleta con acción de plantación de árboles en cooperación con XR y FFF en agosto de 2019 en Potsdam, Brandenburgo y Krielow.",
-      "content": "el 10 de agosto de 2019 gira en bicicleta con acción de plantación de árboles en Potsdam, Brandenburgo y Krielow en cooperación con Extinction Rebellion y Fridays for Future.",
-      "video": "",
-      "presslinks": [],
-      "gallery": [
-        "/images/radtour/67813342_470544643525649_3099070275614932992_o.jpg",
-        "/images/radtour/68343072_470510526862394_5543892864544538624_o.jpg",
-        "/images/radtour/68394535_470544466859000_2028577100453117952_o.jpg",
-        "/images/radtour/branne-baum.jpg",
-        "/images/radtour/IMG_3013.JPG",
-        "/images/radtour/IMG_3024.JPG",
-        "/images/radtour/photo_2019-08-10_14-35-53.jpg",
-        "/images/radtour/photo_2019-08-10_14-36-24.jpg",
-        "/images/radtour/potsdam-baum.jpg"
-      ]
-    },
-    {
-      "id":4,
-      "image": "/images/IMG_3025.JPG",
-      "title": "La plantación a orillas del Nuthe en Saarmund en mayo de 2019",
-      "content": "",
-      "video": "",
-      "presslinks": [],
-      "gallery": []
-    },
-    {
-      "id":5,
-      "image": "/images/goemnigk/IMG_3014.JPG",
-      "title": "Participación en la acción de reforestación de la asociación 'Land und Mehr Projekt-Initiative' en Gömnigk el 14 de diciembre de 2019.",
-      "content": "",
-      "video": "",
-      "presslinks": [],
-      "gallery": [
-        "/images/goemnigk/IMG_3014.JPG",
-        "/images/goemnigk/photo_2019-12-14_20-51-32.jpg",
-        "/images/goemnigk/photo_2019-12-14_20-52-23.jpg"
-      ]
-    },
-    {
-      "id":6,
-      "image": "/images/rio_mira/IMG_3021.JPG",
-      "title": "Plantación de árboles en el proyecto 'Rio Mira' Portugal Febrero 2020",
-      "content": "",
-      "video": "",
-      "presslinks": [],
-      "gallery": [
-        "/images/rio_mira/photo_2019-11-24_22-42-24.jpg",
-        "/images/rio_mira/photo_2020-02-12_13-23-12.jpg",
-        "/images/rio_mira/photo_2020-02-12_13-23-33.jpg"
-      ]
-    },
-    {
-      "id":7,
-      "image": "/images/island_20/IMG_3011.JPG",
-      "title": "Islandia en junio de 2020: establecimiento de un bosque climático con 2500 plántulas de diferentes especies de árboles",
-      "content": "",
-      "video": "https://www.youtube.com/embed/9uYkBS9e6p4",
-      "presslinks": [
-        "https://m.maz-online.de/Lokales/Potsdam/Potsdamer-Aktivisten-pflanzen-einen-Klimawald-in-Island"
-      ],
-      "gallery": [
-        "/images/island_20/IMG_3011.JPG",
-        "/images/island_20/IMG_2869.JPG"
-      ]
-    },
-    {
-      "id":8,
-      "image": "/images/IMG_3733.JPG",
-      "title": "Kagendorf en octubre de 2020: Plantación de 86 árboles (principalmente variedades frutales antiguas).",
-      "content": "",
-      "video": "",
-      "presslinks": [],
-      "gallery": []
-    },
-    {
-      "id":9,
-      "image": "/images/IMG_2855.JPG",
-      "title": "Octubre de 2020: plantar un bosque mixto en Wollin",
-      "content": "",
-      "video": "",
-      "presslinks": [],
-      "gallery": []
-    },
-    {
-      "id":10,
-      "image": "/images/island_21/IMG_2935.JPG",
-      "title": "Islandia - 29.05. - 05.06.2021: Establecimiento de un bosque mixto con aproximadamente 20.000 árboles en 10 hectáreas.",
-      "content": "A finales de mayo, un grupo de cinco personas voló a Hafnarsandur (Islandia) para plantar unos 20.000 árboles y esquejes en un terreno de 10 hectáreas. Para contrarrestar la catástrofe climática y fomentar la biodiversidad, es importante plantar bosques mixtos. Plantamos álamos, sauces, alisos, abetos de Sitka, abedules, pinos de Murray y serbales del vivero local. ¿Por qué volamos varios miles de kilómetros para plantar árboles? Nos lo preguntan una y otra vez. Nos gustaría mucho realizar más proyectos de reforestación en Alemania/Brandeburgo. Nuestra motivación es grande, pero desgraciadamente se ha visto frenada una y otra vez en los últimos dos años. Solicitar financiación es, como en cualquier autoridad alemana, una hazaña de proporciones increíbles. Nuestras solicitudes hasta ahora han sido rechazadas. Además, necesitamos zonas en las que se puedan plantar árboles. En Alemania, éstas son difíciles de conseguir o demasiado caras. En Islandia, nos dieron una gran superficie para plantar sin mucho esfuerzo. Al contrario que en Alemania, hay enormes zonas sin utilizar que pueden ser reforestadas. Como en Islandia no hay que construir vallas alrededor de las zonas plantadas, se ahorra mucho dinero y trabajo. Como en Islandia llueve mucho y a menudo, no es necesario regar los árboles. Tampoco es necesario cortar las malas hierbas que son demasiado altas, porque las zonas apenas están cubiertas de vegetación.  El 90% de los árboles plantados crecerán. En Alemania, normalmente sólo el 50-60% lo consigue.",
-      "video": "",
-      "presslinks": [],
-      "gallery": [
-        "/images/island_21/IMG_2936.JPG",
-        "/images/island_20/IMG_2937.JPG",
-        "/images/island_20/IMG_2938.JPG",
-        "/images/island_20/IMG_2939.JPG"
-      ]
-    },
-    {
-      "id":11,
-      "image": "/images/IMG_3052.JPG",
-      "title": "Presupuesto Ciudadano 2021",
-      "content": "En el verano de 2021, nuestra asociación solicitó con éxito la asignación del Presupuesto Ciudadano de Potsdam y permitió así la plantación de más de un centenar de árboles frutales (principalmente variedades antiguas) en instituciones públicas y jardines privados. El presupuesto asignado al proyecto, de 5.000 euros, se gastó casi exclusivamente en la compra de árboles. Con esta acción iniciamos un intento de aumentar el número de árboles en nuestra ciudad. Teniendo en cuenta que la tala de árboles en Potsdam no se compensa, ni mucho menos, con nuevas plantaciones de árboles urbanos, se nos ocurrió la idea de regalar árboles frutales autóctonos tanto a instituciones públicas como a particulares. En el caso de los árboles frutales plantados en clubes juveniles, jardines infantiles, escolares y privados, se puede garantizar al mismo tiempo que los árboles jóvenes estén bien cuidados y regados en los periodos de sequía. Los comentarios que recibimos sobre nuestra campaña fueron siempre gratificantes. El hecho de recibir algo como regalo, sólo por una buena causa, fue recibido con asombro positivo por muchas personas en Potsdam. Afortunadamente, algunas personas de Potsdam nos enviaron una foto de los árboles frutales plantados, por lo que podemos mostrar un pequeño collage aquí.",
-      "video": "",
-      "presslinks": [
-        "https://m.pnn.de/potsdam/kampf-gegen-den-klimawandel-neue-baeume-von-babelsberg-bis-bosnien/28033016.html"
-      ],
-      "gallery": []
-    },
-    {
-      "id":12,
-      "image": "/images/IMG_3055.JPG",
-      "title": "November 2021: Gemeinsame Pflanzaktion mit der Gemeinde Michendorf",
-      "content": "El 16.11. la comunidad de Michendorf plantó 10 árboles para los 100 recién nacidos de la comunidad en 2021. Woods Up apoyó esta acción plantando más árboles: 4 fresnos, 1 arce de campo, 4 arces de Noruega, 1 haya cobriza, 1 haya europea, 2 olmos, 2 carpes y un níspero para los pájaros. Hoy, la cooperación entre Woods Up y el municipio de Michendorf ha dado lugar al inicio de un pequeño bosque educativo, en el que los niños, en particular, pueden aprender un poco más sobre la diversidad de las especies de árboles. Las plantaciones se han realizado en el bosque de juegos de Wilhelmshorst, entre la escuela primaria, la guardería y el jardín de infancia. A partir de hoy, los niños y sus familias pueden admirar los árboles todos los días y también regarlos regularmente. ¡Gracias por el arranque conjunto!",
-      "video": "",
-      "presslinks": [],
-      "gallery": []
-    },
-    {
-      "id":13,
-      "image": "images/Forst/IMG_D6A3645A986D-5.jpeg",
-      "title": "Marzo de 2022: Apoyo a Schöner Land e.V. en la creación de una arboleda de protección del clima",
-      "content": "Apoyamos a la asociación 'Schöner Land' en la plantación de una zona árida de 5.600 metros cuadrados con diversos árboles y arbustos",
-      "video": "",
-      "presslinks": [],
-      "gallery": [
-        "/images/Forst/IMG_3053.JPG",
-        "/images/Forst/IMG_D6A3645A986D-1.jpeg",
-        "/images/Forst/IMG_D6A3645A986D-3.jpeg",
-        "/images/Forst/IMG_D6A3645A986D-5.jpeg"      ]
-    },
-    {
-      "id":14,
-      "image": "/images/island_22/island_4.JPG",
-      "title": "Islandia 2022",
-      "content": "El equipo de WoodsUp estuvo en Islandia dos veces este año para plantar un total de 45.000 árboles. En primavera volvimos a plantar álamos, sauces, alisos, abetos sitka, abedules, pinos de Murray y serbales del vivero local de Hafnasandur. En septiembre replantamos otros 5.000 árboles. Con esto queremos compensar las pérdidas del año pasado. El último invierno se caracterizó por tormentas inusualmente fuertes y frío. Esto ha sido muy duro para los árboles jóvenes y, por desgracia, varios centenares no han conseguido crecer. Sin embargo, alrededor del 80% de los árboles de 2021 lo han conseguido y estamos deseando continuar con el proyecto en 2023. Queremos dar las gracias al Servicio Forestal de Islandia, especialmente a Hreinn Oskarson y Ellert Marisson, por su apoyo y por facilitarnos gratuitamente la zona.",
-      "video": "",
-      "presslinks": [],
-      "gallery": [
-        "/images/island_22/island_1.JPG",
-        "/images/island_22/island_2.JPG",
-        "/images/island_22/island_3.JPG",
-        "/images/island_22/island_4.JPG",
-        "/images/island_22/island_5.JPG",
-        "/images/island_22/island_6.JPG",
-        "/images/island_22/island_7.JPG"
-      ]
-    },
-    {
-      "id":15,
-      "image": "/images/bosnien/bosnien_2.JPG",
-      "title": "Octubre de 2022: Creación de un parque de permacultura en Bosnia",
-      "content": "Hemos apoyado a Martin Ivicevic en la creación de un parque de permacultura en Polje. Además de los beneficios biológicos del parque, este proyecto también pretende concienciar a la región sobre el cambio climático y demostrar de forma ejemplar el valor y las ventajas de tener tus propios árboles frutales. Martin afirma: 'Como artista, quería hacer una declaración en mi ciudad natal y demostrar a mis semejantes que se puede hacer algo por la naturaleza con pocos recursos y, además, obtener unos ingresos secundarios'. El deseo del artista es 'cuanto más colorido, mejor'. Se plantaron 240 árboles frutales de distintas variedades. Entre ellos, tres variedades de manzanos, tres de perales, tres de ciruelos, nogales, avellanos y cerezos. Además, se plantaron otros sesenta árboles y arbustos. Entre otros, roble rojo, ginkgo, abedul, haya, abeto y pícea. Del vecindario hemos recibido cuarenta plantones más como regalo. Queremos dar las gracias a todos los que han apoyado este proyecto. Al maravilloso equipo que ha trabajado in situ y a todas las buenas personas que han hecho posible este proyecto con sus donaciones. Invitamos a todos los entusiastas de la naturaleza y el arte a venir a Kreševo una vez al año para apoyar el proyecto, intercambiar ideas creativas y conocer juntos la Bosnia salvaje.",
-      "video": "",
-      "presslinks": [],
-      "gallery": [
-        "/images/bosnien/bosnien_1.JPG",
-        "/images/bosnien/bosnien_2.JPG",
-        "/images/bosnien/bosnien_3.JPG",
-        "/images/bosnien/bosnien_4.JPG",
-        "/images/bosnien/bosnien_5.JPG"
-      ]
-    },
-    {
-      "id":16,
-      "image": "/images/reckahn/hain_2.JPG",
-      "title": "Octubre de 2022: Colorida plantación de una parcela dentro de un bosque de monopinos en Brandeburgo",
-      "content": "Plantamos una hectárea y media de monocultivo de pinos cerca de Reckahn con todo tipo de especies arbóreas y pusimos varios plantones en el suelo. Entre ellas haya roja, arce de Noruega, arce de campo, roble rojo, roble inglés, roble albar, castaño, castaño dulce, abedul y sauce. Es un pequeño experimento para ver cuál de las especies se establece en este hábitat. El lugar pertenece a un amigo que también está interesado en apoyar el desarrollo de un bosque mixto diverso y resistente.",
-      "video": "",
-      "presslinks": [],
-      "gallery": [
-        "/images/reckahn/hain_1.JPG",
-        "/images/reckahn/hain_2.JPG"
-      ]
-    },
-      {
-        "id": 17,
-        "image": "/images/island_23/IMG_6100.jpeg",
-        "title": "Islandia 2023",
-        "content": "Desde el inicio de nuestra labor en 2020, con el apoyo de nuestros socios Hreinn Oskarson y Ellert Marisson del IFS, hemos plantado más de 100.000 árboles autóctonos en una superficie de unas 100 hectáreas en la región de Hafnarsandur. Estos éxitos han sido financiados en gran parte por donaciones y nos complace informar de que los plantones y esquejes plantados hasta la fecha tienen una tasa de crecimiento superior al 80%. Esta primavera hemos podido continuar nuestros esfuerzos y plantar 35.000 árboles. 100.000 árboles plantados en Islandia",
-        "video": "",
-        "presslinks": [],
-        "gallery": [
-          "/images/island_23/IMG_5901.jpeg",
-          "/images/island_23/IMG_5902.png",
-          "/images/island_23/IMG_5903.png",
-          "/images/island_23/IMG_6100.jpeg",
-          "/images/island_23/IMG_6101.jpeg",
-          "/images/island_23/IMG_6103.jpeg",
-          "/images/island_23/IMG_6104.jpeg",
-          "/images/island_23/IMG_6105.jpeg",
-          "/images/island_23/IMG_6106.jpeg"
-        ]
-      }
-  ]
+    "projects": [
+        {
+            "id": 1,
+            "image": "/images/Baumpflanzungen.jpg",
+            "title": "Desde 2018 la plantación regular de árboles individuales",
+            "content": "",
+            "video": "",
+            "presslinks": [],
+            "gallery": []
+        },
+        {
+            "id": 2,
+            "image": "/images/landtag/IMG_3023.JPG",
+            "title": "Medida práctica para la protección del clima, plantación de árboles frente al Parlamento del Estado de Brandenburgo en Potsdam el 21 de junio de 2019.",
+            "content": "La plantación de tres secuoyas gigantes frente al Parlamento del Estado de Brandenburgo en Potsdam como medida práctica para la protección del clima",
+            "video": "",
+            "presslinks": [
+                "https://www.focus.de/regional/potsdam/klima-aktivisten-pflanzen-drei-mammutbaeume-neben-dem-landtag_id_10850327.html",
+                "https://www.pnn.de/potsdam/klimaschutz-in-potsdam-schueler-haben-drei-mammutbaeume-am-steubenplatz-gepflanzt/24482244.html",
+                "https://www.sueddeutsche.de/wissen/klima-potsdam-aktivisten-pflanzen-drei-mammutbaeume-neben-dem-landtag-dpa.urn-newsml-dpa-com-20090101-190621-99-743810"
+            ],
+            "gallery": [
+                "/images/landtag/giesen1.jpg",
+                "/images/landtag/P1090274.JPG"
+            ]
+        },
+        {
+            "id": 3,
+            "image": "/images/radtour/IMG_3024.JPG",
+            "title": "Recorrido en bicicleta con acción de plantación de árboles en cooperación con XR y FFF en agosto de 2019 en Potsdam, Brandenburgo y Krielow.",
+            "content": "el 10 de agosto de 2019 gira en bicicleta con acción de plantación de árboles en Potsdam, Brandenburgo y Krielow en cooperación con Extinction Rebellion y Fridays for Future.",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/radtour/67813342_470544643525649_3099070275614932992_o.jpg",
+                "/images/radtour/68343072_470510526862394_5543892864544538624_o.jpg",
+                "/images/radtour/68394535_470544466859000_2028577100453117952_o.jpg",
+                "/images/radtour/branne-baum.jpg",
+                "/images/radtour/IMG_3013.JPG",
+                "/images/radtour/IMG_3024.JPG",
+                "/images/radtour/photo_2019-08-10_14-35-53.jpg",
+                "/images/radtour/photo_2019-08-10_14-36-24.jpg",
+                "/images/radtour/potsdam-baum.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "image": "/images/IMG_3025.JPG",
+            "title": "La plantación a orillas del Nuthe en Saarmund en mayo de 2019",
+            "content": "",
+            "video": "",
+            "presslinks": [],
+            "gallery": []
+        },
+        {
+            "id": 5,
+            "image": "/images/goemnigk/IMG_3014.JPG",
+            "title": "Participación en la acción de reforestación de la asociación 'Land und Mehr Projekt-Initiative' en Gömnigk el 14 de diciembre de 2019.",
+            "content": "",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/goemnigk/IMG_3014.JPG",
+                "/images/goemnigk/photo_2019-12-14_20-51-32.jpg",
+                "/images/goemnigk/photo_2019-12-14_20-52-23.jpg"
+            ]
+        },
+        {
+            "id": 6,
+            "image": "/images/rio_mira/IMG_3021.JPG",
+            "title": "Plantación de árboles en el proyecto 'Rio Mira' Portugal Febrero 2020",
+            "content": "",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/rio_mira/photo_2019-11-24_22-42-24.jpg",
+                "/images/rio_mira/photo_2020-02-12_13-23-12.jpg",
+                "/images/rio_mira/photo_2020-02-12_13-23-33.jpg"
+            ]
+        },
+        {
+            "id": 7,
+            "image": "/images/island_20/IMG_3011.JPG",
+            "title": "Islandia en junio de 2020: establecimiento de un bosque climático con 2500 plántulas de diferentes especies de árboles",
+            "content": "",
+            "video": "https://www.youtube.com/embed/9uYkBS9e6p4",
+            "presslinks": [
+                "https://m.maz-online.de/Lokales/Potsdam/Potsdamer-Aktivisten-pflanzen-einen-Klimawald-in-Island"
+            ],
+            "gallery": [
+                "/images/island_20/IMG_3011.JPG",
+                "/images/island_20/IMG_2869.JPG"
+            ]
+        },
+        {
+            "id": 8,
+            "image": "/images/IMG_3733.JPG",
+            "title": "Kagendorf en octubre de 2020: Plantación de 86 árboles (principalmente variedades frutales antiguas).",
+            "content": "",
+            "video": "",
+            "presslinks": [],
+            "gallery": []
+        },
+        {
+            "id": 9,
+            "image": "/images/IMG_2855.JPG",
+            "title": "Octubre de 2020: plantar un bosque mixto en Wollin",
+            "content": "",
+            "video": "",
+            "presslinks": [],
+            "gallery": []
+        },
+        {
+            "id": 10,
+            "image": "/images/island_21/IMG_2935.JPG",
+            "title": "Islandia - 29.05. - 05.06.2021: Establecimiento de un bosque mixto con aproximadamente 20.000 árboles en 10 hectáreas.",
+            "content": "A finales de mayo, un grupo de cinco personas voló a Hafnarsandur (Islandia) para plantar unos 20.000 árboles y esquejes en un terreno de 10 hectáreas. Para contrarrestar la catástrofe climática y fomentar la biodiversidad, es importante plantar bosques mixtos. Plantamos álamos, sauces, alisos, abetos de Sitka, abedules, pinos de Murray y serbales del vivero local. ¿Por qué volamos varios miles de kilómetros para plantar árboles? Nos lo preguntan una y otra vez. Nos gustaría mucho realizar más proyectos de reforestación en Alemania/Brandeburgo. Nuestra motivación es grande, pero desgraciadamente se ha visto frenada una y otra vez en los últimos dos años. Solicitar financiación es, como en cualquier autoridad alemana, una hazaña de proporciones increíbles. Nuestras solicitudes hasta ahora han sido rechazadas. Además, necesitamos zonas en las que se puedan plantar árboles. En Alemania, éstas son difíciles de conseguir o demasiado caras. En Islandia, nos dieron una gran superficie para plantar sin mucho esfuerzo. Al contrario que en Alemania, hay enormes zonas sin utilizar que pueden ser reforestadas. Como en Islandia no hay que construir vallas alrededor de las zonas plantadas, se ahorra mucho dinero y trabajo. Como en Islandia llueve mucho y a menudo, no es necesario regar los árboles. Tampoco es necesario cortar las malas hierbas que son demasiado altas, porque las zonas apenas están cubiertas de vegetación.  El 90% de los árboles plantados crecerán. En Alemania, normalmente sólo el 50-60% lo consigue.",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/island_21/IMG_2936.JPG",
+                "/images/island_20/IMG_2937.JPG",
+                "/images/island_20/IMG_2938.JPG",
+                "/images/island_20/IMG_2939.JPG"
+            ]
+        },
+        {
+            "id": 11,
+            "image": "/images/IMG_3052.JPG",
+            "title": "Presupuesto Ciudadano 2021",
+            "content": "En el verano de 2021, nuestra asociación solicitó con éxito la asignación del Presupuesto Ciudadano de Potsdam y permitió así la plantación de más de un centenar de árboles frutales (principalmente variedades antiguas) en instituciones públicas y jardines privados. El presupuesto asignado al proyecto, de 5.000 euros, se gastó casi exclusivamente en la compra de árboles. Con esta acción iniciamos un intento de aumentar el número de árboles en nuestra ciudad. Teniendo en cuenta que la tala de árboles en Potsdam no se compensa, ni mucho menos, con nuevas plantaciones de árboles urbanos, se nos ocurrió la idea de regalar árboles frutales autóctonos tanto a instituciones públicas como a particulares. En el caso de los árboles frutales plantados en clubes juveniles, jardines infantiles, escolares y privados, se puede garantizar al mismo tiempo que los árboles jóvenes estén bien cuidados y regados en los periodos de sequía. Los comentarios que recibimos sobre nuestra campaña fueron siempre gratificantes. El hecho de recibir algo como regalo, sólo por una buena causa, fue recibido con asombro positivo por muchas personas en Potsdam. Afortunadamente, algunas personas de Potsdam nos enviaron una foto de los árboles frutales plantados, por lo que podemos mostrar un pequeño collage aquí.",
+            "video": "",
+            "presslinks": [
+                "https://m.pnn.de/potsdam/kampf-gegen-den-klimawandel-neue-baeume-von-babelsberg-bis-bosnien/28033016.html"
+            ],
+            "gallery": []
+        },
+        {
+            "id": 12,
+            "image": "/images/IMG_3055.JPG",
+            "title": "November 2021: Gemeinsame Pflanzaktion mit der Gemeinde Michendorf",
+            "content": "El 16.11. la comunidad de Michendorf plantó 10 árboles para los 100 recién nacidos de la comunidad en 2021. Woods Up apoyó esta acción plantando más árboles: 4 fresnos, 1 arce de campo, 4 arces de Noruega, 1 haya cobriza, 1 haya europea, 2 olmos, 2 carpes y un níspero para los pájaros. Hoy, la cooperación entre Woods Up y el municipio de Michendorf ha dado lugar al inicio de un pequeño bosque educativo, en el que los niños, en particular, pueden aprender un poco más sobre la diversidad de las especies de árboles. Las plantaciones se han realizado en el bosque de juegos de Wilhelmshorst, entre la escuela primaria, la guardería y el jardín de infancia. A partir de hoy, los niños y sus familias pueden admirar los árboles todos los días y también regarlos regularmente. ¡Gracias por el arranque conjunto!",
+            "video": "",
+            "presslinks": [],
+            "gallery": []
+        },
+        {
+            "id": 13,
+            "image": "images/Forst/IMG_D6A3645A986D-5.jpeg",
+            "title": "Marzo de 2022: Apoyo a Schöner Land e.V. en la creación de una arboleda de protección del clima",
+            "content": "Apoyamos a la asociación 'Schöner Land' en la plantación de una zona árida de 5.600 metros cuadrados con diversos árboles y arbustos",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/Forst/IMG_3053.JPG",
+                "/images/Forst/IMG_D6A3645A986D-1.jpeg",
+                "/images/Forst/IMG_D6A3645A986D-3.jpeg",
+                "/images/Forst/IMG_D6A3645A986D-5.jpeg"
+            ]
+        },
+        {
+            "id": 14,
+            "image": "/images/island_22/island_4.JPG",
+            "title": "Islandia 2022",
+            "content": "El equipo de WoodsUp estuvo en Islandia dos veces este año para plantar un total de 45.000 árboles. En primavera volvimos a plantar álamos, sauces, alisos, abetos sitka, abedules, pinos de Murray y serbales del vivero local de Hafnasandur. En septiembre replantamos otros 5.000 árboles. Con esto queremos compensar las pérdidas del año pasado. El último invierno se caracterizó por tormentas inusualmente fuertes y frío. Esto ha sido muy duro para los árboles jóvenes y, por desgracia, varios centenares no han conseguido crecer. Sin embargo, alrededor del 80% de los árboles de 2021 lo han conseguido y estamos deseando continuar con el proyecto en 2023. Queremos dar las gracias al Servicio Forestal de Islandia, especialmente a Hreinn Oskarson y Ellert Marisson, por su apoyo y por facilitarnos gratuitamente la zona.",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/island_22/island_1.JPG",
+                "/images/island_22/island_2.JPG",
+                "/images/island_22/island_3.JPG",
+                "/images/island_22/island_4.JPG",
+                "/images/island_22/island_5.JPG",
+                "/images/island_22/island_6.JPG",
+                "/images/island_22/island_7.JPG"
+            ]
+        },
+        {
+            "id": 15,
+            "image": "/images/bosnien/bosnien_2.JPG",
+            "title": "Octubre de 2022: Creación de un parque de permacultura en Bosnia",
+            "content": "Hemos apoyado a Martin Ivicevic en la creación de un parque de permacultura en Polje. Además de los beneficios biológicos del parque, este proyecto también pretende concienciar a la región sobre el cambio climático y demostrar de forma ejemplar el valor y las ventajas de tener tus propios árboles frutales. Martin afirma: 'Como artista, quería hacer una declaración en mi ciudad natal y demostrar a mis semejantes que se puede hacer algo por la naturaleza con pocos recursos y, además, obtener unos ingresos secundarios'. El deseo del artista es 'cuanto más colorido, mejor'. Se plantaron 240 árboles frutales de distintas variedades. Entre ellos, tres variedades de manzanos, tres de perales, tres de ciruelos, nogales, avellanos y cerezos. Además, se plantaron otros sesenta árboles y arbustos. Entre otros, roble rojo, ginkgo, abedul, haya, abeto y pícea. Del vecindario hemos recibido cuarenta plantones más como regalo. Queremos dar las gracias a todos los que han apoyado este proyecto. Al maravilloso equipo que ha trabajado in situ y a todas las buenas personas que han hecho posible este proyecto con sus donaciones. Invitamos a todos los entusiastas de la naturaleza y el arte a venir a Kreševo una vez al año para apoyar el proyecto, intercambiar ideas creativas y conocer juntos la Bosnia salvaje.",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/bosnien/bosnien_1.JPG",
+                "/images/bosnien/bosnien_2.JPG",
+                "/images/bosnien/bosnien_3.JPG",
+                "/images/bosnien/bosnien_4.JPG",
+                "/images/bosnien/bosnien_5.JPG"
+            ]
+        },
+        {
+            "id": 16,
+            "image": "/images/reckahn/hain_2.JPG",
+            "title": "Octubre de 2022: Colorida plantación de una parcela dentro de un bosque de monopinos en Brandeburgo",
+            "content": "Plantamos una hectárea y media de monocultivo de pinos cerca de Reckahn con todo tipo de especies arbóreas y pusimos varios plantones en el suelo. Entre ellas haya roja, arce de Noruega, arce de campo, roble rojo, roble inglés, roble albar, castaño, castaño dulce, abedul y sauce. Es un pequeño experimento para ver cuál de las especies se establece en este hábitat. El lugar pertenece a un amigo que también está interesado en apoyar el desarrollo de un bosque mixto diverso y resistente.",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/reckahn/hain_1.JPG",
+                "/images/reckahn/hain_2.JPG"
+            ]
+        },
+        {
+            "id": 17,
+            "image": "/images/island_23/IMG_6100.jpeg",
+            "title": "Islandia 2023",
+            "content": "La asociación Woods Up e.V., con sede en Potsdam, ha completado este año su primer proyecto de reforestación en Hafnarsandur (Islandia). Juntos, 10 voluntarios plantaron 35.000 árboles, con lo que el número total de árboles plantados desde 2020 asciende a más de 100.000. Las condiciones fueron duras y se caracterizaron por fuertes lluvias, vientos huracanados y temperaturas frescas. No obstante, en ocho días se plantaron un total de 35.000 árboles. La asociación lleva trabajando en Islandia desde 2020 y ya ha podido plantar más de 100.000 álamos, sauces, abedules, serbales, píceas de Sitka y pinos costeros en una superficie de unas 100 hectáreas gracias a las donaciones. Las zonas plantadas son terrenos baldíos hasta ahora inutilizados, por lo que no se trata simplemente de reconvertir bosques existentes, sino de crear realmente zonas forestales adicionales. La asociación también trabaja en Islandia, donde es posible recultivar grandes superficies con un presupuesto muy reducido y sin trabas burocráticas. El hecho de que no sea necesario vallar ni regar debido a la regularidad de las precipitaciones es especialmente ventajoso. Además, en Islandia no hay que comprar la tierra, sino que sigue siendo de propiedad pública, lo que garantiza el mantenimiento del vínculo social a largo plazo. La sociedad islandesa está muy interesada en apoyar la reforestación para alcanzar los objetivos de protección del clima, detener la erosión del suelo y aumentar la biodiversidad. La asociación también puede aprovechar la experiencia de los científicos forestales islandeses, que llevan décadas investigando qué especies de árboles prosperan en la isla. La picea de Sitka, por ejemplo, ha demostrado su valía y ahora alcanza allí alturas de hasta 30 metros. En Alemania, en cambio, se sigue experimentando para averiguar qué especies arbóreas podrían sobrevivir en el futuro, y también hay enormes obstáculos y retos en los proyectos de reforestación doméstica. Además de la realización de un bosque diminuto en la zona de la ciudad de Potsdam, WoodsUp está planeando otro proyecto en Islandia para otoño, que podría plantar otros 15.000 árboles. La asociación espera que los 7.500 euros necesarios para ello procedan de donaciones. El equipo de plantación también ha seguido desde lejos el actual debate sobre la demolición del Staudenhof y ha observado con disgusto que la ciudad de Potsdam se aferra a su brutal política de construcción, perjudicial para el clima. Los telones de fondo historicistas parecen ser más importantes que la declarada emergencia climática.",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/island_23/IMG_5901.jpeg",
+                "/images/island_23/IMG_5902.png",
+                "/images/island_23/IMG_5903.png",
+                "/images/island_23/IMG_6100.jpeg",
+                "/images/island_23/IMG_6101.jpeg",
+                "/images/island_23/IMG_6103.jpeg",
+                "/images/island_23/IMG_6104.jpeg",
+                "/images/island_23/IMG_6105.jpeg",
+                "/images/island_23/IMG_6106.jpeg"
+            ]
+        }
+    ]
 }
