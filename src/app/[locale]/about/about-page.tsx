@@ -7,7 +7,7 @@ export default function AboutPage() {
     const t = useTranslations('common')
 
     return (
-        <VStack spacing={8} justify="center" h={['', '', '', '100vh']}>
+        <VStack spacing={8} justify="center" h="100vh">
             <Container maxW="container.xl">
                 <Center>
                     <Heading
