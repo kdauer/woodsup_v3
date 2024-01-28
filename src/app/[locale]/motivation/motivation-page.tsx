@@ -22,9 +22,10 @@ export default function MotivationPage() {
     const t = useTranslations('news')
 
     return (
-        <Flex w="full" h="100%">
+        <Flex w="full" h="100vh">
             <VStack
                 w="full"
+                h="100%"
                 justify="center"
                 m="0.5em"
                 px={useBreakpointValue({ base: 4, md: 8 })}
