@@ -221,6 +221,38 @@
                 "/images/island_23/IMG_6105.jpeg",
                 "/images/island_23/IMG_6106.jpeg"
             ]
+        },
+        {
+            "id": 18,
+            "image": "/images/brache/brache-6.jpeg",
+            "title": "September 2023: Bepflanzung einer Schuttbrache mit vielfältigen Arten",
+            "content": "En Brandeburgo abundan los barbechos, terrenos ralos, verdes y cubiertos de maleza, pero que se secan año tras año porque no pueden retener el agua. Si se cava un poco, enseguida queda claro por qué: tras sólo 10-20 cm, se encuentran sobre todo escombros y basura vieja. Es un lugar difícil para que crezcan los árboles y, sin embargo, es igual de importante para almacenar más agua, retener el humus y el suelo y reconstruir la biodiversidad. Así que le echamos una mano. En septiembre se plantaron más de 250 árboles, arbustos y plantas perennes en una antigua rampa de autopista. WoodsUp e.V. contó con el apoyo de GUD.berlin, una agencia de campañas de Berlín, que estuvo presente con picos, palas, bidones de agua y mucho sudor como parte de su jornada de equipo. Desde la plantación inicial, ha habido muchas misiones de riego y poco a poco se han ido añadiendo más plantas en el marco de plantaciones sociales y educativas y de cooperaciones educativas. Esto no sólo beneficia al medio ambiente, sino también al entorno social, a las escuelas y a la comunidad.",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/brache/brache-1.jpeg",
+                "/images/brache/brache-2.jpeg",
+                "/images/brache/brache-3.jpeg",
+                "/images/brache/brache-4.jpeg",
+                "/images/brache/brache-5.jpeg",
+                "/images/brache/brache-6.jpeg"
+            ]
+        },
+        {
+            "id": 19,
+            "image": "/images/zossen/zossen-5.jpeg",
+            "title": "Oktober 2023: Waldumbau von Kiefern-Monokultur zu klimaresilientem Mischwald nahe Zossen",
+            "content": "Jan Böhmermann incluso hizo su propio programa sobre la maldición de los monocultivos de pinos. Pero los tenemos en abundancia y debemos procurar convertirlos rápidamente en bosques mixtos resistentes al clima. Sin embargo, esto no funciona como a menudo imaginamos, es decir, talando todo -tabula rasa- y luego replantando. Muy pocas plantas jóvenes lo soportan bien, se tarda demasiado y además se favorece la erosión del suelo. Por eso tiene sentido dejar los pinos, que ya han crecido mucho pero están delgados y debilitados, como cortavientos y fuente de sombra, y plantar el vivero del futuro bosque a su protección. Así lo hicimos en octubre junto con el equipo de Art+Com en el marco de una campaña en equipo en una zona boscosa cerca de Zossen, que habíamos descubierto a través de anuncios clasificados. Repletos de árboles jóvenes, esquejes y semillas autóctonas, no sólo trabajamos con palas para plantar árboles jóvenes de 1 a 3 años, sino que, sobre todo, jugamos a las ardillas y los arrendajos y enterramos miles y miles de semillas de árboles diferentes -y en su mayoría recolectadas por nosotros mismos-, para que broten vivas el año que viene y crear así un nuevo bosque mixto en los próximos años, cuando los pinos se abran paso lentamente de forma natural. Ya estamos deseando contar las crías de árbol en primavera. Si usted también ha comprado, heredado o le han regalado un trozo de bosque de monocultivo que le gustaría reforestar para convertirlo en un bosque mixto, póngase en contacto con nosotros.",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/zossen/zossen-1.jpeg",
+                "/images/zossen/zossen-2.jpeg",
+                "/images/zossen/zossen-3.jpeg",
+                "/images/zossen/zossen-4.jpeg",
+                "/images/zossen/zossen-5.jpeg",
+                "/images/zossen/zossen-6.jpeg"
+            ]
         }
     ]
 }
