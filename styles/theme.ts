@@ -1,8 +1,5 @@
 import { extendTheme, type ThemeConfig } from '@chakra-ui/react'
-import { Oswald, Public_Sans } from 'next/font/google'
-
-const publicSans = Public_Sans({ subsets: ['latin-ext'], weight: '700' })
-const oswald = Oswald({ subsets: ['latin-ext'], weight: '400' })
+import { oswald, publicSans } from 'app/fonts'
 
 const config: ThemeConfig = {
     initialColorMode: 'system',
