@@ -1,3 +1,4 @@
+import { oswald, publicSans } from 'app/fonts'
 import { Footer } from 'components/Footer'
 import { NavBar } from 'components/NavBar'
 import { NextIntlClientProvider } from 'next-intl'
@@ -24,7 +25,10 @@ export default async function LocaleLayout({
     const messages = await getDictionaries(locale)
 
     return (
-        <html lang={locale}>
+        <html
+            lang={locale}
+            className={`${publicSans.variable} ${oswald.variable}`}
+        >
             <body>
                 <Providers>
                     <NextIntlClientProvider locale={locale} messages={messages}>
