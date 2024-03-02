@@ -3,12 +3,14 @@ import {
     Box,
     Container,
     Heading,
+    Link,
     Stack,
     Text,
     TypographyProps,
     useColorModeValue,
 } from '@chakra-ui/react'
 import { useTranslations } from 'next-intl'
+import NextLink from 'next/link'
 import { Carousel } from './Carousel'
 import { PolymorphicHeading } from './PolymorphicHeading'
 
@@ -60,6 +62,17 @@ export const NewsContainer = () => {
                     {t('h4')}
                 </PolymorphicHeading>
                 <NewsText textAlignment="justify"> {t('topic_2')}</NewsText>
+                <NewsText>
+                    <Link
+                        href="https://www.betterplace.org/de/projects/133638?utm_campaign=ShortURLs&utm_medium=project_133638&utm_source=PlainShortURL"
+                        as={NextLink}
+                        fontSize={['sm', 'md', 'lg', 'xl']}
+                        color="brand.300"
+                        isExternal
+                    >
+                        {t('topic_3')}
+                    </Link>
+                </NewsText>
                 <Carousel props={imageItems} />
             </Stack>
         </Container>
