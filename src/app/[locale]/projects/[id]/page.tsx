@@ -84,6 +84,10 @@ export async function generateStaticParams() {
         { id: '19', locale: 'en' },
         { id: '19', locale: 'es' },
         { id: '19', locale: 'fr' },
+        { id: '20', locale: 'de' },
+        { id: '20', locale: 'en' },
+        { id: '20', locale: 'es' },
+        { id: '20', locale: 'fr' },
     ]
 }
 
