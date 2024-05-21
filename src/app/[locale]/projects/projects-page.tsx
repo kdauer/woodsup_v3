@@ -1,6 +1,6 @@
 'use client'
 import { Center, Link, SimpleGrid, VStack } from '@chakra-ui/react'
-import NextLink from 'next-intl/link'
+import { Link as NextLink } from 'navigation'
 
 import { CardComponent } from 'components/Card'
 import projects_de from 'json/projects_de.json'
