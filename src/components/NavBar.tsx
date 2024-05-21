@@ -12,8 +12,7 @@ import {
     useColorModeValue,
     useDisclosure,
 } from '@chakra-ui/react'
-import NextLink from 'next-intl/link'
-
+import { Link as NextLink } from 'navigation'
 import { useTranslations } from 'next-intl'
 import { ColorModeSwitcher } from './ColorModeSwitcher'
 import { LanguageSwitcher } from './LanguageSwitcher'

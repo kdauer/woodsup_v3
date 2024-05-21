@@ -1,7 +1,6 @@
 'use client'
 import { Link, useColorModeValue } from '@chakra-ui/react'
-import { usePathname } from 'next-intl/client'
-import NextLink from 'next-intl/link'
+import { Link as NextLink, usePathname } from 'navigation'
 
 export const NavLink = ({
     href,
