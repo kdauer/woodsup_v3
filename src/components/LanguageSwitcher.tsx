@@ -1,8 +1,8 @@
 'use client'
 
 import { Select, useColorModeValue } from '@chakra-ui/react'
+import { usePathname } from 'navigation'
 import { useLocale, useTranslations } from 'next-intl'
-import { usePathname } from 'next-intl/client'
 import { useRouter } from 'next/navigation'
 import { ChangeEvent, useTransition } from 'react'
 import { useCookies } from 'react-cookie'

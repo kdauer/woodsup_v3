@@ -1,6 +1,6 @@
 'use client'
 import { MenuItem } from '@chakra-ui/react'
-import NextLink from 'next-intl/link'
+import { Link as NextLink } from 'navigation'
 
 export const NavMenuItem = ({
     href,

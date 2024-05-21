@@ -2,10 +2,17 @@ import { oswald, publicSans } from 'app/fonts'
 import { Footer } from 'components/Footer'
 import { NavBar } from 'components/NavBar'
 import { NextIntlClientProvider } from 'next-intl'
+import { unstable_setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { ReactNode } from 'react'
 import { Locale } from '../../../i18n-config'
 import Providers from './providers'
+
+const locales = ['en', 'de', 'fr', 'es']
+
+export function generateStaticParams() {
+    return locales.map((locale) => ({ locale }))
+}
 
 async function getDictionaries(locale: string) {
     try {
@@ -22,6 +29,7 @@ export default async function LocaleLayout({
     children: ReactNode
     params: { locale: Locale }
 }) {
+    unstable_setRequestLocale(locale)
     const messages = await getDictionaries(locale)
 
     return (
