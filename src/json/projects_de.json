@@ -265,6 +265,33 @@
                 "/images/michendorf/JPEG-4147.jpeg",
                 "/images/michendorf/JPEG-4146.jpeg"
             ]
+        },
+        {
+            "id": 21,
+            "image": "/images/flaeming/hoher_flaeming_2.jpeg",
+            "title": "Wir spenden Buchensaatgut für den hohen Fläming",
+            "content": "In Kooperation mit dem Naturpark Hoher Fläming und nach der Einweisung durch den Naturparkleiter Steffen Bohl wurden am 23.3.2024 auf eine Landesnaturschutzfläche südlich von Görzke viele Kilo Saatgut der Rotbuche (von der Forstbaumschule Templin) mit Spaten, Hacke und Harke in den Mineralboden eingebracht. Die Fläche ist ca. 0,6 ha groß, wurde durchforstet, der Boden aufgebrochen sowie eingezäunt, um vor Wildverbiss (hier insbesondere Dammwild) geschützt zu sein. Vor der Aktion mit vielen Freiwilligen gab es spannende Infos z.B. zu dem FFH-Gebiet insgesamt, dem Thema Wildkatze, Schwierigkeiten der Naturverjüngung durch Land-Reitgras, zu erfahren.",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/flaeming/hoher_flaeming_0.jpeg",
+                "/images/flaeming/hoher_flaeming_1.jpeg",
+                "/images/flaeming/hoher_flaeming_2.jpeg"
+            ]
+        },
+        {
+            "id": 22,
+            "image": "/images/island_24/island_3.jpeg",
+            "title": "Island 2024 (6.-16. Mai)",
+            "content": "Auch in diesem Jahr war ein 10 köpfiges Team aus ehrenamtlichen Helfer*innen auf Island um gemeinsam mit unserem Partner vor Ort, dem Iclandic forest service, 43.000 Bäume zu pflanzen. In diesem Jahr sind wir vor allem auf die Flächen der vergangenen Jahre und haben ergänzend gepflanzt. Dabei haben wir uns gleich ein Bild von den Bäumen aus den letzten Jahren machen können. Sie sind sehr gut angewachsen! Es gibt nur wenig Ausfall. Vielen Dank an alle freiwilligen Unterstützer*innen, an alle die das Projekt finanziell unterstützen und an Hreinn Oskarson.",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/island_24/island_0.jpeg",
+                "/images/island_24/island_1.jpeg",
+                "/images/island_24/island_2.jpeg",
+                "/images/island_24/island_3.jpeg"
+            ]
         }
     ]
 }
