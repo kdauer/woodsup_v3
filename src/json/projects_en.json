@@ -265,6 +265,33 @@
                 "/images/michendorf/JPEG-4147.jpeg",
                 "/images/michendorf/JPEG-4146.jpeg"
             ]
+        },
+        {
+            "id": 21,
+            "image": "/images/flaeming/hoher_flaeming_2.jpeg",
+            "title": "We donate beech seed for the high Fläming region",
+            "content": "In cooperation with the Hoher Fläming Nature Park and after instruction by the nature park manager Steffen Bohl, many kilos of copper beech seeds (from the Templin forest nursery) were planted in the mineral soil with a spade, hoe and rake on a state nature conservation area south of Görzke on March 23, 2024. The area is approx. 0.6 ha in size, was thinned, the soil broken up and fenced in to protect it from browsing by game (in particular fallow deer). Before the action with many volunteers, there was exciting information, e.g. on the FFH area as a whole, the topic of wildcats, difficulties of natural regeneration by land riding grass, to learn.",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/flaeming/hoher_flaeming_0.jpeg",
+                "/images/flaeming/hoher_flaeming_1.jpeg",
+                "/images/flaeming/hoher_flaeming_2.jpeg"
+            ]
+        },
+        {
+            "id": 22,
+            "image": "/images/island_24/island_3.jpeg",
+            "title": "Iceland 2024 (May 6-16)",
+            "content": "Once again this year, a team of 10 volunteers traveled to Iceland to plant 43,000 trees together with our local partner, the Iclandic Forest Service. This year, we mainly went to the areas from previous years and planted additional trees. We were able to get an immediate impression of the trees from previous years. They have grown very well! There is very little wastage. Many thanks to all the volunteers, to everyone who supports the project financially and to Hreinn Oskarson.",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/island_24/island_0.jpeg",
+                "/images/island_24/island_1.jpeg",
+                "/images/island_24/island_2.jpeg",
+                "/images/island_24/island_3.jpeg"
+            ]
         }
     ]
 }

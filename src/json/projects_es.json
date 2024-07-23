@@ -265,6 +265,33 @@
                 "/images/michendorf/JPEG-4147.jpeg",
                 "/images/michendorf/JPEG-4146.jpeg"
             ]
+        },
+        {
+            "id": 21,
+            "image": "/images/flaeming/hoher_flaeming_2.jpeg",
+            "title": "Donamos semillas de haya para la región del Alto Fläming",
+            "content": "En colaboración con el parque natural de Hoher Fläming y siguiendo las instrucciones del director del parque natural, Steffen Bohl, el 23 de marzo de 2024 se plantaron en el suelo mineral muchos kilos de semillas de haya cobriza (procedentes del vivero forestal de Templin) con pala, azada y rastrillo en una zona de protección natural estatal situada al sur de Görzke. La zona, de unas 0,6 ha, fue raleada, el suelo desmenuzado y vallada para protegerla del ramoneo de los animales de caza (en particular, gamos). Antes de la acción con muchos voluntarios, hubo información emocionante, por ejemplo, sobre el área FFH en su conjunto, el tema de los gatos monteses, las dificultades de la regeneración natural por la tierra montando hierba, para aprender.",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/flaeming/hoher_flaeming_0.jpeg",
+                "/images/flaeming/hoher_flaeming_1.jpeg",
+                "/images/flaeming/hoher_flaeming_2.jpeg"
+            ]
+        },
+        {
+            "id": 22,
+            "image": "/images/island_24/island_3.jpeg",
+            "title": "Islandia 2024 (6-16 de mayo)",
+            "content": "Un año más, un equipo de 10 voluntarios viajó a Islandia para plantar 43.000 árboles junto con nuestro socio local, el Servicio Forestal de Islandia. Este año fuimos principalmente a las zonas de años anteriores y plantamos árboles adicionales. Pudimos hacernos una idea inmediata de los árboles de años anteriores. Han crecido muy bien. Hay muy poco desperdicio. Muchas gracias a todos los voluntarios, a todos los que apoyan económicamente el proyecto y a Hreinn Oskarson.",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/island_24/island_0.jpeg",
+                "/images/island_24/island_1.jpeg",
+                "/images/island_24/island_2.jpeg",
+                "/images/island_24/island_3.jpeg"
+            ]
         }
     ]
 }

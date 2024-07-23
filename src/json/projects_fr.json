@@ -265,6 +265,33 @@
                 "/images/michendorf/JPEG-4147.jpeg",
                 "/images/michendorf/JPEG-4146.jpeg"
             ]
+        },
+        {
+            "id": 21,
+            "image": "/images/flaeming/hoher_flaeming_2.jpeg",
+            "title": "Nous faisons don de graines de hêtre pour la région du haut Fläming",
+            "content": "En collaboration avec le parc naturel Hoher Fläming et sur instruction du directeur du parc naturel Steffen Bohl, plusieurs kilos de graines de hêtre cuivré (provenant de la pépinière forestière de Templin) ont été plantés dans le sol minéral à l'aide d'une bêche, d'une houe et d'un râteau dans une zone de protection de la nature au sud de Görzke, le 23 mars 2024. La zone, d'une superficie d'environ 0,6 hectare, a été éclaircie, le sol a été défoncé et clôturé afin de la protéger du gibier (en particulier des daims). Avant l'action avec de nombreux bénévoles, des informations passionnantes ont été données, par exemple sur l'ensemble de la zone FFH, sur le thème des chats sauvages, sur les difficultés de la régénération naturelle par l'herbe de monte, etc.",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/flaeming/hoher_flaeming_0.jpeg",
+                "/images/flaeming/hoher_flaeming_1.jpeg",
+                "/images/flaeming/hoher_flaeming_2.jpeg"
+            ]
+        },
+        {
+            "id": 22,
+            "image": "/images/island_24/island_3.jpeg",
+            "title": "Islande 2024 (6-16 mai)",
+            "content": "Un año más, un equipo de 10 voluntarios viajó a Islandia para plantar 43.000 árboles junto con nuestro socio local, el Servicio Forestal de Islandia. Este año fuimos principalmente a las zonas de años anteriores y plantamos árboles adicionales. Pudimos hacernos una idea inmediata de los árboles de años anteriores. Han crecido muy bien. Hay muy poco desperdicio. Muchas gracias a todos los voluntarios, a todos los que apoyan económicamente el proyecto y a Hreinn Oskarson.",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/island_24/island_0.jpeg",
+                "/images/island_24/island_1.jpeg",
+                "/images/island_24/island_2.jpeg",
+                "/images/island_24/island_3.jpeg"
+            ]
         }
     ]
 }
