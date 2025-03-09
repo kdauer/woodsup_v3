@@ -292,6 +292,36 @@
                 "/images/island_24/island_2.jpeg",
                 "/images/island_24/island_3.jpeg"
             ]
+        },
+        {
+            "id": 23,
+            "image": "/images/island_24/island_okt_24.jpeg",
+            "title": "Island Oktober 2024",
+            "content": "Nachdem wir im Mai 2024 bereits 43.000 Bäume in Island pflanzen konnten, fuhren Jessica, Ilja, Lisa und Falko im Oktober nochmals für ein paar Tage auf die Insel und pflanzten weitere 7.000 Bäumchen (verschiedener Arten). Die Stimmung im Team war sehr gut, auch wenn sich die Wetterbedingungen als besonders harsch herausstellten. Kurz nach der Abreise gab es dann den ersten Schnee.",
+            "video": "",
+            "presslinks": [],
+            "gallery": []
+        },
+        {
+            "id": 24,
+            "image": "/images/potsdam/potsdam_1.jpeg",
+            "title": "November 2024",
+            "content": "Zum Thema 'Seidenstraße' und die Geschichte der Maulbeerbäume in Potsdam (Seidenraupenzucht) fand am 8.11.2024 im Hof des ehemaligen Waisenhauses Potsdam auf Einladung der 'Stiftung Großes Waisenhaus in Potsdam' die Pflanzung von 6 weißen Maulbeerbäumen statt. Mit dabei waren Jugendliche der Wohngruppe JoJo aus Buckow (MOL), der Geschäftsführer und Stiftungsmitarbeiter*innen, eine Grundschulklasse aus Potsdam, eine Vertreterin des Naturkundemuseums Potsdam und einem Profi-GaLaBauer (von LT Natur GmbH). Ein toller und spannender Tag mit vielen Infos, Austausch und Leckereien aus Maulbeeren.",
+            "video": "",
+            "presslinks": [],
+            "gallery": []
+        },
+        {
+            "id": 25,
+            "image": "/images/goettin/goettin_1.jpeg",
+            "title": "Dezember 2024: Kiefermonokultur in Göttin wird zum Mischwald",
+            "content": "Im Dezember haben wir auf einem Hektar Kiefernmonokultur Laubbäume gepflanzt und Saatgut in die Erde gebracht. Da unsere erste Pflanzung vor zwei Jahren fast komplett weg gefressen wurde, haben wir diesmal einzel Umzäunungen aufgestellt. In der Hoffnung, dass die Eichen, Kastanien, Eschen, Hopfenbuchen und Wildpflaumen die wir gepflanzt haben, den Kiefernforst in einen Mischwald verwandeln",
+            "video": "",
+            "presslinks": [],
+            "gallery": [
+                "/images/goettin/goettin_1.jpeg",
+                "/images/goettin/goettin_2.jpeg"
+            ]
         }
     ]
 }
