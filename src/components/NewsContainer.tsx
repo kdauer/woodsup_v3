@@ -3,7 +3,9 @@ import {
     Box,
     Container,
     Heading,
+    Image,
     Link,
+    Spacer,
     Stack,
     Text,
     TypographyProps,
@@ -11,7 +13,6 @@ import {
 } from '@chakra-ui/react'
 import { useTranslations } from 'next-intl'
 import NextLink from 'next/link'
-import { Carousel } from './Carousel'
 import { PolymorphicHeading } from './PolymorphicHeading'
 
 export const NewsText = ({
@@ -58,22 +59,29 @@ export const NewsContainer = () => {
                     {t('h3')}
                 </PolymorphicHeading>
                 <NewsText textAlignment="justify"> {t('topic_1')}</NewsText>
-                <PolymorphicHeading textAlign="center" as="h5">
-                    {t('h4')}
-                </PolymorphicHeading>
                 <NewsText textAlignment="justify"> {t('topic_2')}</NewsText>
+                <NewsText textAlignment={'justify'}>{t('topic_3')}</NewsText>
+                <NewsText textAlignment={'justify'}>{t('topic_4')}</NewsText>
+                <NewsText>28.03.2025 @ Bungalow der Herzen</NewsText>
+                <NewsText>Doors: 18 Uhr</NewsText>
+                <NewsText>Film: 19 Uhr</NewsText>
+                <NewsText>Musik: 21 Uhr</NewsText>
+                <Spacer />
+
+                <NewsText>Bis 21 Uhr bitte draußen rauchen.</NewsText>
                 <NewsText>
                     <Link
-                        href="https://www.betterplace.org/de/projects/133638?utm_campaign=ShortURLs&utm_medium=project_133638&utm_source=PlainShortURL"
+                        href="https://www.betterplace.org/de/projects/147911?utm_campaign=user_share&utm_medium=ppp_stats&utm_source=Link&utm_content=bp"
                         as={NextLink}
                         fontSize={['sm', 'md', 'lg', 'xl']}
                         color="brand.300"
                         isExternal
                     >
-                        {t('topic_3')}
+                        Unterstützte uns mit deiner Spende
                     </Link>
                 </NewsText>
-                <Carousel props={imageItems} />
+                <Image src="./images/soli_party.jpeg" alt="Soli Party" />
+                {/* <Carousel props={imageItems} /> */}
             </Stack>
         </Container>
     )
