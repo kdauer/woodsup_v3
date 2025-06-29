@@ -1,7 +1,6 @@
 'use client'
 
 import { Flex } from '@chakra-ui/react'
-import { NewsContainer } from 'components/NewsContainer'
 
 export default function Page() {
     console.info('Woods Up e.v. - from Potsdam with ❤')
@@ -18,7 +17,7 @@ export default function Page() {
                 bgSize="cover"
                 bgPosition="center"
             >
-                <NewsContainer />
+                {/* <NewsContainer /> */}
             </Flex>
         </main>
     )

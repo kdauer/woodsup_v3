@@ -108,6 +108,14 @@ export async function generateStaticParams() {
         { id: '25', locale: 'en' },
         { id: '25', locale: 'es' },
         { id: '25', locale: 'fr' },
+        { id: '26', locale: 'de' },
+        { id: '26', locale: 'en' },
+        { id: '26', locale: 'es' },
+        { id: '26', locale: 'fr' },
+        { id: '27', locale: 'de' },
+        { id: '27', locale: 'en' },
+        { id: '27', locale: 'es' },
+        { id: '27', locale: 'fr' },
     ]
 }
 
