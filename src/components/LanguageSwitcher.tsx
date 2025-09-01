@@ -1,10 +1,10 @@
 'use client'
 
-import { Select, useColorModeValue } from '@chakra-ui/react'
-import { usePathname } from 'navigation'
+import { Select } from '@radix-ui/themes'
+import { usePathname } from 'i18n/navigation'
 import { useLocale, useTranslations } from 'next-intl'
 import { useRouter } from 'next/navigation'
-import { ChangeEvent, useTransition } from 'react'
+import { useTransition } from 'react'
 import { useCookies } from 'react-cookie'
 
 export const LanguageSwitcher = () => {
@@ -15,39 +15,29 @@ export const LanguageSwitcher = () => {
     const router = useRouter()
     const pathname = usePathname()
 
-    const switchLanguage = (event: ChangeEvent<HTMLSelectElement>) => {
-        event.preventDefault()
-        const selectedLocale = event.target.value
+    const switchLanguage = (selectedLocale: string) => {
         startTransition(() => {
-            router.replace(`/${event.target.value}${pathname}`)
+            router.replace(`/${selectedLocale}${pathname}`)
         })
         if (cookie.NEXT_LOCALE !== selectedLocale) {
             setCookie('NEXT_LOCALE', selectedLocale, { path: '/' })
         }
     }
 
-    const colorModeBg = useColorModeValue('brand.100', 'brand.700')
-
     return (
-        <Select
-            variant="outline"
-            onChange={switchLanguage}
+        <Select.Root
             defaultValue={locale}
-            bg={colorModeBg}
-            ml="0.5rem"
+            onValueChange={switchLanguage}
             disabled={isPending}
+            size='3'
         >
-            {/* {i18n.locales.map((localeValue) => {
-                return (
-                    <option key={localeValue} value={localeValue}>
-                        {t('change-locale')}
-                    </option>
-                )
-            })} */}
-            <option value="de">🇩🇪</option>
-            <option value="en">🇬🇧</option>
-            <option value="es">🇪🇸</option>
-            <option value="fr">🇫🇷</option>
-        </Select>
+            <Select.Trigger variant="soft" />
+            <Select.Content highContrast>
+                <Select.Item value="de">🇩🇪</Select.Item>
+                <Select.Item value="en">🇬🇧</Select.Item>
+                <Select.Item value="es">🇪🇸</Select.Item>
+                <Select.Item value="fr">🇫🇷</Select.Item>
+            </Select.Content>
+        </Select.Root>
     )
 }

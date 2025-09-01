@@ -1,6 +1,6 @@
 'use client'
-import { MenuItem } from '@chakra-ui/react'
-import { Link as NextLink } from 'navigation'
+import { DropdownMenu } from '@radix-ui/themes'
+import { Link as NextLink } from 'i18n/navigation'
 
 export const NavMenuItem = ({
     href,
@@ -12,13 +12,10 @@ export const NavMenuItem = ({
     onClose: () => void
 }) => {
     return (
-        <MenuItem
-            href={href}
-            as={NextLink}
-            onClick={onClose}
-            fontSize={['sm', 'md', 'lg', 'xl']}
-        >
-            {children}
-        </MenuItem>
+        <DropdownMenu.Item asChild onClick={onClose}>
+            <NextLink href={href} passHref>
+                {children}
+            </NextLink>
+        </DropdownMenu.Item>
     )
 }
