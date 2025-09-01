@@ -1,5 +1,10 @@
+import { Theme } from '@radix-ui/themes'
+import '@radix-ui/themes/styles.css'
 import { Analytics } from '@vercel/analytics/react'
+import { oswald, publicSans } from 'app/fonts'
 import { Metadata } from 'next'
+import { ThemeProvider } from 'next-themes'
+import './globals.css'
 
 export const metadata: Metadata = {
     title: 'Woods Up e.V.',
@@ -14,13 +19,27 @@ export default async function RootLayout({
     // Layouts must accept a children prop.
     // This will be populated with nested layouts or pages
     children,
+    params,
 }: {
     children: React.ReactNode
+    params: { locale: string }
 }) {
     return (
-        <>
-            {children}
-            <Analytics />
-        </>
+        <html
+            lang={params.locale}
+            className={`${publicSans.variable} ${oswald.variable}`}
+            suppressHydrationWarning
+        >
+            <body>
+                <ThemeProvider attribute="class" defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange>
+                    <Theme accentColor="green" grayColor="gray">
+                        {children}
+                        <Analytics />
+                    </Theme>
+                </ThemeProvider>
+            </body>
+        </html>
     )
 }

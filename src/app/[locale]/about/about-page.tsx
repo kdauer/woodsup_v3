@@ -1,38 +1,49 @@
 'use client'
-import { Center, Container, Heading, Stack, VStack } from '@chakra-ui/react'
-import { PolymorphicText } from 'components/PolymorphicText'
+import { Flex, Heading, Text } from '@radix-ui/themes'
 import { useTranslations } from 'next-intl'
 
 export default function AboutPage() {
     const t = useTranslations('common')
 
     return (
-        <VStack spacing={8} justify="center" h="100vh">
-            <Container maxW="container.xl">
-                <Center>
-                    <Heading
-                        as="h1"
-                        fontSize={['md', 'lg', '2xl', '4xl']}
-                        mt="2em"
-                        textAlign="center"
-                    >
-                        {t('heading')}
-                    </Heading>
-                </Center>
-            </Container>
-            <Container maxW="container.lg">
-                <Stack spacing={3}>
-                    <PolymorphicText textAlign="justify">
-                        {t('aboutParagraphOne')}
-                    </PolymorphicText>
-                    <PolymorphicText textAlign="justify">
-                        {t('aboutParagraphTwo')}
-                    </PolymorphicText>
-                    <PolymorphicText textAlign="justify">
-                        {t('aboutParagraphThree')}
-                    </PolymorphicText>
-                </Stack>
-            </Container>
-        </VStack>
+        <Flex
+            style={{ width: '100%', minHeight: 'calc(100vh - 64px)' }}
+            justify="center"
+        >
+            <Flex
+                direction="column"
+                justify="center"
+                gap={{ initial: '3', md: '4' }}
+                py={{ initial: '8', md: '9' }}
+                m="0.5em"
+                style={{ textAlign: 'center', width: '100%' }}
+            >
+                <Heading
+                    weight="bold"
+                    size={{ initial: '6', sm: '7', md: '8', lg: '9' }}
+                    mb="6"
+                >
+                    {t('heading')}
+                </Heading>
+                <Text
+                    size={{ initial: '3', sm: '4', md: '5', lg: '6' }}
+                    style={{ textAlign: 'justify' }}
+                >
+                    {t('aboutParagraphOne')}
+                </Text>
+                <Text
+                    size={{ initial: '3', sm: '4', md: '5', lg: '6' }}
+                    style={{ textAlign: 'justify' }}
+                >
+                    {t('aboutParagraphTwo')}
+                </Text>
+                <Text
+                    size={{ initial: '3', sm: '4', md: '5', lg: '6' }}
+                    style={{ textAlign: 'justify' }}
+                >
+                    {t('aboutParagraphThree')}
+                </Text>
+            </Flex>
+        </Flex>
     )
 }

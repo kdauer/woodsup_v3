@@ -1,12 +1,5 @@
 'use client'
-import {
-    Flex,
-    Heading,
-    useBreakpointValue,
-    useColorModeValue,
-    VStack,
-} from '@chakra-ui/react'
-import { NewsText } from 'components/NewsContainer'
+import { Flex, Heading, Text } from '@radix-ui/themes'
 import { useTranslations } from 'next-intl'
 export type Link = {
     id: string
@@ -17,23 +10,33 @@ export type Link = {
 // const linklist: Link[] = links.links
 
 export default function MotivationPage() {
-    const colorModeColor = useColorModeValue('black', 'white')
-    const colorModeBgNav = useColorModeValue('white', 'brand.900')
     const t = useTranslations('news')
 
     return (
-        <Flex w="full" h="100vh">
-            <VStack
-                w="full"
-                h="100%"
+        <Flex
+            style={{ width: '100%', minHeight: 'calc(100vh - 64px)' }}
+            justify="center"
+        >
+            <Flex
+                direction="column"
+                style={{ width: '100%' }}
                 justify="center"
                 m="0.5em"
-                px={useBreakpointValue({ base: 4, md: 8 })}
+                px={{ initial: '4', md: '8' }}
             >
-                <Heading textAlign="center" as="h2" mb="1em">
+                <Heading
+                    weight="bold"
+                    size={{ initial: '6', sm: '7', md: '8', lg: '9' }}
+                    mb="6"
+                >
                     {t('h4')}
                 </Heading>
-                <NewsText textAlignment="justify">{t('topic_1')}</NewsText>
+                <Text
+                    size={{ initial: '3', sm: '4', md: '5', lg: '6' }}
+                    style={{ textAlign: 'justify' }}
+                >
+                    {t('topic_1')}
+                </Text>
                 {/* <Stack
                     maxW="2xl"
                     mt={2}
@@ -57,7 +60,7 @@ export default function MotivationPage() {
                         </Link>
                     ))}
                 </Stack> */}
-            </VStack>
+            </Flex>
         </Flex>
     )
 }
