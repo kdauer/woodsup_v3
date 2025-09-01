@@ -1,12 +1,11 @@
 import { Locale } from '../../../../i18n-config'
 import ProjectsPage from './projects-page'
 
-export default function Page({
-    params: { locale },
+export default async function Page({
+    params,
 }: {
-    params: {
-        locale: Locale
-    }
+    params: Promise<{ locale: Locale }>
 }) {
+    const { locale } = await params
     return <ProjectsPage path="/projects" params={{ locale }} />
 }

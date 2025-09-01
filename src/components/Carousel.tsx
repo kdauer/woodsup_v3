@@ -1,5 +1,6 @@
 'use client'
-import { Box, IconButton, Image, useBreakpointValue } from '@chakra-ui/react'
+import { Box, IconButton } from '@radix-ui/themes'
+import Image from 'next/image'
 import { useState } from 'react'
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi'
 import Slider from 'react-slick'
@@ -20,11 +21,18 @@ const settings = {
 export const Carousel = ({ props }: { props: any }) => {
     const [slider, setSlider] = useState<Slider | null>(null)
 
-    const top = useBreakpointValue({ base: '90%', md: '50%' })
-    const side = useBreakpointValue({ base: '30%', md: '10px' })
+    // const top = useBreakpointValue({ base: '90%', md: '50%' })
+    // const side = useBreakpointValue({ base: '30%', md: '10px' })
 
     return (
-        <Box position="relative" maxH="600px" width="full" overflow="hidden">
+        <Box
+            style={{
+                position: 'relative',
+                maxHeight: '600px',
+                width: '100%',
+                overflow: 'hidden',
+            }}
+        >
             {/* CSS files for react-slick */}
             <link
                 rel="stylesheet"
@@ -40,12 +48,14 @@ export const Carousel = ({ props }: { props: any }) => {
             {/* Left Icon */}
             <IconButton
                 aria-label="left-arrow"
-                borderRadius="full"
-                position="absolute"
-                left={side}
-                top={top}
-                transform="translate(0%, -50%)"
-                zIndex={2}
+                radius="full"
+                style={{
+                    position: 'absolute',
+                    left: '10px',
+                    top: '50%',
+                    transform: 'translate(0%, -50%)',
+                    zIndex: 2,
+                }}
                 onClick={() => slider?.slickPrev()}
             >
                 <BiLeftArrowAlt />
@@ -53,12 +63,14 @@ export const Carousel = ({ props }: { props: any }) => {
             {/* Right Icon */}
             <IconButton
                 aria-label="right-arrow"
-                borderRadius="full"
-                position="absolute"
-                right={side}
-                top={top}
-                transform="translate(0%, -50%)"
-                zIndex={2}
+                radius="full"
+                style={{
+                    position: 'absolute',
+                    right: '10px',
+                    top: '50%',
+                    transform: 'translate(0%, -50%)',
+                    zIndex: 2,
+                }}
                 onClick={() => slider?.slickNext()}
             >
                 <BiRightArrowAlt />
@@ -69,9 +81,12 @@ export const Carousel = ({ props }: { props: any }) => {
                     <Box key={image}>
                         <Image
                             src={image}
-                            height={[300, 648]}
-                            width="100%"
-                            objectFit="cover"
+                            height={648}
+                            width={1920}
+                            style={{
+                                width: '100%',
+                                objectFit: 'cover',
+                            }}
                             alt={image}
                         />
                     </Box>

@@ -1,19 +1,15 @@
 'use client'
-import {
-    Box,
-    Container,
-    Link,
-    Stack,
-    Text,
-    VisuallyHidden,
-    chakra,
-    useColorModeValue,
-} from '@chakra-ui/react'
-import { useTranslations } from 'next-intl'
+import { Box, Container, Flex, IconButton, Link, Text } from '@radix-ui/themes'
+import { useLocale, useTranslations } from 'next-intl'
+import { useTheme } from 'next-themes'
+import dynamic from 'next/dynamic'
 import NextLink from 'next/link'
-import { ReactNode } from 'react'
-import CookieConsent from 'react-cookie-consent'
+import { ReactNode, useEffect, useState } from 'react'
 import { FaInstagram } from 'react-icons/fa'
+
+const CookieConsent = dynamic(() => import('react-cookie-consent'), {
+    ssr: false,
+})
 
 const SocialButton = ({
     children,
@@ -24,98 +20,125 @@ const SocialButton = ({
     label: string
     href: string
 }) => {
-    const colorModeBg = useColorModeValue('brand.100', 'brand.700')
-
     return (
-        <chakra.button
-            bg={colorModeBg}
-            rounded="full"
-            w={8}
-            h={8}
-            cursor="pointer"
-            as="a"
-            target="_blank"
-            href={href}
-            display="inline-flex"
-            alignItems="center"
-            justifyContent="center"
-            transition="background 0.3s ease"
-            _hover={{
-                bg: colorModeBg,
-            }}
-        >
-            <VisuallyHidden>{label}</VisuallyHidden>
-            {children}
-        </chakra.button>
+        <IconButton asChild size="3" variant="ghost" highContrast>
+            <a target="_blank" href={href} aria-label={label}>
+                {children}
+            </a>
+        </IconButton>
     )
 }
 
 const FooterLink = ({
     linkText,
     children,
+    mounted,
+    isLight,
 }: {
     linkText: any
     children: ReactNode
+    mounted: boolean
+    isLight: boolean
 }) => {
     return (
-        <Link href={linkText} as={NextLink} fontSize={['sm', 'md', 'lg', 'xl']}>
-            {children}
+        <Link
+            asChild
+            size={{ initial: '2', md: '3' }}
+            style={{
+                textDecoration: 'none',
+                color: mounted ? (isLight ? 'black' : 'white') : 'black', // Default to black
+            }}
+        >
+            <NextLink href={linkText}>{children}</NextLink>
         </Link>
     )
 }
 
 export const Footer = () => {
     const t = useTranslations('common')
-    const colorModeBgNav = useColorModeValue('brand.50', 'brand.900')
+    const locale = useLocale()
+    const { theme } = useTheme()
+    const [mounted, setMounted] = useState(false)
     const copyrightDate = new Date().getUTCFullYear()
+
+    useEffect(() => {
+        setMounted(true)
+    }, [])
+
+    const isLight = mounted ? theme === 'light' : true // Default to light theme
+    const backgroundColor = isLight ? '#F0FFF4' : '#1C4532'
+    const iconColor = isLight ? 'black' : 'white'
+
     return (
         <Box
-            bg={colorModeBgNav}
-            color={useColorModeValue('brand.400', 'white')}
+            style={{
+                backgroundColor,
+            }}
         >
-            <Container
-                as={Stack}
-                maxW="6xl"
-                py={4}
-                direction={{ base: 'column', md: 'row' }}
-                spacing={4}
-                justify={{ base: 'center', md: 'space-between' }}
-                align={{ base: 'center', md: 'center' }}
-            >
-                <Text fontSize={['sm', 'md', 'lg', 'xl']}>
-                    Copyright © {copyrightDate} Woods Up e.V. All rights
-                    reserved
-                </Text>
-                <FooterLink linkText="/privacy-policy">
-                    {t('privacy-policy')}
-                </FooterLink>
-                <FooterLink linkText="/legal-notice">
-                    {t('legal-notice')}
-                </FooterLink>
-                <FooterLink linkText="/contact">{t('contact')}</FooterLink>
-                <Stack direction="row" spacing={6}>
-                    <SocialButton
-                        label="Instagram"
-                        href="https://www.instagram.com/woods.up.potsdam/"
+            <Container>
+                <Flex
+                    py="4"
+                    direction={{ initial: 'column', md: 'row' }}
+                    gap="4"
+                    justify={{ initial: 'center', md: 'between' }}
+                    align={{ initial: 'center', md: 'center' }}
+                >
+                    <Text size={{ initial: '2', md: '3' }}>
+                        Copyright © {copyrightDate} Woods Up e.V. All rights
+                        reserved
+                    </Text>
+                    <FooterLink
+                        linkText={`/${locale}/privacy-policy`}
+                        mounted={mounted}
+                        isLight={isLight}
                     >
-                        <FaInstagram />
-                    </SocialButton>
-                </Stack>
+                        {t('privacy-policy')}
+                    </FooterLink>
+                    <FooterLink
+                        linkText={`/${locale}/legal-notice`}
+                        mounted={mounted}
+                        isLight={isLight}
+                    >
+                        {t('legal-notice')}
+                    </FooterLink>
+                    <FooterLink
+                        linkText={`/${locale}/contact`}
+                        mounted={mounted}
+                        isLight={isLight}
+                    >
+                        {t('contact')}
+                    </FooterLink>
+                    <Flex direction="row" gap="6">
+                        <SocialButton
+                            label="Instagram"
+                            href="https://www.instagram.com/woods.up.potsdam/"
+                        >
+                            <FaInstagram color={iconColor} />
+                        </SocialButton>
+                    </Flex>
+                </Flex>
             </Container>
             <CookieConsent
+                location="bottom"
                 buttonText={t('cookieButton')}
+                cookieName="myAwesomeCookieName2"
+                style={{ background: 'var(--gray-a5)', opacity: 0.9 }}
                 buttonStyle={{
-                    background: '#276749',
-                    color: '#fff',
-                    borderRadius: '0.25em',
-                    fontSize: '1em',
+                    background: 'var(--gray-a5)',
+                    color: 'white',
+                    fontSize: '13px',
                 }}
-                style={{
-                    background: '#1C4532',
-                    opacity: '0.9',
-                }}
+                expires={150}
             >
-                {t('cookieText')}
+                {t('cookieText')}{' '}
+                <Link asChild>
+                    <NextLink
+                        href="/privacy-policy"
+                        style={{ color: 'var(--gray-a5)' }}
+                    >
+                        {t('privacy-policy')}
+                    </NextLink>
+                </Link>
             </CookieConsent>
         </Box>
     )

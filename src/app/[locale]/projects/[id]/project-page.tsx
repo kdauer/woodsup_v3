@@ -1,19 +1,18 @@
 'use client'
+import * as AspectRatio from '@radix-ui/react-aspect-ratio'
 import {
-    AspectRatio,
     Box,
     Container,
     Flex,
     Heading,
-    Image,
     Link,
-    ListItem,
-    Stack,
+    Skeleton,
     Text,
-    UnorderedList,
-} from '@chakra-ui/react'
+} from '@radix-ui/themes'
 import { Carousel } from 'components/Carousel'
 import Error from 'next/error'
+import Image from 'next/image'
+import { useState } from 'react'
 import { Project } from '../projects-page'
 
 export default function ProjectPage({
@@ -25,6 +24,8 @@ export default function ProjectPage({
         id: string
     }
 }) {
+    const [imageLoaded, setImageLoaded] = useState(false)
+
     const project = projects.find((project) => {
         return project.id === Number(id)
     })
@@ -34,66 +35,118 @@ export default function ProjectPage({
     }
 
     return (
-        <Container maxW="4xl">
-            <Stack
-                textAlign="center"
+        <Container size="4">
+            <Flex
+                direction="column"
                 align="center"
-                spacing={{ base: 8, md: 10 }}
-                py={{ base: 20, md: 28 }}
+                gap={{ initial: '4', md: '5' }}
+                py={{ initial: '6', md: '7' }}
+                className="text-center"
             >
                 <Heading>{project.title}</Heading>
-                <Image src={project.image} alt={project.image} />
-                <Text textAlign="justify" fontSize={['sm', 'md', 'lg', 'xl']}>
+
+                {/* Responsive image container with skeleton */}
+                <Box
+                    style={{
+                        width: '100%',
+                        maxWidth: '800px',
+                        position: 'relative',
+                    }}
+                >
+                    {!imageLoaded && (
+                        <Skeleton
+                            style={{
+                                width: '100%',
+                                height: '400px',
+                                borderRadius: 'var(--radius-3)',
+                            }}
+                        />
+                    )}
+
+                    <Image
+                        src={project.image}
+                        alt={project.title || project.image}
+                        width={0}
+                        height={0}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
+                        style={{
+                            width: '100%',
+                            height: 'auto',
+                            borderRadius: 'var(--radius-3)',
+                            opacity: imageLoaded ? 1 : 0,
+                            transition: 'opacity 0.3s ease-in-out',
+                        }}
+                        placeholder="blur"
+                        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                        onLoad={() => setImageLoaded(true)}
+                    />
+                </Box>
+
+                <Text
+                    className="text-justify"
+                    size={{ initial: '2', sm: '3', md: '4', lg: '5' }}
+                    style={{
+                        maxWidth: '100%',
+                        lineHeight: '1.6',
+                    }}
+                >
                     {project.content}
                 </Text>
-                {project.video ? (
-                    <Stack>
-                        <AspectRatio
-                            maxW="560px"
-                            minW={['320px', '400px', '400px', '560px']}
-                            ratio={16 / 9}
-                        >
+
+                {project.video && (
+                    <Box
+                        style={{
+                            width: '100%',
+                            maxWidth: '800px',
+                        }}
+                    >
+                        <AspectRatio.Root ratio={16 / 9}>
                             <iframe
-                                width={560}
-                                height={315}
+                                width="100%"
+                                height="100%"
                                 src={project.video}
                                 title="YouTube video player"
                                 allowFullScreen
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            ></iframe>
-                        </AspectRatio>
-                    </Stack>
-                ) : (
-                    <Stack></Stack>
+                                style={{
+                                    borderRadius: 'var(--radius-3)',
+                                }}
+                            />
+                        </AspectRatio.Root>
+                    </Box>
                 )}
-                {project.gallery.length > 0 ? (
+
+                {project.gallery.length > 0 && (
                     <Carousel props={project.gallery} />
-                ) : (
-                    <Box />
                 )}
-                <Stack spacing={6}>
-                    {project.presslinks.length > 0 ? (
-                        <UnorderedList>
-                            <Heading>Für Presseartikel</Heading>
-                            {project.presslinks.map((link) => (
-                                <ListItem listStyleType="none" key={link}>
-                                    <Link
-                                        href={link}
-                                        isExternal
-                                        fontSize={['sm', 'md', 'lg', 'xl']}
-                                    >
-                                        hier entlang
-                                    </Link>
-                                </ListItem>
+
+                {project.presslinks.length > 0 && (
+                    <Flex direction="column" gap="3" align="center">
+                        <Heading size="4">Für Presseartikel</Heading>
+                        <Flex direction="column" gap="2" align="center">
+                            {project.presslinks.map((link, index) => (
+                                <Link
+                                    key={`${link}-${index}`}
+                                    href={link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    size={{
+                                        initial: '2',
+                                        sm: '3',
+                                        md: '4',
+                                    }}
+                                    style={{
+                                        wordBreak: 'break-all', // Handle long URLs
+                                    }}
+                                >
+                                    Presseartikel {index + 1}
+                                </Link>
                             ))}
-                        </UnorderedList>
-                    ) : (
-                        <Text></Text>
-                    )}
-                </Stack>
-                <Flex w="full"></Flex>
-            </Stack>
+                        </Flex>
+                    </Flex>
+                )}
+            </Flex>
         </Container>
     )
 }

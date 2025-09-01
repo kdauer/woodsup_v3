@@ -147,7 +147,7 @@
         },
         {
             "id": 13,
-            "image": "images/Forst/IMG_D6A3645A986D-5.jpeg",
+            "image": "/images/Forst/IMG_D6A3645A986D-5.jpeg",
             "title": "Marzo de 2022: Apoyo a Schöner Land e.V. en la creación de una arboleda de protección del clima",
             "content": "Apoyamos a la asociación 'Schöner Land' en la plantación de una zona árida de 5.600 metros cuadrados con diversos árboles y arbustos",
             "video": "",
@@ -338,14 +338,14 @@
         },
         {
             "id": 27,
-            "image": "/images/erfurt/erfrurt_0.jpeg",
+            "image": "/images/erfurt/erfurt_0.jpeg",
             "title": "Juni 2025",
             "content": "20.-22.6.25 - Teilnahme an 'reforest together' in Erfurt und bei der Gründung des Dachverbands 'Baumpflanzende Gesellschaft'",
             "video": "",
             "presslinks": [],
             "gallery": [
-                "/images/erfurt/erfrurt_0.jpeg",
-                "/images/erfurt/erfrurt_1.jpeg"
+                "/images/erfurt/erfurt_0.jpeg",
+                "/images/erfurt/erfurt_1.jpeg"
             ]
         }
     ]
