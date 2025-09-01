@@ -45,7 +45,6 @@ export default function ProjectPage({
             >
                 <Heading>{project.title}</Heading>
 
-                {/* Responsive image container with skeleton */}
                 <Box
                     style={{
                         width: '100%',
