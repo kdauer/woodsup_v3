@@ -1,62 +1,70 @@
 'use client'
 
-import { Box, Button, Flex, Heading, Text } from '@radix-ui/themes'
-import { Link as NextLink } from 'i18n/navigation'
+import Link from 'next/link'
 
 export default function NotFound() {
     return (
-        <Flex align="center" justify="center" height="100vh" width="100%">
-            <Box py="9" px="6">
-                <Heading
-                    as="h2"
-                    size={{
-                        initial: '6',
-                        sm: '7',
-                        md: '8',
-                        lg: '9',
-                    }}
+        <html lang="en">
+            <body>
+                <div
                     style={{
-                        background:
-                            'linear-gradient(to right, var(--blue-9), var(--violet-9))',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        minHeight: '100vh',
+                        fontFamily: 'system-ui, sans-serif',
+                        padding: '1rem',
                     }}
                 >
-                    404
-                </Heading>
-                <Text mt="3" mb="2">
-                    Page Not Found
-                </Text>
-                <Text
-                    size={{
-                        initial: '1',
-                        sm: '2',
-                        md: '3',
-                        lg: '4',
-                    }}
-                    color="gray"
-                    mb="6"
-                >
-                    The page you're looking for does not seem to exist
-                </Text>
-                <NextLink href="/">
-                    <Button
-                        size={{
-                            initial: '1',
-                            sm: '2',
-                            md: '3',
-                            lg: '3',
-                        }}
-                        style={{
-                            background:
-                                'linear-gradient(to right, var(--blue-9), var(--violet-9))',
-                            fontFamily: 'var(--font-body)',
-                        }}
-                    >
-                        Take me to the home page
-                    </Button>
-                </NextLink>
-            </Box>
-        </Flex>
+                    <div style={{ textAlign: 'center' }}>
+                        <h1
+                            style={{
+                                fontSize: '4rem',
+                                fontWeight: 'bold',
+                                background:
+                                    'linear-gradient(90deg, #C6F6D5 0%, #22543D 100%)',
+                                WebkitBackgroundClip: 'text',
+                                WebkitTextFillColor: 'transparent',
+                                marginBottom: '1rem',
+                            }}
+                        >
+                            404
+                        </h1>
+                        <p
+                            style={{
+                                fontSize: '1.125rem',
+                                marginBottom: '0.5rem',
+                            }}
+                        >
+                            Page Not Found
+                        </p>
+                        <p
+                            style={{
+                                color: '#6b7280',
+                                marginBottom: '2rem',
+                                fontSize: '1rem',
+                            }}
+                        >
+                            The page you're looking for does not seem to exist
+                        </p>
+                        <Link
+                            href="/en"
+                            style={{
+                                display: 'inline-block',
+                                padding: '0.75rem 1.5rem',
+                                background:
+                                    'linear-gradient(90deg, #68D391 0%, #276749 100%)',
+                                color: 'white',
+                                textDecoration: 'none',
+                                borderRadius: '0.5rem',
+                                fontWeight: '500',
+                            }}
+                        >
+                            Take me to the home page
+                        </Link>
+                    </div>
+                </div>
+            </body>
+        </html>
     )
 }

@@ -1,3 +1,11 @@
+@import '@radix-ui/themes/styles.css';
+
+/* Custom font variables */
+:root {
+    --font-heading: var(--font-public_sans);
+    --font-body: var(--font-oswald);
+}
+
 .radix-themes {
     --heading-font-family: 'Public Sans', var(--font-public-sans);
     --default-font-family: 'Oswald', var(--font-oswald);
