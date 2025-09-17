@@ -312,7 +312,7 @@
             "gallery": []
         },
         {
-            "id": 28,
+            "id": 25,
             "image": "/images/goettin/goettin_1.jpeg",
             "title": "Dezember 2024: Kiefermonokultur in Göttin wird zum Mischwald",
             "content": "Im Dezember haben wir auf einem Hektar Kiefernmonokultur Laubbäume gepflanzt und Saatgut in die Erde gebracht. Da unsere erste Pflanzung vor zwei Jahren fast komplett weg gefressen wurde, haben wir diesmal einzel Umzäunungen aufgestellt. In der Hoffnung, dass die Eichen, Kastanien, Eschen, Hopfenbuchen und Wildpflaumen die wir gepflanzt haben, den Kiefernforst in einen Mischwald verwandeln",
@@ -331,21 +331,21 @@
             "video": "",
             "presslinks": [],
             "gallery": [
-                "/images/island_25/gisland_0.jpeg",
+                "/images/island_25/island_0.jpeg",
                 "/images/island_25/island_1.jpeg",
                 "/images/island_25/island_2.jpeg"
             ]
         },
         {
             "id": 27,
-            "image": "/images/erfurt/erfrurt_0.jpeg",
+            "image": "/images/erfurt/erfurt_0.jpeg",
             "title": "Juni 2025",
             "content": "20.-22.6.25 - Teilnahme an 'reforest together' in Erfurt und bei der Gründung des Dachverbands 'Baumpflanzende Gesellschaft'",
             "video": "",
             "presslinks": [],
             "gallery": [
-                "/images/erfurt/erfrurt_0.jpeg",
-                "/images/erfurt/erfrurt_1.jpeg"
+                "/images/erfurt/erfurt_0.jpeg",
+                "/images/erfurt/erfurt_1.jpeg"
             ]
         }
     ]

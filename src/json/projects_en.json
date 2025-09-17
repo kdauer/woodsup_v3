@@ -147,7 +147,7 @@
         },
         {
             "id": 13,
-            "image": "images/Forst/IMG_D6A3645A986D-5.jpeg",
+            "image": "/images/Forst/IMG_D6A3645A986D-5.jpeg",
             "title": "March 2022: Support for Schöner Land e.V. in the establishment of a climate protection grove",
             "content": "We supported the association 'Schöner Land' in planting a barren area of 5600 square metres with various trees and shrubs",
             "video": "",
@@ -331,21 +331,21 @@
             "video": "",
             "presslinks": [],
             "gallery": [
-                "/images/island_25/gisland_0.jpeg",
+                "/images/island_25/island_0.jpeg",
                 "/images/island_25/island_1.jpeg",
                 "/images/island_25/island_2.jpeg"
             ]
         },
         {
             "id": 27,
-            "image": "/images/erfurt/erfrurt_0.jpeg",
+            "image": "/images/erfurt/erfurt_0.jpeg",
             "title": "Juni 2025",
             "content": "20.-22.6.25 - Teilnahme an 'reforest together' in Erfurt und bei der Gründung des Dachverbands 'Baumpflanzende Gesellschaft'",
             "video": "",
             "presslinks": [],
             "gallery": [
-                "/images/erfurt/erfrurt_0.jpeg",
-                "/images/erfurt/erfrurt_1.jpeg"
+                "/images/erfurt/erfurt_0.jpeg",
+                "/images/erfurt/erfurt_1.jpeg"
             ]
         }
     ]

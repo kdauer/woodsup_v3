@@ -1,37 +1,39 @@
 'use client'
-import { Box, Container, Heading, Link, Stack, Text } from '@chakra-ui/react'
+import { Box, Container, Flex, Heading, Link, Text } from '@radix-ui/themes'
 
 export default function ContactPage() {
     return (
-        <Container maxW="3xl" h="100vh">
-            <Stack
-                as={Box}
-                textAlign="center"
-                spacing={{ base: 8, md: 14 }}
-                py={{ base: 20, md: 36 }}
+        <Container size="3" style={{ minHeight: 'calc(100vh - 64px)' }}>
+            <Flex
+                asChild
+                align="center"
+                justify="center"
+                direction="column"
+                gap={{ initial: '4', md: '7' }}
+                py={{ initial: '9', md: '9' }}
             >
-                <Heading
-                    fontWeight={600}
-                    fontSize={['md', 'lg', '2xl', '4xl']}
-                    lineHeight="110%"
-                >
-                    Woods Up e.V.
-                </Heading>
-                <Text fontSize={['sm', 'md', 'lg', 'xl']}>
-                    Wollestraße 54
-                    <br />
-                    14482 Potsdam
-                </Text>
-                Mail:{' '}
-                <Link
-                    fontSize={['sm', 'md', 'lg', 'xl']}
-                    color="brand.300"
-                    href="mailto:woodsup@posteo.de"
-                    isExternal
-                >
-                    woodsup@posteo.de
-                </Link>
-            </Stack>
+                <Box>
+                    <Heading
+                        weight="bold"
+                        size={{ initial: '6', sm: '7', md: '8', lg: '9' }}
+                        style={{ lineHeight: '1.1' }}
+                    >
+                        Woods Up e.V.
+                    </Heading>
+                    <Text size={{ initial: '3', sm: '4', md: '5', lg: '6' }}>
+                        Wollestraße 54
+                        <br />
+                        14482 Potsdam
+                    </Text>
+                    Mail:{' '}
+                    <Link
+                        size={{ initial: '3', sm: '4', md: '5', lg: '6' }}
+                        href="mailto:woodsup@posteo.de"
+                    >
+                        woodsup@posteo.de
+                    </Link>
+                </Box>
+            </Flex>
         </Container>
     )
 }

@@ -1,6 +1,6 @@
 'use client'
 
-import { Flex } from '@chakra-ui/react'
+import { Flex } from '@radix-ui/themes'
 
 export default function Page() {
     console.info('Woods Up e.v. - from Potsdam with ❤')
@@ -8,14 +8,16 @@ export default function Page() {
     return (
         <main>
             <Flex
-                w="full"
-                minH="100vh"
-                align="center"
-                justify="center"
-                bgImage="url(/DSC073482.jpg)"
-                bgRepeat="no-repeat"
-                bgSize="cover"
-                bgPosition="center"
+                style={{
+                    width: '100%',
+                    minHeight: 'calc(100vh - 64px)',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    backgroundImage: 'url(/DSC073482.jpg)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                }}
             >
                 {/* <NewsContainer /> */}
             </Flex>

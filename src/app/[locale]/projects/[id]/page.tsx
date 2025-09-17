@@ -120,26 +120,30 @@ export async function generateStaticParams() {
 }
 
 export default async function Page({
-    params: { id, locale },
+    params,
 }: {
-    params: {
+    params: Promise<{
         id: string
         locale: Locale
-    }
+    }>
 }) {
+    const { id, locale } = await params
     let projectsList: Project[] = projects_de.projects
 
-    if (locale === 'de') {
-        projectsList = projects_de.projects
-    }
-    if (locale === 'en') {
-        projectsList = projects_en.projects
-    }
-    if (locale === 'es') {
-        projectsList = projects_es.projects
-    }
-    if (locale === 'fr') {
-        projectsList = projects_fr.projects
+    switch (locale) {
+        case 'en':
+            projectsList = projects_en.projects
+            break
+        case 'es':
+            projectsList = projects_es.projects
+            break
+        case 'fr':
+            projectsList = projects_fr.projects
+            break
+        case 'de':
+        default:
+            projectsList = projects_de.projects
+            break
     }
 
     if (!projectsList) {

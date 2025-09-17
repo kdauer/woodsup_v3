@@ -1,6 +1,6 @@
 'use client'
-import { Center, Link, SimpleGrid, VStack } from '@chakra-ui/react'
-import { Link as NextLink } from 'navigation'
+import { Flex, Grid, Link } from '@radix-ui/themes'
+import { Link as NextLink } from 'i18n/navigation'
 
 import { CardComponent } from 'components/Card'
 import projects_de from 'json/projects_de.json'
@@ -31,36 +31,43 @@ export default function ProjectsPage({
 }) {
     let projectsList: Project[] = projects_de.projects
 
-    if (locale === 'de') {
-        projectsList = projects_de.projects
+    switch (locale) {
+        case 'en':
+            projectsList = projects_en.projects
+            break
+        case 'es':
+            projectsList = projects_es.projects
+            break
+        case 'fr':
+            projectsList = projects_fr.projects
+            break
+        case 'de':
+        default:
+            projectsList = projects_de.projects
+            break
     }
-    if (locale === 'en') {
-        projectsList = projects_en.projects
-    }
-    if (locale === 'es') {
-        projectsList = projects_es.projects
-    }
-    if (locale === 'fr') {
-        projectsList = projects_fr.projects
-    }
+
     const sortedProjects = projectsList.sort(
-        (a: Project, b: Project) => b.id - a.id
+        (a: Project, b: Project) => b.id - a.id,
     )
+
     return (
-        <Center>
-            <VStack mt={10}>
-                <SimpleGrid columns={[1, null, 2, 3]} spacing={10}>
+        <Flex justify="center" style={{ minHeight: 'calc(100vh - 64px)' }}>
+            <Flex direction="column" mt="10">
+                <Grid columns={{ initial: '1', sm: '2', md: '3' }} gap="10">
                     {sortedProjects.map((project) => (
-                        <Link
-                            href={project.id ? path + '/' + project.id : path}
-                            as={NextLink}
-                            key={project.id}
-                        >
-                            <CardComponent project={project} />
+                        <Link asChild key={project.id}>
+                            <NextLink
+                                href={
+                                    project.id ? path + '/' + project.id : path
+                                }
+                            >
+                                <CardComponent project={project} />
+                            </NextLink>
                         </Link>
                     ))}
-                </SimpleGrid>
-            </VStack>
-        </Center>
+                </Grid>
+            </Flex>
+        </Flex>
     )
 }
