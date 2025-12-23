@@ -1,11 +1,12 @@
 'use client'
 
+import type { SanityImageSource } from '@sanity/image-url'
+import { urlFor } from 'lib/sanity/image'
 import Image from 'next/image'
-import { urlFor } from '@/lib/sanity/image'
 
 interface SanityImageProps {
-    image: any
-    alt: string
+    image: SanityImageSource
+    alt?: string
     width?: number
     height?: number
     fill?: boolean
@@ -28,7 +29,7 @@ export function SanityImage({
     onLoad,
     placeholder = 'blur',
 }: SanityImageProps) {
-    if (!image?.asset) return null
+    if (!image) return null
 
     const imageUrl = urlFor(image)
         .width(width || 800)
@@ -42,7 +43,7 @@ export function SanityImage({
     return (
         <Image
             src={imageUrl}
-            alt={alt || image.alt || ''}
+            alt={alt || ''}
             width={fill ? undefined : width}
             height={fill ? undefined : height}
             fill={fill}

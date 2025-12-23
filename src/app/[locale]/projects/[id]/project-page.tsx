@@ -11,7 +11,7 @@ import {
 } from '@radix-ui/themes'
 import { Carousel } from 'components/Carousel'
 import { SanityImage } from 'components/SanityImage'
-import { urlFor } from '@/lib/sanity/image'
+import { urlFor } from 'lib/sanity/image'
 import { useState } from 'react'
 import { SanityProject } from '../projects-page'
 
@@ -20,12 +20,9 @@ export default function ProjectPage({ project }: { project: SanityProject }) {
 
     // Convert Sanity gallery images to legacy format for Carousel component
     const galleryImages =
-        project.gallery?.map((img) => {
-            if (img?.asset) {
-                return urlFor(img).width(800).height(600).url()
-            }
-            return ''
-        }) || []
+        project.gallery
+            ?.filter((img) => img)
+            .map((img) => urlFor(img).width(800).height(600).url()) || []
 
     return (
         <Container size="4">
@@ -106,9 +103,7 @@ export default function ProjectPage({ project }: { project: SanityProject }) {
                     </Box>
                 )}
 
-                {galleryImages.length > 0 && (
-                    <Carousel props={galleryImages} />
-                )}
+                {galleryImages.length > 0 && <Carousel props={galleryImages} />}
 
                 {project.presslinks && project.presslinks.length > 0 && (
                     <Flex direction="column" gap="3" align="center">
