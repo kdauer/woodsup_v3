@@ -20,6 +20,9 @@
 /build
 /.next
 
+# typescript
+*.tsbuildinfo
+
 # misc
 .DS_Store
 .env.local
