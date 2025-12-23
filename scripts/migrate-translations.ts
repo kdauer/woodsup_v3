@@ -4,7 +4,18 @@ import { resolve } from 'path'
 // Load environment variables from .env.local
 config({ path: resolve(process.cwd(), '.env.local') })
 
-import { writeClient } from '../src/lib/sanity/client'
+// Verify environment variables are loaded
+if (!process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) {
+    console.error('❌ Error: NEXT_PUBLIC_SANITY_PROJECT_ID not found in .env.local')
+    console.error('Please create a .env.local file with your Sanity credentials.')
+    process.exit(1)
+}
+
+if (!process.env.SANITY_API_TOKEN) {
+    console.error('❌ Error: SANITY_API_TOKEN not found in .env.local')
+    console.error('Please add your Sanity API token to .env.local')
+    process.exit(1)
+}
 
 import de from '../src/dictionaries/de.json'
 import en from '../src/dictionaries/en.json'
@@ -15,6 +26,9 @@ type TranslationDict = Record<string, Record<string, string>>
 
 async function migrateTranslations() {
     console.log('🌍 Starting translation migration...\n')
+
+    // Dynamically import writeClient after env vars are loaded
+    const { writeClient } = await import('../src/lib/sanity/client.js')
 
     const namespaces = Object.keys(de) as (keyof typeof de)[]
     let totalTranslations = 0

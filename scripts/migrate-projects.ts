@@ -4,7 +4,19 @@ import { resolve } from 'path'
 // Load environment variables from .env.local
 config({ path: resolve(process.cwd(), '.env.local') })
 
-import { writeClient } from '../src/lib/sanity/client'
+// Verify environment variables are loaded
+if (!process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) {
+    console.error('❌ Error: NEXT_PUBLIC_SANITY_PROJECT_ID not found in .env.local')
+    console.error('Please create a .env.local file with your Sanity credentials.')
+    process.exit(1)
+}
+
+if (!process.env.SANITY_API_TOKEN) {
+    console.error('❌ Error: SANITY_API_TOKEN not found in .env.local')
+    console.error('Please add your Sanity API token to .env.local')
+    process.exit(1)
+}
+
 import { createReadStream, existsSync } from 'fs'
 import { join } from 'path'
 
@@ -13,7 +25,10 @@ import projects_en from '../src/json/projects_en.json'
 import projects_es from '../src/json/projects_es.json'
 import projects_fr from '../src/json/projects_fr.json'
 
-async function uploadImage(imagePath: string): Promise<string | null> {
+async function uploadImage(
+    writeClient: any,
+    imagePath: string
+): Promise<string | null> {
     if (!imagePath) return null
 
     // Remove leading slash and construct full path
@@ -41,6 +56,9 @@ async function uploadImage(imagePath: string): Promise<string | null> {
 async function migrateProjects() {
     console.log('🌳 Starting project migration...\n')
 
+    // Dynamically import writeClient after env vars are loaded
+    const { writeClient } = await import('../src/lib/sanity/client.js')
+
     const deProjects = projects_de.projects
     const enProjects = projects_en.projects
     const esProjects = projects_es.projects
@@ -62,7 +80,7 @@ async function migrateProjects() {
         try {
             // Upload main image
             console.log('  📸 Uploading main image...')
-            const mainImageId = await uploadImage(deProject.image)
+            const mainImageId = await uploadImage(writeClient, deProject.image)
             if (mainImageId) {
                 imageCount++
                 console.log('    ✓ Main image uploaded')
@@ -72,7 +90,7 @@ async function migrateProjects() {
             console.log(`  🖼️  Uploading ${deProject.gallery.length} gallery images...`)
             const galleryAssets = await Promise.all(
                 deProject.gallery.map(async (imgPath) => {
-                    const assetId = await uploadImage(imgPath)
+                    const assetId = await uploadImage(writeClient, imgPath)
                     if (assetId) {
                         imageCount++
                         console.log(`    ✓ Gallery image uploaded: ${imgPath.split('/').pop()}`)
