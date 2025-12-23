@@ -10,29 +10,22 @@ import {
     Text,
 } from '@radix-ui/themes'
 import { Carousel } from 'components/Carousel'
-import Error from 'next/error'
-import Image from 'next/image'
+import { SanityImage } from 'components/SanityImage'
+import { urlFor } from '@/lib/sanity/image'
 import { useState } from 'react'
-import { Project } from '../projects-page'
+import { SanityProject } from '../projects-page'
 
-export default function ProjectPage({
-    projects,
-    params: { id },
-}: {
-    projects: Project[]
-    params: {
-        id: string
-    }
-}) {
+export default function ProjectPage({ project }: { project: SanityProject }) {
     const [imageLoaded, setImageLoaded] = useState(false)
 
-    const project = projects.find((project) => {
-        return project.id === Number(id)
-    })
-
-    if (project === undefined) {
-        return <Error statusCode={404} />
-    }
+    // Convert Sanity gallery images to legacy format for Carousel component
+    const galleryImages =
+        project.gallery?.map((img) => {
+            if (img?.asset) {
+                return urlFor(img).width(800).height(600).url()
+            }
+            return ''
+        }) || []
 
     return (
         <Container size="4">
@@ -62,12 +55,11 @@ export default function ProjectPage({
                         />
                     )}
 
-                    <Image
-                        src={project.image}
-                        alt={project.title || project.image}
-                        width={0}
-                        height={0}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
+                    <SanityImage
+                        image={project.mainImage}
+                        alt={project.title || ''}
+                        width={800}
+                        height={600}
                         style={{
                             width: '100%',
                             height: 'auto',
@@ -75,8 +67,6 @@ export default function ProjectPage({
                             opacity: imageLoaded ? 1 : 0,
                             transition: 'opacity 0.3s ease-in-out',
                         }}
-                        placeholder="blur"
-                        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
                         onLoad={() => setImageLoaded(true)}
                     />
                 </Box>
@@ -116,18 +106,18 @@ export default function ProjectPage({
                     </Box>
                 )}
 
-                {project.gallery.length > 0 && (
-                    <Carousel props={project.gallery} />
+                {galleryImages.length > 0 && (
+                    <Carousel props={galleryImages} />
                 )}
 
-                {project.presslinks.length > 0 && (
+                {project.presslinks && project.presslinks.length > 0 && (
                     <Flex direction="column" gap="3" align="center">
                         <Heading size="4">Für Presseartikel</Heading>
                         <Flex direction="column" gap="2" align="center">
                             {project.presslinks.map((link, index) => (
                                 <Link
-                                    key={`${link}-${index}`}
-                                    href={link}
+                                    key={`${link.url}-${index}`}
+                                    href={link.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     size={{
@@ -139,7 +129,7 @@ export default function ProjectPage({
                                         wordBreak: 'break-all', // Handle long URLs
                                     }}
                                 >
-                                    Presseartikel {index + 1}
+                                    {link.title || `Presseartikel ${index + 1}`}
                                 </Link>
                             ))}
                         </Flex>
