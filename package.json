@@ -9,7 +9,10 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "migrate:projects": "tsx scripts/migrate-projects.ts",
+        "migrate:translations": "tsx scripts/migrate-translations.ts",
+        "migrate:all": "pnpm migrate:translations && pnpm migrate:projects"
     },
     "dependencies": {
         "@fontsource/oswald": "^5.2.6",
@@ -48,6 +51,7 @@
         "eslint-config-next": "^15.4.5",
         "prettier": "^3.6.2",
         "tailwindcss": "^4.1.11",
+        "tsx": "^4.21.0",
         "typescript": "^5.9.2"
     },
     "engines": {
