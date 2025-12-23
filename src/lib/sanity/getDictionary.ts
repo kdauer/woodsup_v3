@@ -17,10 +17,9 @@ export async function getDictionary(locale: Locale) {
         const translations: Translation[] = await client.fetch(
             allTranslationsQuery,
             {},
-            { next: { revalidate: 60 } } // Revalidate every 60 seconds
+            { next: { revalidate: 60 } },
         )
 
-        // Transform to nested object structure for next-intl compatibility
         const dictionary: Record<string, Record<string, string>> = {}
 
         for (const t of translations) {
@@ -33,7 +32,5 @@ export async function getDictionary(locale: Locale) {
         return dictionary
     } catch (error) {
         console.error('Failed to fetch translations from Sanity:', error)
-        // Fallback to JSON files if Sanity fetch fails
-        return (await import(`../../dictionaries/${locale}.json`)).default
     }
 }

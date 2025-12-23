@@ -9,7 +9,6 @@ type WebhookBody = {
 export async function POST(request: NextRequest) {
     const secret = request.nextUrl.searchParams.get('secret')
 
-    // Verify the webhook secret
     if (secret !== process.env.SANITY_WEBHOOK_SECRET) {
         return NextResponse.json({ message: 'Invalid secret' }, { status: 401 })
     }
@@ -17,12 +16,9 @@ export async function POST(request: NextRequest) {
     try {
         const body = (await request.json()) as WebhookBody
 
-        // Revalidate based on document type
         if (body._type === 'project') {
-            // Revalidate the projects list page for all locales
             revalidatePath('/[locale]/projects', 'page')
 
-            // Revalidate the specific project page if we have a projectId
             if (body.projectId) {
                 revalidatePath(`/[locale]/projects/${body.projectId}`, 'page')
             }
@@ -35,7 +31,6 @@ export async function POST(request: NextRequest) {
         }
 
         if (body._type === 'translation') {
-            // Revalidate all pages since translations affect the entire site
             revalidatePath('/', 'layout')
 
             return NextResponse.json({
@@ -44,7 +39,6 @@ export async function POST(request: NextRequest) {
             })
         }
 
-        // Return success even for unknown types
         return NextResponse.json({
             revalidated: false,
             message: `Document type '${body._type}' is not configured for revalidation`,

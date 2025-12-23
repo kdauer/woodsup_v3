@@ -37,7 +37,6 @@ export function SanityImage({
         .auto('format')
         .url()
 
-    // Generate blur placeholder
     const blurUrl = urlFor(image).width(20).blur(10).url()
 
     return (

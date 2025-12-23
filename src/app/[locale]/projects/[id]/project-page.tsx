@@ -18,7 +18,6 @@ import { SanityProject } from '../projects-page'
 export default function ProjectPage({ project }: { project: SanityProject }) {
     const [imageLoaded, setImageLoaded] = useState(false)
 
-    // Convert Sanity gallery images to legacy format for Carousel component
     const galleryImages =
         project.gallery
             ?.filter((img) => img)

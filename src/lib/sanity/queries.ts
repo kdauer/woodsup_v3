@@ -1,6 +1,5 @@
 import { groq } from 'next-sanity'
 
-// Get all projects for listing
 export const projectsQuery = groq`
     *[_type == "project"] | order(projectId desc) {
         _id,
@@ -15,7 +14,6 @@ export const projectsQuery = groq`
     }
 `
 
-// Get single project by ID
 export const projectByIdQuery = groq`
     *[_type == "project" && projectId == $id][0] {
         _id,
@@ -30,7 +28,6 @@ export const projectByIdQuery = groq`
     }
 `
 
-// Get all translations for a namespace
 export const translationsQuery = groq`
     *[_type == "translation" && namespace == $namespace] {
         key,
@@ -38,7 +35,6 @@ export const translationsQuery = groq`
     }
 `
 
-// Get all translations (for building dictionary)
 export const allTranslationsQuery = groq`
     *[_type == "translation"] {
         namespace,

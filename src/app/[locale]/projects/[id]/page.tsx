@@ -7,7 +7,6 @@ import ProjectPage from './project-page'
 
 export async function generateStaticParams() {
     try {
-        // Fetch all projects to generate static paths
         const projects = await client.fetch(
             `*[_type == "project"]{ projectId }`,
         )
@@ -21,7 +20,6 @@ export async function generateStaticParams() {
         )
     } catch (error) {
         console.error('Failed to fetch projects for static params:', error)
-        // Return empty array if Sanity is not set up yet
         return []
     }
 }
@@ -36,7 +34,6 @@ export default async function Page({
 }) {
     const { id, locale } = await params
 
-    // Fetch single project from Sanity
     const project: SanityProject = await client.fetch(
         projectByIdQuery,
         { id: parseInt(id), locale },

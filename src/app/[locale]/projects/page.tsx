@@ -10,7 +10,6 @@ export default async function Page({
 }) {
     const { locale } = await params
 
-    // Fetch projects from Sanity
     const projects = await client.fetch(
         projectsQuery,
         { locale },
