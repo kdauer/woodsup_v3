@@ -1,6 +1,6 @@
+import { getDictionary } from 'lib/sanity/getDictionary'
 import { getRequestConfig } from 'next-intl/server'
 import { routing } from './routing'
-import { getDictionary } from '@/lib/sanity/getDictionary'
 
 export default getRequestConfig(async ({ requestLocale }) => {
     // This typically corresponds to the `[locale]` segment
