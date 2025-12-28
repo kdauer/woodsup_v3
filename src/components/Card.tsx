@@ -1,11 +1,11 @@
 'use client'
 import { Box, Card, Flex, Inset, Skeleton, Text } from '@radix-ui/themes'
-import { Project } from 'app/[locale]/projects/projects-page'
+import { SanityProject } from 'app/[locale]/projects/projects-page'
+import { SanityImage } from 'components/SanityImage'
 import { useTheme } from 'next-themes'
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
-export const CardComponent = ({ project }: { project: Project }) => {
+export const CardComponent = ({ project }: { project: SanityProject }) => {
     const { theme } = useTheme()
     const [imageLoaded, setImageLoaded] = useState(false)
     const [mounted, setMounted] = useState(false)
@@ -47,22 +47,21 @@ export const CardComponent = ({ project }: { project: Project }) => {
                                 }}
                             />
                         )}
-                        <Image
-                            src={project.image}
-                            alt={project.image}
-                            height={300}
-                            width={300}
-                            style={{
-                                display: 'block',
-                                objectFit: 'cover',
-                                width: '100%',
-                                height: 300,
-                                backgroundColor: 'green',
-                            }}
-                            placeholder="blur"
-                            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
-                            onLoad={() => setImageLoaded(true)}
-                        />
+                        {project.mainImage && (
+                            <SanityImage
+                                image={project.mainImage}
+                                alt={project.title || ''}
+                                width={300}
+                                height={300}
+                                style={{
+                                    display: 'block',
+                                    objectFit: 'cover',
+                                    width: '100%',
+                                    height: 300,
+                                }}
+                                onLoad={() => setImageLoaded(true)}
+                            />
+                        )}
                     </Inset>
                     <Text as="p" size="3" align="center">
                         {project.title}

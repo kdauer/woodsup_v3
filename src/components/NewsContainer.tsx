@@ -1,6 +1,5 @@
 'use client'
 import { Container, Flex, Heading, Link, Text } from '@radix-ui/themes'
-import { Responsive } from '@radix-ui/themes/dist/cjs/props/prop-def'
 import { useTranslations } from 'next-intl'
 import { useTheme } from 'next-themes'
 import { ReactNode } from 'react'
@@ -11,7 +10,15 @@ export const NewsText = ({
     textAlignment = 'center',
 }: {
     children: ReactNode
-    textAlignment?: Responsive<'left' | 'center' | 'right'>
+    textAlignment?:
+        | 'left'
+        | 'center'
+        | 'right'
+        | {
+              initial?: 'left' | 'center' | 'right'
+              sm?: 'left' | 'center' | 'right'
+              md?: 'left' | 'center' | 'right'
+          }
 }) => {
     return (
         <Text
