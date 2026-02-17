@@ -2,8 +2,7 @@
 import { Container, Flex, Heading, Link, Text } from '@radix-ui/themes'
 import { useTranslations } from 'next-intl'
 import { useTheme } from 'next-themes'
-import { ReactNode } from 'react'
-import { Carousel } from './Carousel'
+import { ReactNode, useEffect, useState } from 'react'
 
 export const NewsText = ({
     children,
@@ -57,14 +56,19 @@ const PolymorphicHeading = ({
 export const NewsContainer = () => {
     const t = useTranslations('news')
     const { resolvedTheme } = useTheme()
-    const isDark = resolvedTheme === 'dark'
-    const imageItems = ['./IMG_4810.jpeg', './IMG_168EC.jpeg']
+    const [mounted, setMounted] = useState(false)
+
+    useEffect(() => {
+        setMounted(true)
+    }, [])
+
+    const isDark = mounted && resolvedTheme === 'dark'
 
     return (
         <Container
             size="3"
             style={{
-                backgroundColor: isDark ? 'var(--brand-900)' : 'white',
+                backgroundColor: isDark ? '#1C4532' : 'white',
                 color: isDark ? 'white' : 'black',
                 borderRadius: 'var(--radius-4)',
                 margin: '2em',
@@ -98,13 +102,14 @@ export const NewsContainer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         size={{ initial: '2', sm: '3', md: '4', lg: '5' }}
-                        style={{ color: 'var(--brand-300)' }}
+                        style={{
+                            color: isDark ? '#90EE90' : '#006400',
+                            fontWeight: 'bold',
+                        }}
                     >
                         Unterstützte uns mit deiner Spende
                     </Link>
                 </NewsText>
-
-                <Carousel props={imageItems} />
             </Flex>
         </Container>
     )

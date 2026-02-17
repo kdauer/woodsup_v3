@@ -1,8 +1,9 @@
 'use client'
 
 import { Flex } from '@radix-ui/themes'
+import { NewsContainer } from 'components/NewsContainer'
 
-export default function Page() {
+export default function Page({ hasNews }: { hasNews: boolean }) {
     console.info('Woods Up e.v. - from Potsdam with ❤')
 
     return (
@@ -19,7 +20,7 @@ export default function Page() {
                     backgroundPosition: 'center',
                 }}
             >
-                {/* <NewsContainer /> */}
+                {hasNews && <NewsContainer />}
             </Flex>
         </main>
     )
