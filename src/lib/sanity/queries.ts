@@ -42,3 +42,7 @@ export const allTranslationsQuery = groq`
         de, en, es, fr
     }
 `
+
+export const hasNewsContentQuery = groq`
+    count(*[_type == "translation" && namespace == "news" && key in ["h3", "h4", "topic_1", "topic_2"] && defined(de) && de != ""]) == 4
+`

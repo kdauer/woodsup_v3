@@ -122,7 +122,7 @@ export const Footer = () => {
                 location="bottom"
                 buttonText={t('cookieButton')}
                 cookieName="myAwesomeCookieName2"
-                style={{ background: 'var(--gray-a5)', opacity: 0.9 }}
+                style={{ background: 'green', opacity: 0.9 }}
                 buttonStyle={{
                     background: 'var(--gray-a5)',
                     color: 'white',
@@ -134,7 +134,7 @@ export const Footer = () => {
                 <Link asChild>
                     <NextLink
                         href="/privacy-policy"
-                        style={{ color: 'var(--gray-a5)' }}
+                        style={{ color: 'var(--green-7)' }}
                     >
                         {t('privacy-policy')}
                     </NextLink>
