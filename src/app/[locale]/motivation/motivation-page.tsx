@@ -10,7 +10,7 @@ export type Link = {
 // const linklist: Link[] = links.links
 
 export default function MotivationPage() {
-    const t = useTranslations('news')
+    const t = useTranslations('motivation')
 
     return (
         <Flex
@@ -29,13 +29,13 @@ export default function MotivationPage() {
                     size={{ initial: '6', sm: '7', md: '8', lg: '9' }}
                     mb="6"
                 >
-                    {t('h4')}
+                    {t('h1')}
                 </Heading>
                 <Text
                     size={{ initial: '3', sm: '4', md: '5', lg: '6' }}
                     style={{ textAlign: 'justify' }}
                 >
-                    {t('topic_1')}
+                    {t('text_1')}
                 </Text>
                 {/* <Stack
                     maxW="2xl"
