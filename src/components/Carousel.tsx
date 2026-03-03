@@ -18,7 +18,7 @@ const settings = {
     slidesToScroll: 1,
 }
 
-export const Carousel = ({ props }: { props: any }) => {
+export const Carousel = ({ props }: { props: string[] }) => {
     const [slider, setSlider] = useState<Slider | null>(null)
 
     // const top = useBreakpointValue({ base: '90%', md: '50%' })
@@ -77,7 +77,7 @@ export const Carousel = ({ props }: { props: any }) => {
             </IconButton>
             {/* Slider */}
             <Slider {...settings} ref={(slider) => setSlider(slider)}>
-                {props.map((image: any) => (
+                {props.map((image: string) => (
                     <Box key={image}>
                         <Image
                             src={image}

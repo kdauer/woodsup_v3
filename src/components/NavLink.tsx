@@ -2,14 +2,14 @@
 import { Link } from '@radix-ui/themes'
 import { Link as NextLink, usePathname } from 'i18n/navigation'
 import { useTheme } from 'next-themes'
-import { useEffect, useState } from 'react'
+import { ReactNode, useEffect, useState } from 'react'
 
 export const NavLink = ({
     href,
     children,
 }: {
     href: string
-    children?: React.ReactNode
+    children?: ReactNode
 }) => {
     const pathname = usePathname()
     const isActive = pathname === href
