@@ -1,14 +1,15 @@
 'use client'
 import { DropdownMenu } from '@radix-ui/themes'
 import { Link as NextLink } from 'i18n/navigation'
+import { ReactNode } from 'react'
 
 export const NavMenuItem = ({
     href,
     children,
     onClose,
 }: {
-    href: any
-    children?: React.ReactNode
+    href: string
+    children?: ReactNode
     onClose: () => void
 }) => {
     return (

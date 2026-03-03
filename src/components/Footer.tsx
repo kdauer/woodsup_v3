@@ -35,7 +35,7 @@ const FooterLink = ({
     mounted,
     isLight,
 }: {
-    linkText: any
+    linkText: string
     children: ReactNode
     mounted: boolean
     isLight: boolean

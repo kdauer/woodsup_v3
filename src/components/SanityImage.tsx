@@ -3,6 +3,7 @@
 import type { SanityImageSource } from '@sanity/image-url'
 import { urlFor } from 'lib/sanity/image'
 import Image from 'next/image'
+import { CSSProperties } from 'react'
 
 interface SanityImageProps {
     image: SanityImageSource
@@ -12,7 +13,7 @@ interface SanityImageProps {
     fill?: boolean
     className?: string
     priority?: boolean
-    style?: React.CSSProperties
+    style?: CSSProperties
     onLoad?: () => void
     placeholder?: 'blur' | 'empty'
 }
