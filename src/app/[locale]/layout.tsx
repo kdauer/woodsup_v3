@@ -9,6 +9,7 @@ import { getMessages } from 'next-intl/server'
 import { ThemeProvider } from 'next-themes'
 import { notFound } from 'next/navigation'
 import { ReactNode } from 'react'
+import { Providers } from 'lib/providers'
 import '../globals.css'
 
 export default async function LocaleLayout({
@@ -39,16 +40,18 @@ export default async function LocaleLayout({
                     enableSystem
                     disableTransitionOnChange
                 >
-                    <Theme accentColor="green" grayColor="gray">
-                        <NextIntlClientProvider
-                            locale={locale}
-                            messages={messages}
-                        >
-                            <NavBar />
-                            {children}
-                            <Footer />
-                        </NextIntlClientProvider>
-                    </Theme>
+                    <Providers>
+                        <Theme accentColor="green" grayColor="gray">
+                            <NextIntlClientProvider
+                                locale={locale}
+                                messages={messages}
+                            >
+                                <NavBar />
+                                {children}
+                                <Footer />
+                            </NextIntlClientProvider>
+                        </Theme>
+                    </Providers>
                 </ThemeProvider>
             </body>
         </html>
